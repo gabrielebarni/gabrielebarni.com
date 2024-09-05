@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gabriele's Link Repository - Essential resources for people managers and professionals">
+    <title>Gabriele's Link Repository</title>
+    <style>
+        :root {
+            --primary-color: #7D6E9B;
+            --secondary-color: #E76F51;
+            --bg-color: #F4F4F4;
+            --text-color: #333;
+            --link-color: #5E478B;
+            --hover-color: #4A3A6B;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+
+        .header h4 {
+            margin-top: 0;
+            font-weight: normal;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .ascii-art {
+            font-family: monospace;
+            font-size: 0.7rem;
+            line-height: 1.2;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 1rem;
+            white-space: pre;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 350px;
+            max-width: 450px;
+            margin: 1rem;
+            padding: 2rem;
+            background-color: var(--bg-color);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            top: 0;
+        }
+
+        .column:hover {
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            top: -5px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+
+        .details {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #666;
+            font-weight: normal;
+        }
+
+        .footer {
+            background-color: var(--bg-color);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            display: none;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--hover-color);
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .column {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Gabriele's Link Repository</h1>
+        <h4>A virtual repository where I collect the links to important resources for myself and illuminated people managers.
+</h4>
+        
+    </header>
+
+    <main class="content">
+        <section class="column" aria-labelledby="people-managers">
+            <h2 id="people-managers">People Managers Resources</h2>
+            <h3>Talent Development</h3>
+            <ul>
+                <li><a href="https://www.accel-5.com/learn/dashboard">Accel-5: Training Library</a></li>
+                <li><a href="https://thermofisher.edcast.com/">TFU+: Includes All LinkedIn Learning</a></li>
+                <li><strong>Gabriele's TFU Curricula:</strong> Coming Soon</li>
+                <li><a href="https://thermofisher.edcast.com/pathways/ECL-cb426904-690b-49b5-b031-ca5f0106eb7c">Mentoring Resources</a> <span class="details">(TFU)</span></li>
+                <li><a href="https://thermofisher.edcast.com/teams/hiring-managers/11518">Hiring and Onboarding</a> <span class="details">(TFU)</span></li>
+                <li><a href="https://thermofisher.sharepoint.com/sites/ThermoFisherUniversity/SitePages/Yammer/Effective%20Interviewing.aspx?csf=1&web=1&e=jFWsZ5&cid=0dc3709a-f6ce-4a84-8567-f517af00f9e1">Effective Interviewing Techniques</a> <span class="details">(TFU)</span></li>
+            </ul>
+            <h3>New Manager Training</h3>
+            <ul>
+                <li><a href="https://thermofisher.edcast.com/journey/aspiring-manager-aspiring">Aspiring Manager</a> <span class="details">(TFU)</span></li>
+                <li><a href="https://thermofisher.edcast.com/channel/new-manager/28040">New Manager</a> <span class="details">(TFU)</span></li>
+            </ul>
+            <h3>People Manager Toolkits</h3>
+            <ul>
+                <li><a href="https://thermofisherit.service-now.com/hr?id=kb_article&sys_id=5fd0f1751b0799146b6c0d86cc4bcbad">High Turnover Toolkit</a> <span class="details">(TFU)</span></li>
+                <li><a href="https://thermofisherit.service-now.com/hr?id=kb_article&sys_id=5fd0f1751b0799146b6c0d86cc4bcbad">Leadership Inclusion Toolkit</a> <span class="details">(TFU)</span></li>
+                <li><a href="https://thermofisherit.service-now.com/hr?id=nr_kb_article&sys_id=a3357f371b2c48146a32eac8bc4bcb82">Performance Improvement Plan Toolkit</a></li>
+                <li><a href="https://thermofisher.edcast.com/channel/hr-hour">HR Hours</a> <span class="details">(TFU)</span></li>
+            </ul>
+        </section>
+
+        <section class="column" aria-labelledby="commercial-resources">
+            <h2 id="commercial-resources">Commercial Resources</h2>
+            <ul>
+                <li><a href="https://thermofisher.edcast.com/teams/sales-leader-toolkit">Sales Leader Toolkit</a> <span class="details">(TFU)</span></li>
+                <li><a href="https://thermofisher.edcast.com/teams/sales-leader-toolkit/36290">Sales Leader Skill Assessment</a> <span class="details">(TFU)</span></li>
+                <li><a href="https://thermofisher.edcast.com/channel/sales-training">Sales Training</a> <span class="details">(TFU)</span></li>
+                <li><a href="https://engage.cloud.microsoft/main/org/thermofisher.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxMzU5Mjc4NTcxNTIifQ/new">Commercial Connections</a> <span class="details">(Yammer community)</span></li>
+            </ul>
+
+            <h2>Workday Key Reports</h2>
+            <ul>
+                <li><a href="https://wd5.myworkday.com/thermofisher/d/task/1422$8914.htmld">Employee Year-End Completion Status</a> <span class="details">(PMD)</span></li>
+                <li><a href="https://wd5.myworkday.com/thermofisher/d/task/1422$8061.htmld">Employees Goal Setting Completion</a> <span class="details">(PMD)</span></li>
+                <li><a href="https://wd5.myworkday.com/thermofisher/d/task/1422$3176.htmld">Employee Assess Potential Status</a> <span class="details">(Talent)</span></li>
+            </ul>
+
+            <h2>Careers Resources</h2>
+            <ul>
+                <li><a href="https://jobs.thermofisher.com/global/en/c/operations-jobs">Internal TF Careers Site</a></li>
+                <li><a href="https://thermofisher.edcast.com/pathways/create-your-draft-development-plan-templates-tools-and-gui/cards/11753833">Individual Development Plan Template</a></li>
+                <li><a href="https://thermofisher-my.sharepoint.com/:p:/p/gabriele_barni/EZ1Zr5P8fTlBm0yQYE-izjQBb4I3jlahVQ2Mzraul3ewxA?e=c7QbP2&CID=b445cb1e-92c6-ebdd-53af-df042679a548">Succession Plan Aids</a></li>
+                <li><a href="https://thermofisher.edcast.com/channel/careers-in-motion/31955">Careers in Motion</a> <span class="details">(TFU)</span></li>
+            </ul>
+        </section>
+
+        <section class="column" aria-labelledby="other-tools">
+            <h2 id="other-tools">Other Useful Tools</h2>
+            <h3>Agile</h3>
+            <ul>
+                <li><a href="https://kanbantool.com/kanban-board">Kanban Board</a> <span class="details">(use <a href="https://tasks.office.com/">MS Planner</a> to start one)</span></li>
+                <li><a href="https://www.pomodorotechnique.com/">Pomodoro Technique</a></li>
+            </ul>
+
+            <h3>AI</h3>
+            <ul>
+                <li><a href="https://geneai.thermofisher.com/agents/7f5ad510-a47c-49df-9f3e-6c1fe87ccc64/chat">Agent Inclusio</a> <span class="details">(<a href="https://thermofisher-my.sharepoint.com/:b:/p/gabriele_barni/ET_MvL8AjHlMrLwbZ9RqegwBFDt3P-0o4xvHcoBw0McZIg?e=4bsvGQ">Agent Specs Sheet</a>)</span></li>
+                <li><a href="https://geneai.thermofisher.com/">Gene.AI: Your Co-pilot</a></li>
+                <li><a href="https://designer.microsoft.com/image-creator">MS Image Creator</a></li>
+                <li><a href="https://ollama.com/">Ollama: Run Your LLM</a></li>
+            </ul>
+
+            <h3>Other Free Tools</h3>
+            <ul>
+                <li><a href="https://mermaid.live/">Mermaid: Draft Quick Flowcharts</a></li>
+                <li><a href="https://excalidraw.com/">Excalidraw: Draft Quick Diagrams</a></li>
+                <li><a href="https://forms.office.com/">MS Form: Create Quick Surveys and Forms</a></li>
+                <li><a href="https://realtimeinsights.northernlight.com/dashboard.php?id=235">Realtime: Thermo Fisher Insight Search Engine</a></li>
+		<li><a href="https://thermofisher.sharepoint.com/sites/Wiktionary">Thermo Fisher Acronyms Wiktionary App</a></li>
+
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Contact me via <a href="mailto:gabriele.barni@thermofisher.com">Email</a> or <a href="https://teams.microsoft.com/l/chat/0/0?users=gabriele.barni@thermofisher.com">Teams@barni</a></p>
+This page helped already :  <script type="text/javascript" src="//counter.websiteout.com/js/2/4/500/0"></script> colleagues. <p>
+
+<pre>
+
+   -''--.
+       _`>   `\.-'
+    _.'     _     '._
+  .'   _.='   '=._   '.
+  >_   / /_\ /_\ \   _
+    / (  \o/\\o/  ) \
+    >._\ .-,_)-. /_.< 
+   /__/ \__\ 
+          '---'     E=mc^2  
+        </pre>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Back to top">↑</a>
+
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Visitor count (placeholder - replace with actual counter implementation)
+        document.getElementById('visitor-count').
