@@ -43,7 +43,7 @@
     h2 {
       border-bottom: 1px solid #30363d;
       padding-bottom: 0.3rem;
-      color: #3df2b0; /* Aqua green from index.html */
+      color: #3df2b0;
     }
     a.button {
       display: inline-block;
@@ -69,6 +69,27 @@
       font-size: 0.8rem;
       color: #8b949e;
       border-top: 1px solid #30363d;
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+    .lightbox-content {
+      display: block;
+      margin: 5% auto;
+      max-width: 90%;
+    }
+    .lightbox img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
   </style>
 </head>
@@ -100,13 +121,16 @@
       <p>This map shows the current repeater coverage of the Swiss Meshtastic Mesh Network I’m actively participating in and helping expand.</p>
       <p>With connections stretching from Bern to Brig, from Zürich to Plaine Morte, this mesh is growing steadily — for hikers, off-grid enthusiasts, and anyone who believes in digital self-reliance. One day, I’d love to bridge the network all the way to Milano — but crossing the Alps will be quite the challenge.</p>
       <figure style="text-align: center;">
-        <a href="map-meshtastic-coverage.png" target="_blank">
-          <img src="map-meshtastic-coverage.png" alt="Meshtastic Repeater Coverage Map" style="width: 50%;">
-        </a>
+        <img src="map-meshtastic-coverage.png" alt="Meshtastic Repeater Coverage Map" style="width: 50%; cursor: pointer;" onclick="openLightbox();">
         <figcaption style="font-size: 0.9rem; color: #8b949e; margin-top: 0.5rem;">
-          🛁 Jun 2025 coverage area (click to enlarge)
+          🛁 Jun 2025 coverage area (click to expand)
         </figcaption>
       </figure>
+      <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-content">
+          <img src="map-meshtastic-coverage.png" alt="Full Size Coverage Map">
+        </div>
+      </div>
     </section>
 
     <section id="nodes">
@@ -149,5 +173,23 @@
   </footer>
 
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script>
+    function openLightbox() {
+      document.getElementById('lightbox').style.display = 'block';
+      document.addEventListener('keydown', handleEscKey);
+    }
+    function closeLightbox(event) {
+      if (event.target.id === 'lightbox') {
+        document.getElementById('lightbox').style.display = 'none';
+        document.removeEventListener('keydown', handleEscKey);
+      }
+    }
+    function handleEscKey(event) {
+      if (event.key === 'Escape') {
+        document.getElementById('lightbox').style.display = 'none';
+        document.removeEventListener('keydown', handleEscKey);
+      }
+    }
+  </script>
 </body>
 </html>
