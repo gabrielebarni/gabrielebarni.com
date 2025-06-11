@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Scruch.com Network - Nodes, Coverage and Resources for resilient communication in Basel and beyond.">
+  <title>Meshtastic Mesh Network - Basel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto Mono', monospace;
+      background-color: #0d1117;
+      color: #c9d1d9;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.3rem;
+      color: #58a6ff;
+    }
+    a.button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem 0;
+      background: #21262d;
+      color: #58a6ff;
+      text-decoration: none;
+      border: 1px solid #30363d;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #30363d;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: #8b949e;
+      border-top: 1px solid #30363d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meshtastic Network – Basel</h1>
+    <div>
+      <img src="meshtastic-powered.png" alt="Powered by Meshtastic" style="width: 90px; margin-top: 1rem;">
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#coverage">Map</a>
+      <a href="#nodes">Nodes</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#links">Links</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>📡 About This Project</h2>
+      <p>
+        What started as a curiosity became a mission.
+      </p>
+      <p>
+        I initially began experimenting with <strong>Meshtastic</strong> to build a resilient, long-range <abbr title="Low-Power Wide-Area Network">LoRa</abbr> communication network for my family.
+        The idea was to have a communication fallback in case mobile towers went down — be it due to a power outage, natural disaster, or remote travel.
+      </p>
+      <p>
+        But the deeper I went, the more I discovered the beauty of decentralized mesh networks. No central authority. Just nodes, sharing data, broadcasting position, messages, and hope.
+        It felt like a modern ham radio revolution — fully encrypted, low power, and open-source.
+      </p>
+      <p>
+        That’s when I decided to go bigger: I’ve started deploying permanent nodes across the <strong>Basel area</strong> — acting as repeaters, link extenders, and community enablers.
+        My vision is simple: contribute to a resilient mesh backbone across Switzerland, one antenna at a time.
+      </p>
+    </section>
+
+    <section id="coverage">
+      <h2>📍 Current Network Coverage</h2>
+      <p>
+        This map shows the actual repeater coverage of the Swiss Meshtastic Mesh Network. Some of these nodes — especially in Basel and surrounding regions — are ones I personally deployed or helped connect.
+      </p>
+      <p>
+        With connections stretching from Bern to Brig, from Zürich to Plaine Morte, this mesh is growing steadily — for hikers, off-grid enthusiasts, and anyone who believes in digital self-reliance.
+      </p>
+      <figure style="text-align: center;">
+        <img src="map-meshtastic-coverage.png" alt="Meshtastic Repeater Coverage Map">
+        <figcaption style="font-size: 0.9rem; color: #8b949e; margin-top: 0.5rem;">
+          📡 Live coverage area – powered by permanent repeaters and community nodes
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="nodes">
+      <h2>🛰️ My Nodes</h2>
+      <ul>
+        <li><strong>EchoT</strong> – Overland unit with GPS, solar, and AES encryption</li>
+        <li><strong>Repeater01</strong> – High balcony node, optimized for urban relaying</li>
+        <li><strong>BaseStation</strong> – Indoor hub node, always-on, connected via USB</li>
+      </ul>
+    </section>
+
+    <section id="downloads">
+      <h2>📦 Downloads</h2>
+      <ul>
+        <li><a class="button" href="https://github.com/meshtastic/Meshtastic-device/releases" target="_blank">⬇️ Latest Firmware</a></li>
+        <li><a class="button" href="https://meshtastic.org/docs" target="_blank">📘 Meshtastic Documentation</a></li>
+        <li><a class="button" href="https://github.com/meshtastic/Meshtastic-python" target="_blank">🐍 Python CLI Tools</a></li>
+      </ul>
+    </section>
+
+    <section id="links">
+      <h2>🔗 Useful Links</h2>
+      <ul>
+        <li><a href="https://meshtastic.org" target="_blank">🌐 Official Website</a></li>
+        <li><a href="https://discord.gg/meshtastic" target="_blank">💬 Community Discord</a></li>
+        <li><a href="https://reddit.com/r/meshtastic" target="_blank">📣 Reddit Community</a></li>
+        <li><a href="https://map.meshtastic.org" target="_blank">🗺️ Live Map Viewer</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Gabriele Barni • Mesh is freedom • Built with 💚 & LoRa
+  </footer>
+
+</body>
+</html>
