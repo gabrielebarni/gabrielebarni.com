@@ -1,172 +1,857 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabriele Barni - Welcome</title>
-  <meta name="description" content="Gabriele Barni: HR Leader, tech enthusiast, and advocate for the #FutureOfWork.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabriele Barni — HR and #FutureofWork</title>
+  <meta name="description" content="Gabriele Barni: HR leader and technology enthusiast. Field notes on AI in HR, service delivery, skills and the future of work.">
+  <meta name="theme-color" content="#17232f">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://www.gabrielebarni.com/">
+  <link rel="icon" href="/favicon.ico">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.gabrielebarni.com/">
-  <meta property="og:title" content="Gabriele Barni">
-  <meta property="og:description" content="HR Leader, tech enthusiast, and advocate for the #FutureOfWork.">
+  <meta property="og:title" content="Gabriele Barni — HR and #FutureofWork">
+  <meta property="og:description" content="A website at the crossroads of technology and humanity. Explore 30 connected field notes on people, work and AI.">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@gabrielebarni">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #1d1f20;
-      color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.85rem;
-      color: #999;
-      text-align: center;
-    }
-    .container {
-      padding: 30px;
-      background-color: #292b2e;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-      position: relative;
-      border: 2px solid transparent;
-      background-clip: padding-box;
-    }
-    .container::before {
-      content: '';
-      position: absolute;
-      top: -3px;
-      left: -3px;
-      right: -3px;
-      bottom: -3px;
-      border-radius: 10px;
-      background: linear-gradient(45deg, #00ff88, #00d1b2, #00ff88);
-      background-size: 400% 400%;
-      z-index: -1;
-      animation: glowing-border 8s ease infinite;
-    }
-    @keyframes glowing-border {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #00d1b2;
-      font-weight: 700;
-    }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-      color: #d1d1d1;
-    }
-    a {
-      text-decoration: none;
-      color: #00d1b2;
-      padding: 10px 20px;
-      border: 2px solid #00d1b2;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-      font-weight: 500;
-    }
-    a:hover,
-    a:focus-visible {
-      background-color: #00d1b2;
-      color: #292b2e;
-      transform: scale(1.05); /* Adds a slight scaling effect */
-    }
-    .links {
-      margin-top: 30px;
-    }
-    .links a {
-      display: block;
-      margin: 10px 0;
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .x-lists {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #3c3f41;
-    }
-    .x-lists h3 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      color: #00d1b2;
-      font-weight: 700;
-    }
-    .x-lists a {
-      display: block;
-      margin: 10px 0;
-      padding: 10px 20px;
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    @media screen and (max-width: 768px) {
-      h1 {
-        font-size: 2rem;
-      }
-      p {
-        font-size: 1rem;
-      }
-      .x-lists h3 {
-        font-size: 1.6rem;
-      }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .container::before {
-        animation: none;
-      }
-      a {
-        transition: none;
-      }
-      a:hover,
-      a:focus-visible {
-        transform: none;
-      }
-    }
+    html,body{margin:0;min-height:100%;background:#0c1927}
+    body{font-family:"Segoe UI",Tahoma,Arial,sans-serif}
+    #gb-oxygen{max-width:1200px;margin:0 auto}
+    #gb-oxygen .ox-wallpaper{min-height:100svh}
+    #gb-oxygen .ox-edition{padding-right:0}
+    #gb-oxygen .ox-footer{line-height:1.7}
+    #gb-oxygen .ox-footer>span{max-width:100%;flex:1 1 300px}
+    #gb-oxygen button,#gb-oxygen a{cursor:pointer}
+    #gb-oxygen i[data-lucide]{display:inline-block;width:16px;height:16px}
+    #gb-oxygen .ox-skip{position:absolute;left:20px;top:-100px;padding:12px 16px;background:#17232f;color:#eef5fa;z-index:10}
+    #gb-oxygen .ox-skip:focus{top:12px}
+    #gb-oxygen .ox-main:focus{outline:none}
+    @media(max-width:570px){#gb-oxygen .ox-masthead{gap:7px}#gb-oxygen .ox-masthead .ox-edition{display:block;font-size:11px;letter-spacing:.04em;padding:0}#gb-oxygen .ox-masthead{margin-bottom:15px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
+  <script defer src="https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to gabrielebarni.com</h1>
-    <p>I am an HR Leader, tech enthusiast, and advocate for the #FutureOfWork.</p>
-
-    <div class="links">
-      <a href="https://www.linkedin.com/in/barni/" target="_blank" rel="me noopener">💼 Connect on LinkedIn</a>
-      <a href="https://www.reddit.com/r/risorseumane/" target="_blank" rel="noopener">👥 My Reddit: r/risorseumane</a>
-      <a href="https://x.com/gabrielebarni" target="_blank" rel="me noopener">🐦 Follow me on X: @gabrielebarni</a>
-      <a href="/meshtastic.htm">📡 Meshtastic Notfunk Netzwerk</a>
+<div id="gb-oxygen" data-finish="midnight" aria-label="Gabriele Barni website">
+  <a class="ox-skip" href="#main-content">Skip to content</a>
+  <div class="ox-wallpaper">
+    <div class="ox-masthead"><span class="ox-address">gabrielebarni.com</span><span class="ox-edition">HR and #FutureofWork</span></div>
+    <div class="ox-window">
+      <header class="ox-header">
+        <button class="ox-brand" data-page="home" aria-label="Gabriele Barni home"><span class="ox-monogram">gb.</span><span>Gabriele Barni<small>People &amp; technology</small></span></button>
+        <button class="ox-theme" aria-label="Switch to the light Air theme"><i data-lucide="sun" aria-hidden="true"></i><span>Air</span></button>
+      </header>
+      <nav class="ox-nav" aria-label="Main navigation">
+        <button data-page="home" aria-current="page"><i data-lucide="house" aria-hidden="true"></i>Overview</button>
+        <button data-page="notes"><i data-lucide="notebook-pen" aria-hidden="true"></i>Field notes</button>
+        <button data-page="projects"><i data-lucide="radio" aria-hidden="true"></i>Projects</button>
+        <button data-page="about"><i data-lucide="user-round" aria-hidden="true"></i>About</button>
+      </nav>
+      <main class="ox-main" id="main-content" tabindex="-1">
+        <section data-panel="home">
+          <div class="ox-hero">
+            <div class="ox-hero-copy"><p class="ox-eyebrow"><span></span>HR LEADER · TECHNOLOGY ENTHUSIAST</p><h1>People, work<br>&amp; an <em>AI-shaped</em><br>world.</h1><p class="ox-lead">I'm Gabriele. I explore what AI means for the way we work, the organisations we build, and the people who lead them.</p><div class="ox-actions"><button class="ox-button ox-primary" data-page="notes">Explore my field notes <span>→</span></button><a class="ox-link" href="https://www.linkedin.com/in/barni/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div></div>
+            <aside class="ox-focus"><div class="ox-focus-title"><i data-lucide="compass" aria-hidden="true"></i><span>Questions worth asking</span></div><div class="ox-question"><span>01</span><p>How does work change when AI becomes a colleague?</p></div><div class="ox-question"><span>02</span><p>What does good judgement look like now?</p></div><div class="ox-question"><span>03</span><p>How do we help people make the transition?</p></div><div class="ox-focus-bottom">NOTES ON PEOPLE &amp; TECHNOLOGY</div></aside>
+          </div>
+          <section class="ox-notes-section" aria-labelledby="ox-notes-title"><div class="ox-section-head"><div><p class="ox-eyebrow">THE NOTEBOOK</p><h2 id="ox-notes-title">A few things to think about.</h2></div><span class="ox-draft">30 connected notes</span></div><div class="ox-note-grid"><button class="ox-note" data-article="work-design"><div class="ox-note-label"><i data-lucide="file-text" aria-hidden="true"></i><span>WORK DESIGN</span></div><h3>AI changes tasks.<br>Leadership changes work.</h3><p>What happens after the tools arrive?</p><span class="ox-note-bottom">Read field note <span>↗</span></span></button><button class="ox-note" data-article="service-model"><div class="ox-note-label"><i data-lucide="file-text" aria-hidden="true"></i><span>HR SERVICE DELIVERY</span></div><h3>The next HR model<br>is a service.</h3><p>Start with the employee problem, not the org chart.</p><span class="ox-note-bottom">Read field note <span>↗</span></span></button></div></section>
+          <button class="ox-project-strip" data-page="projects"><span class="ox-project-icon"><i data-lucide="radio-tower" aria-hidden="true"></i></span><span><small>BEYOND THE DAY JOB</small><strong>Communities, signals &amp; open systems.</strong><span>Risorse Umane, curated X lists, and Meshtastic in Basel.</span></span><span class="ox-strip-arrow">→</span></button>
+        </section>
+        <section data-panel="notes" hidden>
+          <div class="ox-library">
+            <div class="ox-page-heading"><p class="ox-eyebrow">THE NOTEBOOK / 30 CONNECTED NOTES</p><h1>Work is changing.<br><em>Let's make it better.</em></h1><p class="ox-lead">Research, practical questions and a point of view on HR in an AI-shaped world.</p><p class="ox-editorial">Research &amp; practical perspectives · sources checked 13 October 2026</p></div>
+            <div class="ox-paths" aria-label="Suggested starting points"><span>START HERE</span><button data-article="service-model">Redesign HR services <span>→</span></button><button data-article="copilot-pilot">Make AI useful <span>→</span></button><button data-article="work-design">Rethink work <span>→</span></button></div>
+            <div class="ox-library-tools"><label for="ox-search">Search the notebook<input id="ox-search" type="search" placeholder="Try skills, onboarding, agents…" maxlength="200"></label><label for="ox-topic">Explore a topic<select id="ox-topic"><option value="all">All topics</option><option>HR service delivery</option><option>AI in HR</option><option>Skills &amp; talent</option><option>Employee experience</option><option>Future of work</option><option>Governance &amp; value</option></select></label></div>
+            <div class="ox-results-head"><p id="ox-result-count" role="status" aria-live="polite"></p><button class="ox-quiet" data-clear hidden>Clear filters</button></div>
+            <div class="ox-library-grid" id="ox-library-grid"></div>
+            <div class="ox-empty" hidden><h2>No notes found.</h2><p>Try a broader term or another topic.</p><button class="ox-button ox-primary" data-clear>Show all notes</button></div>
+            <nav class="ox-pagination" aria-label="Field notes pages"><button class="ox-pager" data-prev>← Previous</button><span id="ox-page-number"></span><button class="ox-pager" data-next>Next →</button></nav>
+            <p class="ox-library-footnote">Each note separates sourced evidence from an editorial perspective and a suggested experiment. Guidance is not a substitute for local legal, privacy or professional advice.</p>
+          </div>
+          <div class="ox-reader" hidden><button class="ox-back" data-library>← Back to the notebook</button><article id="ox-reader-content"></article></div>
+          <span class="ox-visually-hidden" id="ox-reading-status" role="status" aria-live="polite"></span>
+        </section>
+        <section data-panel="projects" hidden>
+          <div class="ox-page-heading"><p class="ox-eyebrow">PROJECTS / COMMUNITY / CURATION</p><h1>Things built.<br><em>Ideas shared.</em></h1><p class="ox-lead">A community for people in HR, a few carefully chosen reading lists, and an open-source experiment closer to home.</p></div>
+          <div class="ox-projects-grid">
+            <article class="ox-project-feature"><div class="ox-project-symbol"><i data-lucide="messages-square" aria-hidden="true"></i></div><p class="ox-eyebrow">COMMUNITY / REDDIT</p><h2>Risorse Umane.</h2><p>An Italian-language space for questions, perspectives and conversations about HR, careers and working life.</p><span class="ox-project-handle">r/risorseumane</span><a class="ox-button ox-primary" href="https://www.reddit.com/r/risorseumane/" target="_blank" rel="noopener noreferrer">Explore the community ↗</a></article>
+            <article class="ox-project-feature"><div class="ox-project-symbol"><i data-lucide="radio-tower" aria-hidden="true"></i></div><p class="ox-eyebrow">OPEN SYSTEMS / BASEL</p><h2>Meshtastic.</h2><p>What began as a backup communication system for my family became an exploration of open-source, decentralised mesh networking.</p><span class="ox-project-handle">A network in Basel</span><a class="ox-button ox-primary" href="https://www.gabrielebarni.com/meshtastic.htm" target="_blank" rel="noopener noreferrer">Explore the project ↗</a></article>
+          </div>
+          <section class="ox-curation" aria-labelledby="ox-curation-title"><div class="ox-section-head"><div><p class="ox-eyebrow">CURATED LISTS / X</p><h2 id="ox-curation-title">Three windows on the world.</h2></div><span class="ox-draft">Curated by Gabriele</span></div><p class="ox-curation-intro">Follow the conversations around work, artificial intelligence and life in Basel.</p>
+            <a class="ox-curated-link" href="https://x.com/i/lists/1714400175333031995" target="_blank" rel="noopener noreferrer"><span class="ox-curation-number">01</span><span><strong>Future of Work</strong><small>The evolving landscape of work, people and organisations.</small></span><span aria-hidden="true">↗</span></a>
+            <a class="ox-curated-link" href="https://x.com/i/lists/1714184824729084061" target="_blank" rel="noopener noreferrer"><span class="ox-curation-number">02</span><span><strong>AI Frontiers</strong><small>A reading list for exploring artificial intelligence.</small></span><span aria-hidden="true">↗</span></a>
+            <a class="ox-curated-link" href="https://x.com/i/lists/1714628311018578319" target="_blank" rel="noopener noreferrer"><span class="ox-curation-number">03</span><span><strong>Basel City</strong><small>A local lens on the city and what is happening around it.</small></span><span aria-hidden="true">↗</span></a>
+            <p class="ox-editorial">Lists open on X, which may ask you to sign in.</p>
+          </section>
+        </section>
+        <section data-panel="about" hidden><div class="ox-page-heading"><p class="ox-eyebrow">A LITTLE CONTEXT</p><h1>Gabriele Barni.</h1><p class="ox-lead">HR leader. Technology enthusiast. Advocate for the future of work.</p></div><div class="ox-about"><p>My interests sit where people and technology meet: how work evolves, how organisations adapt, and how we build useful things.</p><p>This is my personal space for sharing ideas, asking questions, and documenting projects.</p><a class="ox-button ox-primary" href="https://www.linkedin.com/in/barni/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div></section>
+      </main>
+      <footer class="ox-footer"><span>A website at the crossroads of technology and humanity.</span><div><a href="https://www.linkedin.com/in/barni/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://x.com/gabrielebarni" target="_blank" rel="noopener noreferrer">X ↗</a><a href="https://www.reddit.com/r/risorseumane/" target="_blank" rel="noopener noreferrer">Reddit ↗</a></div></footer>
     </div>
-
-    <!-- X Lists Section -->
-    <div class="x-lists">
-      <h3>A few curated lists to check out</h3>
-      <a href="https://x.com/i/lists/1714400175333031995" target="_blank">🌐💼 Future of Work: Exploring the evolving landscape of work</a>
-      <a href="https://x.com/i/lists/1714184824729084061" target="_blank">🤖 AI Frontiers: Dive into the realm of artificial intelligence</a>
-      <a href="https://x.com/i/lists/1714628311018578319" target="_blank">🏙️ Basel City: Discover what’s happening in Basel</a>
-    </div>
- <footer>
-      © 2012-2026 Gabriele Barni | Empowering innovation at the crossroads of technology and humanity.
-    </footer>
+    <div class="ox-signoff"><span>PEOPLE / WORK / TECHNOLOGY</span><span>A personal perspective.</span></div>
   </div>
+</div>
+<style>
+#gb-oxygen{--ox-accent:#77c8ef;--ox-ink:#eef5fa;--ox-secondary:#afc0cf;--ox-paper:#17232f;--ox-raised:#233342;--ox-low:#131e28;--ox-edge:#405564;--ox-chrome-top:#506170;--ox-chrome-bottom:#283744;--ox-glint:#ffffff26;--ox-navy:#0c1822;--ox-radius:10px;color-scheme:dark;font-family:"Segoe UI",Tahoma,Arial,sans-serif;color:var(--ox-ink)}
+#gb-oxygen[data-finish="air"]{--ox-accent:#206c97;--ox-ink:#253d50;--ox-secondary:#566e7f;--ox-paper:#f4f7f9;--ox-raised:#fff;--ox-low:#e9eff3;--ox-edge:#b7c8d4;--ox-chrome-top:#fff;--ox-chrome-bottom:#d6e1e8;--ox-glint:#ffffffd9;color-scheme:light}
+#gb-oxygen *{box-sizing:border-box}#gb-oxygen [hidden]{display:none!important}#gb-oxygen button,#gb-oxygen a{-webkit-tap-highlight-color:transparent}#gb-oxygen button{font:inherit;cursor:var(--ox-pointer, pointer)}#gb-oxygen a{color:inherit}#gb-oxygen button:focus-visible,#gb-oxygen a:focus-visible,#gb-oxygen summary:focus-visible{outline:2px solid var(--ox-accent);outline-offset:4px}#gb-oxygen button:hover,#gb-oxygen a:hover{filter:brightness(1.12)}
+#gb-oxygen .ox-wallpaper{padding:24px;background:radial-gradient(ellipse at 92% 7%,#50849a55,transparent 34%),radial-gradient(ellipse at 0% 60%,#005e8c55,transparent 52%),linear-gradient(135deg,#0c1927,#244554 54%,#0e1c2c);position:relative;isolation:isolate;overflow:hidden}
+#gb-oxygen .ox-wallpaper:before{content:"";position:absolute;inset:80px -400px 180px -200px;transform:rotate(-28deg);border-top:1px solid #b5eeff20;border-bottom:1px solid #c1ebff18;border-radius:50%;box-shadow:0 -20px 70px #62b5eb0d,inset 0 30px 80px #b5eeff0c;z-index:-1;pointer-events:none}
+#gb-oxygen .ox-masthead,#gb-oxygen .ox-signoff{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;color:#bbcdd8;font-size:11px;letter-spacing:.04em}#gb-oxygen .ox-masthead{margin:0 4px 16px}#gb-oxygen .ox-address{font-size:13px;letter-spacing:.035em;color:#e4eef4}#gb-oxygen .ox-edition{font-size:11px;letter-spacing:.15em;padding-right:78px}#gb-oxygen .ox-signoff{padding:18px 4px 0;font-size:11px;letter-spacing:.11em}
+#gb-oxygen .ox-window{background:var(--ox-paper);border:1px solid #b9d5e34d;border-radius:var(--ox-radius);box-shadow:0 26px 55px #020b1770,0 2px 4px #020b1755,inset 0 1px var(--ox-glint);overflow:hidden}
+#gb-oxygen .ox-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 25px;background:linear-gradient(var(--ox-chrome-top),var(--ox-chrome-bottom));border-bottom:1px solid var(--ox-low);box-shadow:inset 0 1px var(--ox-glint);text-shadow:0 1px #00000010}
+#gb-oxygen .ox-brand{display:flex;align-items:center;gap:12px;padding:0;background:none;border:0;color:var(--ox-ink);text-align:left;font-size:15px;letter-spacing:.015em}#gb-oxygen .ox-brand small{display:block;color:var(--ox-secondary);font-size:11px;margin-top:3px;letter-spacing:.04em}
+#gb-oxygen .ox-monogram{display:grid;place-items:center;width:43px;height:43px;border-radius:10px;background:linear-gradient(165deg,#aee2f8 0%,#60a5cb 48%,#28628a 49%,#438cb5 100%);border:1px solid #a3d9f090;box-shadow:inset 0 1px #ffffffb3,0 2px 4px #0005;color:#f4fbff;text-shadow:0 1px 2px #133d5a;font-size:24px;letter-spacing:-2px}
+#gb-oxygen .ox-theme{display:flex;align-items:center;gap:7px;padding:8px 10px;background:linear-gradient(var(--ox-chrome-top),var(--ox-chrome-bottom));border:1px solid var(--ox-edge);border-radius:6px;box-shadow:inset 0 1px var(--ox-glint),0 1px 2px #0002;color:var(--ox-ink);font-size:11px}#gb-oxygen .ox-theme svg{width:14px;height:14px}
+#gb-oxygen .ox-nav{display:flex;gap:4px;padding:9px 23px;background:linear-gradient(var(--ox-raised),var(--ox-paper));border-top:1px solid var(--ox-glint);border-bottom:1px solid var(--ox-edge);flex-wrap:wrap}#gb-oxygen .ox-nav button{display:flex;align-items:center;justify-content:center;gap:7px;padding:8px 11px;min-height:35px;background:transparent;color:var(--ox-secondary);border:1px solid transparent;border-radius:5px;font-size:11px}#gb-oxygen .ox-nav svg{width:13px;height:13px}#gb-oxygen .ox-nav button[aria-current]{background:linear-gradient(#75b8d638,#37769b24);border-color:#75b8d65c;box-shadow:inset 0 1px #ffffff20,0 1px 2px #0002;color:var(--ox-ink)}
+#gb-oxygen .ox-main{padding:0 30px 28px;background:radial-gradient(ellipse at 5% 1%,#69acda0b,transparent 65%)}#gb-oxygen .ox-hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:25px;align-items:center;padding:40px 0 35px}#gb-oxygen .ox-eyebrow{font-size:11px;line-height:1.8;letter-spacing:.13em;font-weight:500;color:var(--ox-accent);margin:0 0 17px}#gb-oxygen .ox-hero .ox-eyebrow{font-size:11px;letter-spacing:.1em}#gb-oxygen .ox-eyebrow>span{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--ox-accent);box-shadow:0 0 7px #69ceee66;margin:0 7px 1px 0}
+#gb-oxygen h1{font-size:43px;line-height:1.08;letter-spacing:-1.8px;font-weight:400;margin:0 0 22px;color:var(--ox-ink)}#gb-oxygen h1 em{font-style:normal;color:var(--ox-accent)}#gb-oxygen .ox-lead{font-size:13px;line-height:1.8;color:var(--ox-secondary);max-width:450px;margin:0}#gb-oxygen .ox-actions{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:26px}#gb-oxygen .ox-button{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:37px;padding:9px 12px;text-decoration:none;border-radius:5px;font-size:11px;border:1px solid #95cce9;box-shadow:inset 0 1px #ffffff9c,0 2px 4px #0003}#gb-oxygen .ox-primary{background:linear-gradient(#c7e7f7,#94c9e3 48%,#75b5d8 49%,#96cce6);color:#12364c;text-shadow:0 1px #ffffff70}#gb-oxygen .ox-link{font-size:11px;color:var(--ox-secondary);text-decoration:none}
+#gb-oxygen .ox-focus{align-self:center;background:linear-gradient(145deg,var(--ox-raised),var(--ox-low));border:1px solid var(--ox-edge);border-radius:7px;box-shadow:inset 0 1px var(--ox-glint),0 8px 20px #0002;transform:translateY(10px)}#gb-oxygen .ox-focus-title{display:flex;align-items:center;gap:8px;padding:12px;border-bottom:1px solid var(--ox-edge);font-size:11px;color:var(--ox-ink);background:linear-gradient(#ffffff0b,#ffffff00)}#gb-oxygen .ox-focus-title svg{width:14px;height:14px;color:var(--ox-accent)}#gb-oxygen .ox-question{display:flex;gap:12px;margin:0 13px;padding:15px 0;border-bottom:1px solid #8199ac25}#gb-oxygen .ox-question>span{font-family:monospace;color:var(--ox-accent);font-size:11px;padding-top:2px}#gb-oxygen .ox-question p{font-size:12px;line-height:1.6;color:var(--ox-secondary);margin:0}#gb-oxygen .ox-focus-bottom{padding:13px;font:11px/1.5 monospace;letter-spacing:.05em;color:var(--ox-secondary)}
+#gb-oxygen .ox-notes-section{border-top:1px solid var(--ox-edge);padding-top:25px;box-shadow:0 -1px #0001}#gb-oxygen .ox-section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin-bottom:18px}#gb-oxygen .ox-section-head .ox-eyebrow{margin:0 0 5px}#gb-oxygen h2{font-size:21px;font-weight:400;line-height:1.35;letter-spacing:-.4px;margin:0}#gb-oxygen .ox-draft{font-size:11px;color:var(--ox-secondary);border:1px solid var(--ox-edge);border-radius:3px;padding:4px 7px;display:inline-block}#gb-oxygen .ox-note-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}#gb-oxygen .ox-note{text-align:left;background:linear-gradient(155deg,var(--ox-raised),var(--ox-paper));border:1px solid var(--ox-edge);border-radius:7px;padding:17px;color:var(--ox-ink);box-shadow:inset 0 1px var(--ox-glint),0 2px 4px #0001}#gb-oxygen .ox-note-label{display:flex;gap:7px;align-items:center;color:var(--ox-secondary);font-size:11px;letter-spacing:.1em}#gb-oxygen .ox-note-label svg{width:13px;height:13px;color:var(--ox-accent)}#gb-oxygen h3{font-size:17px;line-height:1.35;font-weight:400;letter-spacing:-.3px;margin:13px 0 8px}#gb-oxygen .ox-note p{font-size:11px;line-height:1.7;color:var(--ox-secondary);margin:0 0 17px}#gb-oxygen .ox-note-bottom{display:flex;justify-content:space-between;border-top:1px solid #8199ac25;padding-top:10px;font-size:11px;color:var(--ox-accent)}
+#gb-oxygen .ox-project-strip{display:flex;align-items:center;gap:14px;width:100%;padding:19px 0 0;margin-top:24px;border:0;border-top:1px solid var(--ox-edge);background:none;color:var(--ox-ink);text-align:left}#gb-oxygen .ox-project-icon{display:grid;place-items:center;flex-shrink:0;width:40px;height:40px;border-radius:8px;border:1px solid var(--ox-edge);background:linear-gradient(var(--ox-raised),var(--ox-low));box-shadow:inset 0 1px var(--ox-glint);color:var(--ox-accent)}#gb-oxygen .ox-project-icon svg{width:20px;height:20px}#gb-oxygen .ox-project-strip small{display:block;font-size:11px;letter-spacing:.13em;color:var(--ox-secondary)}#gb-oxygen .ox-project-strip strong{display:block;font-size:12px;font-weight:500;margin:4px 0}#gb-oxygen .ox-project-strip span span{display:block;font-size:11px;color:var(--ox-secondary);line-height:1.6}#gb-oxygen .ox-strip-arrow{margin-left:auto;color:var(--ox-accent)}
+#gb-oxygen .ox-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px;padding:15px 28px;background:linear-gradient(var(--ox-raised),var(--ox-low));border-top:1px solid var(--ox-edge);box-shadow:inset 0 1px var(--ox-glint);font-size:11px;color:var(--ox-secondary)}#gb-oxygen .ox-footer div{display:flex;gap:18px}#gb-oxygen .ox-footer a{text-decoration:none}
+#gb-oxygen .ox-page-heading{padding:40px 0 30px}#gb-oxygen .ox-page-heading .ox-draft{margin-top:17px}#gb-oxygen .ox-article{border-top:1px solid var(--ox-edge);padding:24px 0}#gb-oxygen .ox-article .ox-eyebrow{margin-bottom:8px}#gb-oxygen .ox-article p,#gb-oxygen .ox-about p,#gb-oxygen .ox-project-feature p,#gb-oxygen .ox-next p{font-size:13px;line-height:1.8;color:var(--ox-secondary)}#gb-oxygen details{margin-top:18px}#gb-oxygen summary{color:var(--ox-accent);font-size:12px;cursor:var(--ox-pointer, pointer)}#gb-oxygen .ox-proposal{border-left:2px solid var(--ox-edge);padding-left:14px}#gb-oxygen .ox-project-feature{position:relative;padding:26px;background:linear-gradient(145deg,var(--ox-raised),var(--ox-low));border:1px solid var(--ox-edge);border-radius:8px;box-shadow:inset 0 1px var(--ox-glint)}#gb-oxygen .ox-project-feature h2{font-size:29px}#gb-oxygen .ox-project-feature .ox-eyebrow{font-size:11px;color:var(--ox-accent)}#gb-oxygen .ox-project-symbol{float:right;color:var(--ox-accent)}#gb-oxygen .ox-project-symbol svg{width:40px;height:40px}#gb-oxygen .ox-next{padding:28px 0 12px}#gb-oxygen .ox-next .ox-eyebrow{margin-bottom:4px}#gb-oxygen .ox-about{max-width:520px;padding-bottom:50px}#gb-oxygen .ox-bio-placeholder{display:flex;gap:13px;border:1px dashed var(--ox-edge);padding:15px;border-radius:6px;margin:25px 0}#gb-oxygen .ox-bio-placeholder svg{flex-shrink:0;width:18px;height:18px;color:var(--ox-accent);margin-top:5px}#gb-oxygen .ox-bio-placeholder p{font-size:12px;margin:0}
+@media(min-width:900px){#gb-oxygen .ox-main{padding-left:50px;padding-right:50px}#gb-oxygen .ox-hero{gap:55px;padding:55px 0}#gb-oxygen h1{font-size:57px}#gb-oxygen .ox-lead{font-size:15px}#gb-oxygen .ox-eyebrow,#gb-oxygen .ox-hero .ox-eyebrow{font-size:11px}#gb-oxygen .ox-question p{font-size:14px}#gb-oxygen .ox-question{padding:20px 0}}
+@media(max-width:570px){#gb-oxygen .ox-wallpaper{padding:13px}#gb-oxygen .ox-header{padding:15px}#gb-oxygen .ox-main{padding:0 20px 24px}#gb-oxygen .ox-nav{padding:8px;gap:2px}#gb-oxygen .ox-nav button{flex:1;padding:9px 5px;font-size:11px;gap:5px}#gb-oxygen .ox-nav svg{display:none}#gb-oxygen .ox-hero{grid-template-columns:1fr;padding:32px 0;gap:27px}#gb-oxygen h1{font-size:40px}#gb-oxygen .ox-hero .ox-eyebrow{font-size:11px}#gb-oxygen .ox-focus{transform:none}#gb-oxygen .ox-question{padding:12px 0}#gb-oxygen .ox-focus-bottom{font-size:11px}#gb-oxygen .ox-note-grid{grid-template-columns:1fr}#gb-oxygen .ox-edition{display:none}#gb-oxygen .ox-signoff{font-size:11px}#gb-oxygen .ox-project-strip{align-items:start}#gb-oxygen .ox-project-icon{width:30px;height:34px}#gb-oxygen .ox-footer{padding:15px 20px}#gb-oxygen .ox-actions{gap:17px}#gb-oxygen .ox-link{font-size:11px}}
+@media(pointer:coarse){#gb-oxygen .ox-nav button,#gb-oxygen .ox-theme,#gb-oxygen .ox-button{min-height:44px}#gb-oxygen .ox-footer a{display:inline-flex;align-items:center;min-height:44px}}
+#gb-oxygen .ox-editorial{font-size:11px;line-height:1.6;color:var(--ox-secondary);margin:15px 0 0}
+#gb-oxygen .ox-paths{display:flex;align-items:center;gap:8px 20px;flex-wrap:wrap;border-top:1px solid var(--ox-edge);border-bottom:1px solid var(--ox-edge);padding:13px 0;margin-bottom:24px}
+#gb-oxygen .ox-paths>span{font:11px/1.6 monospace;letter-spacing:.08em;color:var(--ox-secondary)}
+#gb-oxygen .ox-paths button{border:0;background:none;padding:6px 0;color:var(--ox-accent);font-size:12px;text-align:left}#gb-oxygen .ox-paths button span{margin-left:5px}
+#gb-oxygen .ox-library-tools{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px}
+#gb-oxygen .ox-library-tools label{font-size:11px;line-height:1.5;color:var(--ox-secondary);min-width:0}
+#gb-oxygen .ox-library-tools input,#gb-oxygen .ox-library-tools select{display:block;width:100%;max-width:100%;min-width:0;margin-top:7px;background:var(--ox-low);color:var(--ox-ink);border:1px solid var(--ox-edge);border-radius:5px;box-shadow:inset 0 1px 3px #0002;padding:10px 11px;font:14px/1.4 "Segoe UI",Tahoma,Arial,sans-serif;min-height:43px}
+#gb-oxygen .ox-library-tools input::placeholder{color:var(--ox-secondary);opacity:1}
+#gb-oxygen .ox-results-head{display:flex;justify-content:space-between;gap:12px;align-items:center;min-height:52px;font-size:11px;color:var(--ox-secondary)}
+#gb-oxygen .ox-quiet{border:0;background:none;color:var(--ox-accent);font-size:12px;padding:8px 0}
+#gb-oxygen .ox-library-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+#gb-oxygen .ox-library-card{display:flex;flex-direction:column;text-align:left;background:linear-gradient(145deg,var(--ox-raised),var(--ox-paper));border:1px solid var(--ox-edge);box-shadow:inset 0 1px var(--ox-glint);border-radius:7px;padding:20px;color:var(--ox-ink);min-width:0}
+#gb-oxygen .ox-card-meta{display:flex;gap:10px;justify-content:space-between;color:var(--ox-accent);font-size:11px;line-height:1.5}
+#gb-oxygen .ox-card-meta span:last-child{color:var(--ox-secondary);font-family:monospace;white-space:nowrap}
+#gb-oxygen .ox-library-card h2{font-size:21px;line-height:1.3;margin:13px 0 10px;letter-spacing:-.4px}
+#gb-oxygen .ox-library-card p{font-size:13px;line-height:1.65;color:var(--ox-secondary);margin:0 0 20px}
+#gb-oxygen .ox-library-card .ox-note-bottom{margin-top:auto}
+#gb-oxygen .ox-pagination{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:22px 0 8px;color:var(--ox-secondary);font-size:12px}
+#gb-oxygen .ox-pager{background:linear-gradient(var(--ox-raised),var(--ox-low));border:1px solid var(--ox-edge);border-radius:5px;color:var(--ox-ink);padding:9px 12px;box-shadow:inset 0 1px var(--ox-glint);font-size:12px}
+#gb-oxygen .ox-pager:disabled{opacity:.42;cursor:default;filter:none}
+#gb-oxygen .ox-library-footnote{font-size:11px;line-height:1.8;color:var(--ox-secondary);border-top:1px solid var(--ox-edge);padding-top:18px;margin:20px 0 0}
+#gb-oxygen .ox-empty{padding:25px 0 35px}#gb-oxygen .ox-empty p{font-size:14px;line-height:1.6;color:var(--ox-secondary)}
+#gb-oxygen .ox-reader{max-width:690px;margin:auto;padding:26px 0 6px}
+#gb-oxygen .ox-back{border:0;background:none;color:var(--ox-accent);font-size:12px;padding:10px 0;margin-bottom:24px}
+#gb-oxygen .ox-reader h1{font-size:clamp(29px,4.5vw,45px);line-height:1.15;letter-spacing:-1.2px;margin:12px 0 18px}
+#gb-oxygen .ox-reader .ox-deck{font-size:17px;line-height:1.6;color:var(--ox-secondary);margin:0 0 25px}
+#gb-oxygen .ox-reader .ox-evidence{padding:19px 20px;border:1px solid var(--ox-edge);border-radius:6px;background:var(--ox-low);box-shadow:inset 0 1px var(--ox-glint)}
+#gb-oxygen .ox-reader h2{font-size:17px;line-height:1.4;margin:25px 0 9px;color:var(--ox-ink)}
+#gb-oxygen .ox-reader p{font-size:15px;line-height:1.85;color:var(--ox-secondary);margin:0 0 12px}
+#gb-oxygen .ox-reader .ox-evidence h2{margin:0 0 7px;font-size:11px;letter-spacing:.1em;color:var(--ox-accent)}
+#gb-oxygen .ox-reader .ox-evidence p{font-size:14px;line-height:1.8}
+#gb-oxygen .ox-source{font-size:12px;line-height:1.7;color:var(--ox-accent)!important;display:inline-block;overflow-wrap:anywhere;text-underline-offset:3px}
+#gb-oxygen .ox-source-year{font-size:11px!important;margin:5px 0 0!important}
+#gb-oxygen .ox-related{margin-top:28px;padding-top:4px;border-top:1px solid var(--ox-edge)}
+#gb-oxygen .ox-related button{display:flex;width:100%;align-items:center;gap:15px;justify-content:space-between;padding:13px 0;text-align:left;background:none;border:0;border-bottom:1px solid var(--ox-edge);color:var(--ox-accent);font-size:14px;line-height:1.5}
+#gb-oxygen .ox-related small{display:block;font-size:11px;color:var(--ox-secondary);margin-bottom:4px}
+#gb-oxygen .ox-reader .ox-reader-meta{font-size:11px;color:var(--ox-secondary);margin-top:22px}
+#gb-oxygen .ox-visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:570px){#gb-oxygen .ox-library-grid,#gb-oxygen .ox-library-tools{grid-template-columns:1fr}#gb-oxygen .ox-library-card{padding:18px}#gb-oxygen .ox-paths{gap:4px 16px}#gb-oxygen .ox-paths>span{width:100%}#gb-oxygen .ox-library .ox-page-heading h1{font-size:35px}#gb-oxygen .ox-reader .ox-evidence{padding:16px}#gb-oxygen .ox-pagination{gap:6px}#gb-oxygen .ox-pager{padding:10px 8px}}
+@media(pointer:coarse){#gb-oxygen .ox-library-tools input,#gb-oxygen .ox-library-tools select{font-size:16px}#gb-oxygen .ox-paths button,#gb-oxygen .ox-pager,#gb-oxygen .ox-back,#gb-oxygen .ox-quiet{min-height:44px}}
+
+#gb-oxygen .ox-projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+#gb-oxygen .ox-projects-grid .ox-project-feature{padding:22px;display:flex;flex-direction:column;align-items:start}
+#gb-oxygen .ox-projects-grid .ox-project-symbol{float:none;position:absolute;right:20px;top:20px}
+#gb-oxygen .ox-projects-grid .ox-project-symbol svg{width:20px;height:20px}
+#gb-oxygen .ox-projects-grid .ox-eyebrow{padding-right:25px;margin-bottom:22px;font-size:11px;letter-spacing:.09em}
+#gb-oxygen .ox-projects-grid h2{font-size:27px}
+#gb-oxygen .ox-projects-grid .ox-project-feature p:not(.ox-eyebrow){font-size:14px;line-height:1.8;margin:15px 0 20px}
+#gb-oxygen .ox-project-handle{display:block;font:11px/1.8 monospace;color:var(--ox-accent);margin-top:auto;margin-bottom:15px}
+#gb-oxygen .ox-curation{margin-top:33px;padding-top:27px;border-top:1px solid var(--ox-edge)}
+#gb-oxygen .ox-curation .ox-section-head{margin-bottom:10px}
+#gb-oxygen .ox-curation-intro{font-size:14px;line-height:1.7;color:var(--ox-secondary);margin:0 0 20px}
+#gb-oxygen .ox-curated-link{display:flex;align-items:center;gap:18px;text-decoration:none;padding:19px 0;border-top:1px solid var(--ox-edge)}
+#gb-oxygen .ox-curation-number{font:12px/1.5 monospace;color:var(--ox-accent)}
+#gb-oxygen .ox-curated-link strong{display:block;font-size:18px;font-weight:400;margin-bottom:5px;color:var(--ox-ink)}
+#gb-oxygen .ox-curated-link small{font-size:13px;line-height:1.65;display:block;color:var(--ox-secondary)}
+#gb-oxygen .ox-curated-link>span:last-child{margin-left:auto;color:var(--ox-accent)}
+@media(max-width:570px){#gb-oxygen .ox-projects-grid{grid-template-columns:1fr}#gb-oxygen .ox-curated-link{gap:12px}#gb-oxygen .ox-projects-grid .ox-project-feature{padding:20px}}
+
+</style>
+
+<script id="ox-notes-data" type="application/json">
+{
+  "sources": {
+    "cipd-model": {
+      "title": "CIPD · Transforming HR operating models",
+      "year": "2024",
+      "url": "https://www.cipd.org/uk/views-and-insights/thought-leadership/insight/transforming-operating-models"
+    },
+    "journeys": {
+      "title": "GOV.UK · Solve a whole problem for users",
+      "year": "updated 2026",
+      "url": "https://www.gov.uk/service-manual/service-standard/point-2-solve-a-whole-problem"
+    },
+    "kcs": {
+      "title": "Consortium for Service Innovation · KCS v6 Practices Guide",
+      "year": "living guidance",
+      "url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide"
+    },
+    "metrics": {
+      "title": "GOV.UK · Define success and publish performance data",
+      "year": "updated 2022",
+      "url": "https://www.gov.uk/service-manual/service-standard/point-10-define-success-publish-performance-data"
+    },
+    "support": {
+      "title": "Brynjolfsson, Li & Raymond · Generative AI at Work",
+      "year": "2024 revision",
+      "url": "https://arxiv.org/abs/2304.11771v2"
+    },
+    "genai": {
+      "title": "NIST · Generative AI Profile, AI 600-1",
+      "year": "2024",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence"
+    },
+    "rmf": {
+      "title": "NIST · AI Risk Management Framework",
+      "year": "2023 framework; revision underway",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    "interviews": {
+      "title": "US OPM · Structured interviews",
+      "year": "practice guidance",
+      "url": "https://www.opm.gov/policy-data-oversight/assessment-and-selection/other-assessment-methods/structured-interviews/"
+    },
+    "ico": {
+      "title": "ICO · Findings from AI recruitment audits",
+      "year": "2024; UK context",
+      "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/11/ico-intervention-into-ai-recruitment-tools-leads-to-better-data-protection-for-job-seekers"
+    },
+    "ilo": {
+      "title": "ILO · A refined index of occupational exposure to GenAI",
+      "year": "2025",
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure"
+    },
+    "skills": {
+      "title": "OECD · AI and changing demand for skills",
+      "year": "2024",
+      "url": "https://www.oecd.org/en/publications/artificial-intelligence-and-the-changing-demand-for-skills-in-the-labour-market_88684e36-en.html"
+    },
+    "planning": {
+      "title": "CIPD · AI skills planning for people professionals",
+      "year": "2026",
+      "url": "https://www.cipd.org/uk/knowledge/guides/ai-skills-planning/"
+    },
+    "wef": {
+      "title": "World Economic Forum · Future of Jobs Report",
+      "year": "2025",
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/"
+    },
+    "voice": {
+      "title": "OECD · AI surveys of employers and workers",
+      "year": "2023",
+      "url": "https://www.oecd.org/en/publications/the-impact-of-ai-on-the-workplace-main-findings-from-the-oecd-ai-surveys-of-employers-and-workers_ea0a0fe1-en.html"
+    },
+    "access": {
+      "title": "W3C WAI · Labeling controls",
+      "year": "updated 2024",
+      "url": "https://www.w3.org/WAI/tutorials/forms/labels/"
+    },
+    "who": {
+      "title": "WHO · Mental health at work",
+      "year": "current guidance",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work"
+    },
+    "hybrid": {
+      "title": "Bloom, Han & Liang · Hybrid work trial",
+      "year": "Nature, 2024",
+      "url": "https://www.nature.com/articles/s41586-024-07500-2"
+    },
+    "patterns": {
+      "title": "Dillon et al. · Shifting Work Patterns with Generative AI",
+      "year": "NBER, revised 2025",
+      "url": "https://www.nber.org/papers/w33795"
+    },
+    "algorithmic": {
+      "title": "OECD · Algorithmic management in the workplace",
+      "year": "2025",
+      "url": "https://www.oecd.org/en/publications/algorithmic-management-in-the-workplace_287c13c4-en.html"
+    },
+    "analytics": {
+      "title": "CIPD · People analytics",
+      "year": "2025",
+      "url": "https://www.cipd.org/en/knowledge/factsheets/analytics-factsheet/"
+    }
+  },
+  "notes": [
+    {
+      "id": "service-model",
+      "topic": "HR service delivery",
+      "title": "The next HR model is a service, not an org chart.",
+      "deck": "Start with the employee problem. Decide where the boxes belong afterwards.",
+      "evidence": "CIPD's operating-model case studies describe different routes to transformation, with no universally right structure. Strategic alignment matters more than copying a fashionable template.",
+      "source": "cipd-model",
+      "perspective": "A useful design starts with three promises: routine needs are easy to resolve; complex situations reach the right expert; leaders get help changing the organisation. Shared services, business partners and centres of expertise are ways to fulfil those promises, not the promises themselves. An AI front door cannot compensate for unclear ownership behind it.",
+      "action": "Choose one service, such as an internal transfer. Write its user promise, accountable owner, handoffs and definition of completion on one page. Walk through a difficult case before choosing a platform.",
+      "watch": "A smaller HR cost line can hide extra administrative work for managers. Include their time in the redesign.",
+      "related": [
+        "journey-owner",
+        "expert-escalation",
+        "ninety-days"
+      ]
+    },
+    {
+      "id": "journey-owner",
+      "topic": "HR service delivery",
+      "title": "Give the journey an owner—not another inbox.",
+      "deck": "Employee moments cross functions. Accountability should cross them too.",
+      "evidence": "The UK Government Service Standard recommends solving the user's whole problem across organisational boundaries. This is a service-design principle, not a study of HR outcomes.",
+      "source": "journeys",
+      "perspective": "Consider someone moving country: recruiting, payroll, mobility, IT and the manager each complete a task, yet nobody knows whether the person can actually start work. A journey owner should be able to see the whole route, negotiate handoffs and resolve exceptions. Ownership need not mean moving every specialist into one team.",
+      "action": "Map one journey from the employee's first question to a verified outcome. For every handoff, record the receiving team, required information and escalation time. Give the employee one visible status rather than five ticket numbers.",
+      "watch": "A journey owner without authority or a funded improvement backlog becomes another coordinator chasing the same people.",
+      "related": [
+        "knowledge-layer",
+        "onboarding",
+        "service-model"
+      ]
+    },
+    {
+      "id": "knowledge-layer",
+      "topic": "HR service delivery",
+      "title": "Before the chatbot, fix the knowledge.",
+      "deck": "Your policy library is infrastructure—not a filing cabinet.",
+      "evidence": "Knowledge-Centered Service embeds capturing, structuring and reusing knowledge in service work. Its guidance treats knowledge improvement as an ongoing practice, not a one-off documentation exercise.",
+      "source": "kcs",
+      "perspective": "An HR assistant needs more than a pile of PDFs. It needs an answer that applies to this country, employee group and date. Two contradictory policies are a governance problem before they become a model problem. Good answers should be maintainable by the people responsible for the policy.",
+      "action": "Take the twenty most common questions. For each, create a short approved answer with an owner, applicability, source policy and review date. Let service agents flag an obsolete answer during the case, then route that flag to the owner.",
+      "watch": "Do not reward article volume. Track whether people find the right answer and whether corrections reach every channel using it.",
+      "related": [
+        "grounded-answers",
+        "service-metrics",
+        "journey-owner"
+      ]
+    },
+    {
+      "id": "expert-escalation",
+      "topic": "HR service delivery",
+      "title": "Automation needs a door to a real expert.",
+      "deck": "Make simple work faster without making sensitive work harder.",
+      "evidence": "CIPD's transformation research distinguishes work suitable for standardisation from work requiring local adaptation, and describes both self-service and person-to-person support.",
+      "source": "cipd-model",
+      "perspective": "A proposed service model: self-service for clear information, a generalist for interpretation, and a specialist for consequential or unusual cases. These are routing choices, not a hierarchy of employee importance. Someone describing harassment or a serious payroll problem should not have to persuade a chatbot that their situation deserves attention.",
+      "action": "Define a small set of escalation triggers with employee-relations specialists. Preserve the employee's context when transferring, show who owns the case and explain when a response is expected. Test the route with fictional sensitive scenarios.",
+      "watch": "An escalation button is cosmetic if nobody staffs the receiving queue. Measure time to meaningful help, not just time to transfer.",
+      "related": [
+        "service-metrics",
+        "human-accountability",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "service-metrics",
+      "topic": "HR service delivery",
+      "title": "A closed ticket is not a solved problem.",
+      "deck": "Measure resolution, effort and trust—not just throughput.",
+      "evidence": "The Government Service Standard pairs performance measures with user research and recommends collecting data across online and offline channels. Applied to HR, this suggests looking beyond the portal dashboard.",
+      "source": "metrics",
+      "perspective": "A fast closure can mean success, an employee giving up, or a problem being pushed to a manager. Pair operational measures with a sampled outcome check. Did the payroll correction arrive? Was the policy understood? Did the employee have to repeat their story? Each question reveals something a response-time average cannot.",
+      "action": "For one service, track end-to-end resolution time, recontacts, employee effort and confirmed completion. Segment by channel and case complexity. Review a few failed journeys alongside the numbers each month.",
+      "watch": "Avoid comparing complex employee-relations cases with password-style requests. A target that discourages necessary escalation makes the service look better while making it worse.",
+      "related": [
+        "value-scorecard",
+        "expert-escalation",
+        "copilot-pilot"
+      ]
+    },
+    {
+      "id": "copilot-pilot",
+      "topic": "AI in HR",
+      "title": "Give the service agent a copilot first.",
+      "deck": "Assistance is a useful starting point before autonomous employee advice.",
+      "evidence": "Research on 5,172 customer-support agents found uneven gains from AI assistance: less experienced workers benefited more, while experienced workers saw smaller speed gains and some quality declines. This was not an HR trial.",
+      "source": "support",
+      "perspective": "The transferable question is not whether HR can claim the same productivity uplift. It is whether a tool can help an agent find approved guidance and draft a clearer response without weakening judgement. Start with a narrow, low-risk queue. Keep the employee-facing response under an accountable person's control.",
+      "action": "Compare a baseline with a time-limited pilot. Have reviewers assess sampled answers for accuracy, applicability and clarity without knowing whether AI helped. Include review time and rework in the cost calculation.",
+      "watch": "Average improvements can hide harm to a subgroup or a difficult case type. Look at performance by experience level and request category.",
+      "related": [
+        "grounded-answers",
+        "value-scorecard",
+        "early-careers"
+      ]
+    },
+    {
+      "id": "grounded-answers",
+      "topic": "AI in HR",
+      "title": "An HR answer should come with its evidence.",
+      "deck": "Fluent policy advice is not the same as correct policy advice.",
+      "evidence": "NIST's Generative AI Profile provides cross-sector guidance for identifying and managing generative-AI risks. It is voluntary guidance, not a guarantee that a particular system is reliable.",
+      "source": "genai",
+      "perspective": "For policy questions, a useful answer should identify the approved source, its effective date and who it applies to. Retrieval can help a system find relevant material, but displaying a citation does not prove the answer follows that material. Sometimes the most competent response is to ask for missing context or refer the case.",
+      "action": "Create a test set covering ordinary questions, contradictory policies, outdated documents and situations where no approved answer exists. Score both correctness and appropriate refusal. Re-run it after policy or model changes.",
+      "watch": "Do not let an assistant infer a person's location, employment status or benefit eligibility from an ambiguous question. Confirm the minimum context needed.",
+      "related": [
+        "knowledge-layer",
+        "bounded-agents",
+        "vendor-evidence"
+      ]
+    },
+    {
+      "id": "bounded-agents",
+      "topic": "AI in HR",
+      "title": "An agent needs a job description—and limits.",
+      "deck": "Reading a policy and changing a person's record are different kinds of authority.",
+      "evidence": "NIST's AI Risk Management Framework addresses risks through the design, development, use and evaluation of systems. It is a voluntary framework; local obligations need separate assessment.",
+      "source": "rmf",
+      "perspective": "Treat an HR agent as a bounded workflow, not a digital employee with unlimited discretion. Drafting a letter, proposing a transaction and committing that transaction should have different permissions. Payroll, access rights and employee records are not sensible places to discover an agent's limits through live experimentation.",
+      "action": "For a proposed leave-administration agent, list permitted reads, permitted drafts and actions requiring approval. Use synthetic cases first. Record the requested action, approver and system result; define a manual fallback and a way to stop the workflow.",
+      "watch": "Human approval is weak when the reviewer cannot see what will change. Show the exact transaction, not just an AI-written assurance that it is safe.",
+      "related": [
+        "human-accountability",
+        "vendor-evidence",
+        "grounded-answers"
+      ]
+    },
+    {
+      "id": "structured-hiring",
+      "topic": "AI in HR",
+      "title": "Better hiring starts with better questions.",
+      "deck": "Use AI to support structure—not to manufacture certainty about people.",
+      "evidence": "US Office of Personnel Management guidance links structured, job-related interviews with stronger rater agreement and validity than loosely structured interviews. Structure includes consistent questions and scoring criteria.",
+      "source": "interviews",
+      "perspective": "AI can help draft an interview guide, but a fluent question is not automatically relevant to the job. The essential work is agreeing what good performance requires and what evidence would demonstrate it. Keep assessment criteria explicit before the first candidate arrives, rather than rationalising a preferred candidate afterwards.",
+      "action": "Choose three critical job competencies. Develop comparable questions and behaviour-based scoring anchors, then have interviewers independently score fictional answers and discuss differences. Review any AI suggestions with a subject-matter expert.",
+      "watch": "Do not confuse style, accent or confidence with competence. Provide appropriate accommodations and avoid unsupported inferences about personality or emotion from video.",
+      "related": [
+        "candidate-transparency",
+        "skills-evidence",
+        "human-accountability"
+      ]
+    },
+    {
+      "id": "candidate-transparency",
+      "topic": "AI in HR",
+      "title": "Tell candidates where AI enters the process.",
+      "deck": "Trust begins before a person joins the organisation.",
+      "evidence": "The UK ICO's 2024 recruitment-tool audits highlighted fair processing, data minimisation and clear explanations to candidates. These findings concern UK data protection, not a universal legal checklist.",
+      "source": "ico",
+      "perspective": "A candidate should not need to guess whether a tool transcribed an interview, summarised a CV or helped rank applicants. Those uses have different consequences. Plain-language explanations make it easier to identify an error and ask a useful question; a generic statement that the company uses innovative technology does not.",
+      "action": "Map each AI-supported hiring step and write a short explanation of purpose, data used and the responsible contact. Offer a workable route to raise concerns. Ask privacy and employment specialists to check jurisdiction-specific requirements before launch.",
+      "watch": "Do not promise that a human reviews every outcome unless the workflow actually guarantees it. Operational truth matters more than reassuring language.",
+      "related": [
+        "structured-hiring",
+        "vendor-evidence",
+        "human-accountability"
+      ]
+    },
+    {
+      "id": "work-design",
+      "topic": "Skills & talent",
+      "title": "AI changes tasks. Leadership changes work.",
+      "deck": "Exposure to AI is a starting point for redesign—not a redundancy forecast.",
+      "evidence": "The ILO's 2025 occupational-exposure index combines task-level analysis, expert input and model predictions. It measures potential exposure; it does not establish that an exposed occupation will disappear.",
+      "source": "ilo",
+      "perspective": "A job combines production, judgement, relationships and accountability. Automating one component changes the balance but does not settle what the role should become. HR can move the conversation from headcount speculation to concrete choices: which activities improve, which new responsibilities appear and what support workers need.",
+      "action": "Ask one team to map its recurring tasks. For each, discuss whether AI might assist, automate under controls or add little value. Estimate the review burden and dependencies before making a workforce assumption.",
+      "watch": "Do not turn an occupational exposure score into an individual performance label. People doing the same job title may perform very different work.",
+      "related": [
+        "skills-evidence",
+        "workforce-scenarios",
+        "time-dividend"
+      ]
+    },
+    {
+      "id": "skills-evidence",
+      "topic": "Skills & talent",
+      "title": "Skills are useful when they have evidence.",
+      "deck": "A vocabulary is a beginning. Demonstrated capability is the point.",
+      "evidence": "OECD research finds that most workers in AI-exposed occupations will not need specialist AI-development skills, although their tasks and skill requirements may change. Demand patterns are not uniform.",
+      "source": "skills",
+      "perspective": "A skills profile should help answer a practical question: who can do this work, who could learn it and what evidence would give us confidence? A long taxonomy can create the illusion of precision. A smaller set of skills connected to real assignments is easier to challenge and maintain.",
+      "action": "For one job family, define a few capabilities with examples of observable work. Distinguish self-reported interest, demonstrated proficiency and willingness to move. Let employees correct their profiles and discuss development gaps with a manager.",
+      "watch": "Do not infer proficiency from a job title or a training completion alone. Record where the evidence came from and when it was last checked.",
+      "related": [
+        "ai-literacy",
+        "internal-mobility",
+        "structured-hiring"
+      ]
+    },
+    {
+      "id": "ai-literacy",
+      "topic": "Skills & talent",
+      "title": "AI literacy is a work skill, not a prompt contest.",
+      "deck": "Teach people how to decide when to use AI—and when not to.",
+      "evidence": "CIPD's 2026 AI skills-planning guide connects changing work with skills planning and provides different routes for organisations at different stages of adoption.",
+      "source": "planning",
+      "perspective": "For an HR professional, competence includes framing the task, choosing an approved tool, protecting information, checking the output and recognising when specialist judgement is needed. Prompting matters, but only inside that larger practice. A person who can reject a convincing wrong answer may be more capable than one who produces an impressive demo.",
+      "action": "Build a short practice session around fictional HR cases: a policy summary, an ambiguous employee question and an unsupported recommendation. Ask participants to explain what they would verify and what they would not put into the tool.",
+      "watch": "Completion rates tell you who attended. Use a safe, job-relevant assessment to learn who can apply the judgement afterwards.",
+      "related": [
+        "learning-loop",
+        "manager-rehearsal",
+        "grounded-answers"
+      ]
+    },
+    {
+      "id": "internal-mobility",
+      "topic": "Skills & talent",
+      "title": "A talent marketplace needs time, not just matching.",
+      "deck": "Opportunity is not real if a manager cannot release the person.",
+      "evidence": "The World Economic Forum's 2025 employer survey places skills disruption and workforce adaptation at the centre of its 2030 outlook. It reports employer expectations, not proof that talent marketplaces work.",
+      "source": "wef",
+      "perspective": "An internal matching engine can suggest a project, but it cannot by itself resolve workload, manager incentives or the cost of learning. A credible mobility model makes those choices visible. The question is not only who matches; it is who gets a fair opportunity to try.",
+      "action": "Pilot a small set of short assignments with explicit time allocation, release agreements and a named learning sponsor. Invite applications as well as algorithmic suggestions. Review who receives opportunities, who is repeatedly excluded and why.",
+      "watch": "Historical role and performance data may reproduce old access patterns. Treat matching as a starting point for conversation, not an objective verdict on potential.",
+      "related": [
+        "early-careers",
+        "skills-evidence",
+        "workforce-scenarios"
+      ]
+    },
+    {
+      "id": "early-careers",
+      "topic": "Skills & talent",
+      "title": "Protect the apprenticeship inside the job.",
+      "deck": "When AI takes the first draft, where does a beginner learn judgement?",
+      "evidence": "The customer-support study by Brynjolfsson and colleagues reports evidence of learning alongside uneven productivity effects. Its setting does not establish what happens to every profession's early-career development.",
+      "source": "support",
+      "perspective": "Some routine work is waste; some is how people learn to recognise exceptions. Removing both indiscriminately risks leaving junior colleagues supervising outputs they cannot yet evaluate. The leadership choice is to redesign practice, not preserve every manual task for its own sake.",
+      "action": "In one role, identify the exercises that build judgement. Let a learner attempt a case, compare it with AI assistance and explain the differences to an experienced colleague. Include occasional unaided practice where appropriate and safe.",
+      "watch": "Faster delivery is not the same as growing expertise. Review whether the person can explain their reasoning and handle an unfamiliar case, not only reproduce a polished answer.",
+      "related": [
+        "learning-loop",
+        "manager-rehearsal",
+        "work-design"
+      ]
+    },
+    {
+      "id": "onboarding",
+      "topic": "Employee experience",
+      "title": "Onboarding ends when someone can contribute.",
+      "deck": "A completed checklist is only the administrative beginning.",
+      "evidence": "The Government Service Standard emphasises joining related services into a journey that makes sense to the user. Applying this to onboarding is an editorial design proposal, not a measured HR result.",
+      "source": "journeys",
+      "perspective": "The new colleague experiences equipment, access, role clarity and social connection as one arrival. HR can coordinate that experience without pretending to own every task. AI may help personalise a guide or answer routine questions, but it cannot replace a manager explaining priorities or a teammate making space for questions.",
+      "action": "Define the first meaningful contribution for a role. Work backwards to the access, knowledge and relationships it requires. Give the manager a short conversation guide and ask the new hire what blocked progress after the first week.",
+      "watch": "Time-to-contribution should not become pressure to skip learning or safety checks. Pair it with role clarity and the quality of support.",
+      "related": [
+        "journey-owner",
+        "accessibility",
+        "early-careers"
+      ]
+    },
+    {
+      "id": "employee-voice",
+      "topic": "Employee experience",
+      "title": "Consult people before the workflow is fixed.",
+      "deck": "Participation is a design input—not a launch communication.",
+      "evidence": "OECD surveys in finance and manufacturing across seven countries found training and worker consultation associated with better reported AI outcomes. The association does not prove that consultation caused the improvement.",
+      "source": "voice",
+      "perspective": "People doing the work can reveal exceptions, unofficial workarounds and trust concerns that a process diagram misses. Involvement matters most while choices are still open. Asking for feedback after procurement can feel like an invitation to endorse a decision rather than influence it.",
+      "action": "Before a pilot, hold separate sessions with frontline users, managers and relevant employee representatives. Show a realistic workflow, including failure cases. Publish what changed because of their input and what remains unresolved.",
+      "watch": "A workshop is not representative by default. Include less digitally confident colleagues and people on different shifts, not only enthusiastic volunteers.",
+      "related": [
+        "workload",
+        "algorithmic-management",
+        "ninety-days"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "topic": "Employee experience",
+      "title": "Self-service must work for people unlike its designers.",
+      "deck": "An elegant portal can still be an obstacle.",
+      "evidence": "W3C's forms guidance recommends clear, properly associated labels so people can understand and operate controls, including through assistive technology. This is one component of accessibility, not a complete compliance test.",
+      "source": "access",
+      "perspective": "HR services are used on phones, shared devices and during stressful moments. A chatbot-only experience adds a new burden: the person must know how to ask the right question. Keep a clear route for common tasks and an alternative way to get help. Essential services should not depend on prompt-writing skill.",
+      "action": "Observe a small, varied group completing one real task using keyboard navigation, mobile and their usual assistive setup where relevant. Check instructions, errors and recovery as well as the happy path. Include frontline employees without a desk.",
+      "watch": "A technically accessible page can still be incomprehensible. Test whether employees understand what happens next, not only whether they can submit the form.",
+      "related": [
+        "expert-escalation",
+        "onboarding",
+        "candidate-transparency"
+      ]
+    },
+    {
+      "id": "manager-rehearsal",
+      "topic": "Employee experience",
+      "title": "Let AI rehearse the conversation, not have it.",
+      "deck": "A proposed use case for better preparation with clear boundaries.",
+      "evidence": "NIST's generative-AI guidance provides a risk-management reference for evaluating proposed uses. It does not demonstrate that AI coaching improves management outcomes.",
+      "source": "genai",
+      "perspective": "A fictional role-play can help a manager notice unclear language or prepare open questions. That is different from asking a system to judge a real employee's motivation, health or future. The manager remains responsible for listening, checking assumptions and having the actual conversation.",
+      "action": "Pilot with invented situations and an approved conversation framework. Have HR reviewers assess whether the practice encourages clarity, curiosity and appropriate escalation. Ask managers to describe what they changed, rather than rate whether the tool felt clever.",
+      "watch": "Do not upload identifiable case histories or treat generated scripts as employee-relations advice. Sensitive situations need the appropriate human expertise and local policy checks.",
+      "related": [
+        "ai-literacy",
+        "human-accountability",
+        "workload"
+      ]
+    },
+    {
+      "id": "workload",
+      "topic": "Employee experience",
+      "title": "Do not automate your way to a heavier workload.",
+      "deck": "Wellbeing belongs in work design, not just the benefits catalogue.",
+      "evidence": "WHO recommends addressing workplace psychosocial risks through organisational interventions that target working conditions, with meaningful worker involvement. Individual support alone is not the whole response.",
+      "source": "who",
+      "perspective": "An AI tool may remove drafting time while increasing review, coordination and exception handling. If every saving is immediately converted into higher volume, employees may experience acceleration rather than relief. HR should ask what the redesigned day feels like, not just what the output chart shows.",
+      "action": "During a pilot, review workload, after-hours demands, interruptions and perceived control alongside quality and speed. Agree what work will stop and where released time may go. Use aggregated feedback rather than intrusive individual monitoring.",
+      "watch": "Do not use AI to diagnose employees from communication patterns. Concerns about distress require appropriate support, privacy and qualified advice—not a speculative risk score.",
+      "related": [
+        "time-dividend",
+        "employee-voice",
+        "value-scorecard"
+      ]
+    },
+    {
+      "id": "hybrid-work",
+      "topic": "Future of work",
+      "title": "Hybrid work deserves evidence, not ideology.",
+      "deck": "Design around the work—and test what actually changes.",
+      "evidence": "A randomised trial of 1,612 Trip.com employees found that two home-working days per week reduced attrition and improved satisfaction without damaging measured performance. The study concerned graduate employees in one company, not every role or remote model.",
+      "source": "hybrid",
+      "perspective": "The useful question is which activities benefit from being together and which need uninterrupted focus. A blanket attendance count cannot answer it. Nor does one successful trial justify assuming the same arrangement will work in a laboratory, hospital or newly formed team.",
+      "action": "Agree team-level purposes for shared time, response expectations and decision documentation. Review delivery quality, collaboration and retention over a meaningful period. Check whether people outside the office receive comparable information and development access.",
+      "watch": "Avoid treating presence as a proxy for performance. Equally, do not dismiss real coordination problems simply because flexibility is popular.",
+      "related": [
+        "time-dividend",
+        "onboarding",
+        "decision-analytics"
+      ]
+    },
+    {
+      "id": "time-dividend",
+      "topic": "Future of work",
+      "title": "Who gets the time that AI saves?",
+      "deck": "The answer is a leadership decision, not a software feature.",
+      "evidence": "A six-month experiment across 66 firms found time savings among users given an integrated AI tool, but no detected shift in task quantity or composition from individual-level access. The NBER paper was revised in November 2025.",
+      "source": "patterns",
+      "perspective": "A saved hour may become deeper work, learning, better customer attention—or more email. Access to a tool does not decide which. HR can help teams make the allocation explicit and separate time released from financial savings actually realised.",
+      "action": "Ask a pilot team to choose one use for released capacity before rollout. Track whether that activity actually happens. Include verification, training and rework when estimating net time; record a range rather than a falsely precise number.",
+      "watch": "Do not multiply self-reported minutes by salary and call the result cash savings. Capacity, output and budget reductions are distinct outcomes.",
+      "related": [
+        "value-scorecard",
+        "work-design",
+        "workload"
+      ]
+    },
+    {
+      "id": "workforce-scenarios",
+      "topic": "Future of work",
+      "title": "Workforce planning needs scenarios, not one AI forecast.",
+      "deck": "Prepare for different adoption speeds without pretending to know the future.",
+      "evidence": "The Future of Jobs Report 2025 captures expectations from more than 1,000 employers for 2025–2030. These are survey-based outlooks across multiple drivers of change, not measured AI job losses.",
+      "source": "wef",
+      "perspective": "A useful plan separates demand for work, the technology's capability, actual adoption and the organisation's ability to redesign processes. Those variables move at different speeds. The aim is to identify decisions that remain sensible across futures, and signals that tell leaders when to change course.",
+      "action": "Build three scenarios for one function: limited assistance, widespread assistance and bounded automation. Describe the work, skills, implementation constraints and review load in each. Set triggers for training investment, hiring or redeployment rather than locking in a single headcount number.",
+      "watch": "External forecasts provide context, not permission to skip local task analysis or consultation. Document assumptions so the plan can be revised when evidence changes.",
+      "related": [
+        "work-design",
+        "internal-mobility",
+        "learning-loop"
+      ]
+    },
+    {
+      "id": "algorithmic-management",
+      "topic": "Future of work",
+      "title": "When software allocates work, it is doing management.",
+      "deck": "Scheduling and scoring systems deserve the same scrutiny as visible AI tools.",
+      "evidence": "OECD research defines algorithmic management broadly as software automating managerial tasks, with or without AI. Its employer survey highlights both perceived benefits and concerns about accountability and worker impacts.",
+      "source": "algorithmic",
+      "perspective": "An organisation may debate a chatbot while overlooking a scheduling engine that determines someone's hours. Allocation rules, targets and automated flags shape the employee experience. HR's remit should include the consequences of those systems, not only whether they are labelled AI.",
+      "action": "Inventory tools that allocate, monitor or evaluate work. For each, identify the person who can explain an outcome and correct an error. Ask workers which decisions feel opaque, then test those examples with the system owner.",
+      "watch": "A manager who cannot override a flawed recommendation is not meaningful oversight. Look at actual authority and incentives, not only the approval box in a workflow.",
+      "related": [
+        "human-accountability",
+        "employee-voice",
+        "decision-analytics"
+      ]
+    },
+    {
+      "id": "learning-loop",
+      "topic": "Future of work",
+      "title": "Reskilling is a loop, not a launch campaign.",
+      "deck": "Connect learning to changing tasks and return to the question regularly.",
+      "evidence": "CIPD's 2026 AI skills-planning guide recommends reviewing the skills frameworks and technology assumptions used in planning, ideally at least every six months.",
+      "source": "planning",
+      "perspective": "A course catalogue can become obsolete while a transformation programme is still running. The better unit is a cycle: notice a task changing, identify a capability gap, practise it in real work and review what improved. Learning teams need access to those workflow changes, not just a request to train everybody on a tool.",
+      "action": "Choose one team and a capability needed for its next work change. Agree protected practice time, a real assignment and feedback from a capable colleague. Revisit the need after the assignment rather than assuming the training plan remains correct.",
+      "watch": "Do not put all responsibility on the learner. Without time, access and manager support, a reskilling promise can become an unpaid second job.",
+      "related": [
+        "ai-literacy",
+        "early-careers",
+        "workforce-scenarios"
+      ]
+    },
+    {
+      "id": "human-accountability",
+      "topic": "Governance & value",
+      "title": "Human oversight needs power, time and evidence.",
+      "deck": "A person clicking approve is not necessarily exercising judgement.",
+      "evidence": "NIST's voluntary AI Risk Management Framework treats trustworthiness as a lifecycle concern. It is not a legal safe harbour or a certification that human review makes a system acceptable.",
+      "source": "rmf",
+      "perspective": "For a consequential people decision, name the decision-maker and make sure they can understand the recommendation, challenge it and obtain further evidence. They also need enough time and authority to disagree. A process that penalises overrides encourages ceremonial approval rather than accountability.",
+      "action": "For one proposed use, document who recommends, who decides, who can pause and who handles a challenge. Run a fictional case with a deliberately plausible but wrong recommendation. Observe whether the process catches it.",
+      "watch": "Do not assume every use becomes appropriate with a human in the loop. Some uses should be narrowed or rejected after legal, ethical and operational review.",
+      "related": [
+        "bounded-agents",
+        "algorithmic-management",
+        "candidate-transparency"
+      ]
+    },
+    {
+      "id": "decision-analytics",
+      "topic": "Governance & value",
+      "title": "Start people analytics with a decision.",
+      "deck": "A dashboard is useful only if someone can act differently because of it.",
+      "evidence": "CIPD defines people analytics around solving business problems and distinguishes correlation from causation. It also cautions that employee monitoring can be intrusive even where lawful.",
+      "source": "analytics",
+      "perspective": "Before requesting a predictive model, write the decision it would inform. If a team has high attrition, what action is available and what else could explain the pattern? A model cannot repair an unclear question. Descriptive analysis plus employee conversations may be more useful than a sophisticated score.",
+      "action": "Create a decision brief: question, accountable owner, available actions, minimum data, alternative explanations and review date. Prefer aggregated analysis where it can answer the question. Evaluate the intervention, not only the model's apparent accuracy.",
+      "watch": "An individual flight-risk label can affect how a manager treats someone. Do not turn a statistical association into a story about that person's intentions.",
+      "related": [
+        "value-scorecard",
+        "hybrid-work",
+        "algorithmic-management"
+      ]
+    },
+    {
+      "id": "vendor-evidence",
+      "topic": "Governance & value",
+      "title": "Buy evidence, not an impressive demo.",
+      "deck": "The procurement question is what happens on your difficult cases.",
+      "evidence": "The ICO's recruitment-tool audits identified concerns including excessive data collection and unclear candidate information. Their UK findings show why a polished product demonstration is not enough due diligence.",
+      "source": "ico",
+      "perspective": "Ask a vendor to show failure modes, not just the best answer. Which data leaves the organisation? What changes after a model update? Can a customer inspect the basis of a recommendation and export records on exit? HR, IT, security, privacy and procurement need a shared view of the answers.",
+      "action": "Use a synthetic evaluation pack representing your languages, policy exceptions and ambiguous cases. Agree acceptance criteria and change-notification expectations before contracting. Document data handling, access controls, support ownership and the exit route with specialists.",
+      "watch": "A generic benchmark or claim of being compliant does not validate your use case. Jurisdiction, purpose, configuration and actual operation all matter.",
+      "related": [
+        "grounded-answers",
+        "bounded-agents",
+        "candidate-transparency"
+      ]
+    },
+    {
+      "id": "value-scorecard",
+      "topic": "Governance & value",
+      "title": "The AI scorecard should include what got worse.",
+      "deck": "Count value, quality, effort and risk on the same page.",
+      "evidence": "The Government Service Standard recommends defining success, combining metrics with user research and revising measures as understanding improves. The HR scorecard below is an editorial adaptation of that principle.",
+      "source": "metrics",
+      "perspective": "A pilot can be faster and still be a bad investment. Review labour, exceptions, employee frustration and ongoing content maintenance can absorb the apparent gain. A balanced decision makes trade-offs visible rather than turning a productivity estimate into the entire business case.",
+      "action": "Before launch, agree a baseline and a scorecard covering net effort, answer quality, employee experience and significant incidents. Include licence, integration, training and review costs. Decide what evidence would justify continuing, changing or stopping the pilot.",
+      "watch": "Do not move the success criteria after seeing disappointing results. Record limitations and compare like-for-like cases; a small pilot may not establish a reliable financial return.",
+      "related": [
+        "service-metrics",
+        "time-dividend",
+        "ninety-days"
+      ]
+    },
+    {
+      "id": "ninety-days",
+      "topic": "Governance & value",
+      "title": "A practical first 90 days for HR and AI.",
+      "deck": "One useful service, one bounded experiment, one honest decision.",
+      "evidence": "CIPD's operating-model research describes the importance of planning, stakeholder involvement and reviewing outcomes after implementation. The timeline here is a proposed working plan, not a validated formula.",
+      "source": "cipd-model",
+      "perspective": "The first objective should be learning how to change work responsibly, not announcing an AI-first function. Choose a service important enough to matter but bounded enough to evaluate. Keep a named business owner and involve the people who will use and support it.",
+      "action": "Days 1–30: map the journey, consult users, establish a baseline and fix the source knowledge. Days 31–60: test with synthetic cases, train a small group and pilot with clear escalation. Days 61–90: review quality, effort and employee feedback; decide whether to scale, redesign or stop.",
+      "watch": "The dates are not a promise of production readiness. Sensitive data, unresolved controls or weak evidence are reasons to slow down—not hide the uncertainty.",
+      "related": [
+        "service-model",
+        "employee-voice",
+        "value-scorecard"
+      ]
+    }
+  ]
+}
+</script>
+<script>
+
+(() => {
+  const root=document.getElementById('gb-oxygen');
+  const data=JSON.parse(document.getElementById('ox-notes-data').textContent);
+  const notes=data.notes;
+  const byId=new Map(notes.map(n=>[n.id,n]));
+  const topics=new Set(notes.map(n=>n.topic));
+  const state={finish:'midnight',radius:10,page:'home',article:null,query:'',topic:'all',index:0};
+  const search=root.querySelector('#ox-search');
+  const topic=root.querySelector('#ox-topic');
+  const grid=root.querySelector('#ox-library-grid');
+  const reader=root.querySelector('#ox-reader-content');
+  const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function save(){
+    try{localStorage.setItem('gb-appearance',state.finish);}catch{}
+  }
+  function readRoute(){
+    const parts=location.hash.slice(1).split('/');
+    state.article=parts[0]==='notes'&&byId.has(parts[1])?parts[1]:null;
+    state.page=['home','notes','projects','about'].includes(parts[0])?parts[0]:'home';
+  }
+  function route(){
+    return '#'+state.page+(state.article?'/'+state.article:'');
+  }
+  function appearance(){
+    root.dataset.finish=state.finish;root.style.setProperty('--ox-radius',state.radius+'px');
+    const light=state.finish==='air';root.querySelector('.ox-theme span').textContent=light?'Oxygen':'Air';
+    root.querySelector('.ox-theme').setAttribute('aria-label',light?'Switch to the dark Oxygen theme':'Switch to the light Air theme');
+  }
+  function library(){
+    const terms=state.query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    const matches=notes.filter(n=>(state.topic==='all'||n.topic===state.topic)&&terms.every(term=>[n.title,n.deck,n.topic,n.evidence,n.perspective,n.action,n.watch].join(' ').toLowerCase().includes(term)));
+    const pages=Math.max(1,Math.ceil(matches.length/6));state.index=Math.min(state.index,pages-1);
+    const start=state.index*6;const shown=matches.slice(start,start+6);
+    grid.innerHTML=shown.map(n=>`<button class="ox-library-card cursor-interaction" data-article="${n.id}"><span class="ox-card-meta"><span>${escape(n.topic)}</span><span>${String(notes.indexOf(n)+1).padStart(2,'0')} / 30</span></span><h2>${escape(n.title)}</h2><p>${escape(n.deck)}</p><span class="ox-note-bottom">Read field note <span>↗</span></span></button>`).join('');
+    root.querySelector('#ox-result-count').textContent=matches.length?`${start+1}–${Math.min(start+6,matches.length)} of ${matches.length} notes`:'0 notes';
+    root.querySelector('#ox-page-number').textContent=`${state.index+1} / ${pages}`;
+    root.querySelector('[data-prev]').disabled=state.index===0;
+    root.querySelector('[data-next]').disabled=state.index>=pages-1;
+    root.querySelector('.ox-pagination').hidden=matches.length<=6;
+    root.querySelector('.ox-empty').hidden=matches.length>0;
+    root.querySelector('.ox-results-head [data-clear]').hidden=state.topic==='all'&&!state.query;
+  }
+  function article(){
+    const n=byId.get(state.article);if(!n)return;
+    const src=data.sources[n.source];
+    reader.innerHTML=`<p class="ox-eyebrow">FIELD NOTE ${String(notes.indexOf(n)+1).padStart(2,'0')} / ${escape(n.topic.toUpperCase())}</p><h1>${escape(n.title)}</h1><p class="ox-deck">${escape(n.deck)}</p><div class="ox-evidence"><h2>THE EVIDENCE</h2><p>${escape(n.evidence)}</p><a class="ox-source" href="${escape(src.url)}" target="_blank" rel="noopener noreferrer">${escape(src.title)} ↗</a><p class="ox-source-year">${escape(src.year)}</p></div><h2>The leadership implication</h2><p>${escape(n.perspective)}</p><h2>Try this in practice</h2><p>${escape(n.action)}</p><h2>Watch for</h2><p>${escape(n.watch)}</p><section class="ox-related" aria-label="Connected field notes"><h2>Follow the thread</h2>${n.related.map(id=>{const r=byId.get(id);return `<button class="cursor-interaction" data-article="${id}"><span><small>${escape(r.topic)}</small>${escape(r.title)}</span><span aria-hidden="true">→</span></button>`;}).join('')}</section><p class="ox-reader-meta">Research-led perspectives · evidence and practical proposals kept distinct.<br>Source checked 13 October 2026. Not a personal case study or legal advice.</p>`;
+  }
+  function render(){
+    appearance();library();
+    document.title=state.article?byId.get(state.article).title+' — Gabriele Barni':'Gabriele Barni — HR and #FutureofWork';
+    root.querySelectorAll('[data-panel]').forEach(p=>p.hidden=p.dataset.panel!==state.page);
+    root.querySelectorAll('.ox-nav button').forEach(b=>{if(b.dataset.page===state.page)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+    root.querySelector('.ox-library').hidden=!!state.article;
+    root.querySelector('.ox-reader').hidden=!state.article;
+    if(state.article)article();
+  }
+  function go(page,id=null){
+    state.page=page;state.article=byId.has(id)?id:null;
+    if(location.hash!==route())history.pushState(null,'',route());
+    render();save();
+    root.querySelector('.ox-main').scrollIntoView({block:'start'});
+    root.querySelector('#ox-reading-status').textContent=state.article?'Reading: '+byId.get(state.article).title:page==='notes'?'Field notes library':'';
+    if(state.article){root.querySelector('[data-library]').focus({preventScroll:true});}else{root.querySelector('.ox-main').focus({preventScroll:true});}
+  }
+  root.addEventListener('click',e=>{
+    if(e.target.closest('.ox-skip')){e.preventDefault();root.querySelector('.ox-main').focus();return;}
+    const b=e.target.closest('button');if(!b||!root.contains(b))return;
+    if(b.dataset.article){go('notes',b.dataset.article);return;}
+    if(b.dataset.page){go(b.dataset.page);return;}
+    if(b.hasAttribute('data-library')){const previous=state.article;go('notes');const card=grid.querySelector(`[data-article="${previous}"]`);(card||search).focus();return;}
+    if(b.hasAttribute('data-clear')){state.query='';state.topic='all';state.index=0;search.value='';topic.value='all';library();save();search.focus();return;}
+    if(b.hasAttribute('data-prev')||b.hasAttribute('data-next')){state.index+=b.hasAttribute('data-next')?1:-1;library();save();grid.querySelector('button')?.focus();return;}
+    if(b.classList.contains('ox-theme')){state.finish=state.finish==='air'?'midnight':'air';appearance();save();}
+  });
+  search.addEventListener('input',()=>{state.query=search.value;state.index=0;library();save();});
+  topic.addEventListener('change',()=>{state.topic=topic.value;state.index=0;library();save();});
+  try{state.finish=localStorage.getItem('gb-appearance')==='air'?'air':'midnight';}catch{}
+  readRoute();render();
+  window.addEventListener('popstate',()=>{readRoute();render();});
+  window.addEventListener('hashchange',()=>{readRoute();render();});
+  window.addEventListener('DOMContentLoaded',()=>{
+    if(window.lucide)window.lucide.createIcons({attrs:{width:16,height:16}});
+  });
+})();
+</script>
+
+<noscript><style>#gb-oxygen [data-panel][hidden]{display:block!important}#gb-oxygen .ox-nav,#gb-oxygen .ox-library-tools,#gb-oxygen .ox-pagination,#gb-oxygen .ox-paths{display:none}</style><p style="color:#eef5fa;padding:24px">Please enable JavaScript to explore the searchable field notes. The profile and project links are available above.</p></noscript>
 </body>
 </html>
-
