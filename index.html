@@ -826,7 +826,7 @@
     state.page=page;state.article=byId.has(id)?id:null;
     if(location.hash!==route())history.pushState(null,'',route());
     render();save();
-    root.querySelector('.ox-main').scrollIntoView({block:'start'});
+    root.scrollIntoView({block:'start',behavior:'instant'});
     root.querySelector('#ox-reading-status').textContent=state.article?'Reading: '+byId.get(state.article).title:page==='notes'?'Field notes library':'';
     if(state.article){root.querySelector('[data-library]').focus({preventScroll:true});}else{root.querySelector('.ox-main').focus({preventScroll:true});}
   }
