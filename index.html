@@ -30,7 +30,11 @@
     #gb-oxygen .ox-main:focus{outline:none}
     @media(max-width:570px){#gb-oxygen .ox-masthead{gap:7px}#gb-oxygen .ox-masthead .ox-edition{display:block;font-size:11px;letter-spacing:.04em;padding:0}#gb-oxygen .ox-masthead{margin-bottom:15px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  </style>
+  
+#gb-oxygen .ox-editorial-source{margin:28px 0 18px;border-top:1px solid var(--ox-edge);padding-top:15px}
+#gb-oxygen .ox-editorial-source summary{cursor:pointer;font-size:12px;color:var(--ox-accent);padding:6px 0;margin-bottom:10px}
+#gb-oxygen .ox-editorial-source p{font-size:13px;line-height:1.8}
+</style>
   <script defer src="https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js"></script>
 </head>
 <body>
@@ -347,497 +351,587 @@
     {
       "id": "service-model",
       "topic": "HR service delivery",
-      "title": "The next HR model is a service, not an org chart.",
-      "deck": "Start with the employee problem. Decide where the boxes belong afterwards.",
+      "title": "Start the HR redesign with the service.",
+      "deck": "Before moving the boxes, agree what employees and the business need from HR.",
       "evidence": "CIPD's operating-model case studies describe different routes to transformation, with no universally right structure. Strategic alignment matters more than copying a fashionable template.",
       "source": "cipd-model",
-      "perspective": "A useful design starts with three promises: routine needs are easy to resolve; complex situations reach the right expert; leaders get help changing the organisation. Shared services, business partners and centres of expertise are ways to fulfil those promises, not the promises themselves. An AI front door cannot compensate for unclear ownership behind it.",
-      "action": "Choose one service, such as an internal transfer. Write its user promise, accountable owner, handoffs and definition of completion on one page. Walk through a difficult case before choosing a platform.",
-      "watch": "A smaller HR cost line can hide extra administrative work for managers. Include their time in the redesign.",
+      "perspective": "I would first agree three service commitments: straightforward requests are easy to complete, difficult cases reach the right expertise, and business leaders get support with organisational change. Then decide how shared services, HRBPs and specialist teams should deliver them. The structure matters. It just needs to answer a business question, rather than become the whole conversation.",
+      "action": "Choose one service, perhaps an internal transfer. Agree who owns it, what completion means and which handoffs are creating delays. Walk through a difficult case with the teams involved before discussing the platform.",
+      "watch": "Check where the effort goes. A saving in HR may simply mean more administration for line managers.",
       "related": [
         "journey-owner",
         "expert-escalation",
         "ninety-days",
         "future-hr-service-delivery"
-      ]
+      ],
+      "opening": "An HR transformation can spend months on the structure and still leave a manager asking the same question: who can help me get this done? That is a useful place to start the design discussion.",
+      "perspectiveHeading": "What needs to be agreed",
+      "actionHeading": "Where I would start"
     },
     {
       "id": "journey-owner",
       "topic": "HR service delivery",
-      "title": "Give the journey an owner—not another inbox.",
-      "deck": "Employee moments cross functions. Accountability should cross them too.",
+      "title": "Who owns the move from start to finish?",
+      "deck": "An employee transfer needs more than a collection of completed tasks.",
       "evidence": "The UK Government Service Standard recommends solving the user's whole problem across organisational boundaries. This is a service-design principle, not a study of HR outcomes.",
       "source": "journeys",
-      "perspective": "Consider someone moving country: recruiting, payroll, mobility, IT and the manager each complete a task, yet nobody knows whether the person can actually start work. A journey owner should be able to see the whole route, negotiate handoffs and resolve exceptions. Ownership need not mean moving every specialist into one team.",
-      "action": "Map one journey from the employee's first question to a verified outcome. For every handoff, record the receiving team, required information and escalation time. Give the employee one visible status rather than five ticket numbers.",
-      "watch": "A journey owner without authority or a funded improvement backlog becomes another coordinator chasing the same people.",
+      "perspective": "This is a coordination problem with a real business cost. Someone needs visibility of the whole move, authority to resolve conflicting priorities and accountability for the outcome. That person does not need to manage every specialist. They do need an agreed route to get decisions made when the process stops.",
+      "action": "Map one transfer from the first request to the point at which the employee can work. Agree the information required at each handoff, the receiving owner and when a delay must be escalated. Give the employee one reliable view of progress.",
+      "watch": "If the owner can only chase other teams, we have created another coordination role without solving the accountability gap.",
       "related": [
         "knowledge-layer",
         "onboarding",
         "service-model",
         "future-hr-service-delivery"
-      ]
+      ],
+      "opening": "Imagine a colleague moving country. HR has issued the documents, payroll has opened a case and IT has received a request. Everyone has acted. The employee still cannot confirm the start date.",
+      "perspectiveHeading": "Accountability across the handoffs",
+      "actionHeading": "Make the next step visible"
     },
     {
       "id": "knowledge-layer",
       "topic": "HR service delivery",
-      "title": "Before the chatbot, fix the knowledge.",
-      "deck": "Your policy library is infrastructure—not a filing cabinet.",
+      "title": "The chatbot is ready. Is the policy?",
+      "deck": "Reliable HR answers start with information somebody owns.",
       "evidence": "Knowledge-Centered Service embeds capturing, structuring and reusing knowledge in service work. Its guidance treats knowledge improvement as an ongoing practice, not a one-off documentation exercise.",
       "source": "kcs",
-      "perspective": "An HR assistant needs more than a pile of PDFs. It needs an answer that applies to this country, employee group and date. Two contradictory policies are a governance problem before they become a model problem. Good answers should be maintainable by the people responsible for the policy.",
-      "action": "Take the twenty most common questions. For each, create a short approved answer with an owner, applicability, source policy and review date. Let service agents flag an obsolete answer during the case, then route that flag to the owner.",
-      "watch": "Do not reward article volume. Track whether people find the right answer and whether corrections reach every channel using it.",
+      "perspective": "This is why I would treat knowledge quality as part of service delivery, with proper ownership and ongoing capacity. HR needs to know which source is current, where local exceptions apply and who can approve a correction. Buying a better interface does not resolve contradictory guidance.",
+      "action": "Start with the twenty questions the service team receives most often. Agree a short approved answer for each, including applicability, the source policy, an owner and a review date. Make it easy for agents to flag an answer that no longer works.",
+      "watch": "More articles do not necessarily mean better support. Check whether the correct answer reaches every channel after a policy changes.",
       "related": [
         "grounded-answers",
         "service-metrics",
         "journey-owner"
-      ]
+      ],
+      "opening": "A manager asks a simple question about leave. The answer changes depending on the country, the employee group and which version of the policy the assistant finds. The technology may respond perfectly to the wrong document.",
+      "perspectiveHeading": "The work behind a reliable answer",
+      "actionHeading": "Start with the questions people actually ask"
     },
     {
       "id": "expert-escalation",
       "topic": "HR service delivery",
-      "title": "Automation needs a door to a real expert.",
-      "deck": "Make simple work faster without making sensitive work harder.",
+      "title": "Make it easy to reach the right person.",
+      "deck": "Self-service should simplify access to HR, including when a case becomes sensitive.",
       "evidence": "CIPD's transformation research distinguishes work suitable for standardisation from work requiring local adaptation, and describes both self-service and person-to-person support.",
       "source": "cipd-model",
-      "perspective": "A proposed service model: self-service for clear information, a generalist for interpretation, and a specialist for consequential or unusual cases. These are routing choices, not a hierarchy of employee importance. Someone describing harassment or a serious payroll problem should not have to persuade a chatbot that their situation deserves attention.",
-      "action": "Define a small set of escalation triggers with employee-relations specialists. Preserve the employee's context when transferring, show who owns the case and explain when a response is expected. Test the route with fictional sensitive scenarios.",
-      "watch": "An escalation button is cosmetic if nobody staffs the receiving queue. Measure time to meaningful help, not just time to transfer.",
+      "perspective": "I support self-service where it genuinely helps. But employees should not have to prove to a chatbot that their problem matters. Clear information, generalist support and specialist expertise need to work as one service, with a straightforward route between them and no requirement to repeat the whole story.",
+      "action": "Agree escalation triggers with the relevant specialists. Test fictional cases involving sensitive concerns and urgent payroll issues. Confirm who receives the case, what context transfers and when the employee should expect meaningful contact.",
+      "watch": "The route is only credible if the receiving team has capacity. Measure the time to useful help, not just the speed of transferring a ticket.",
       "related": [
         "service-metrics",
         "human-accountability",
         "accessibility"
-      ]
+      ],
+      "opening": "A routine query can become a serious issue very quickly. A missing payment may be a technical correction for payroll and an immediate financial concern for the employee. The service needs to recognise both.",
+      "perspectiveHeading": "Keep the service responsive to the situation",
+      "actionHeading": "Test the difficult route"
     },
     {
       "id": "service-metrics",
       "topic": "HR service delivery",
-      "title": "A closed ticket is not a solved problem.",
-      "deck": "Measure resolution, effort and trust—not just throughput.",
+      "title": "The ticket is closed. Is the problem solved?",
+      "deck": "A service dashboard should tell us what happened to the employee.",
       "evidence": "The Government Service Standard pairs performance measures with user research and recommends collecting data across online and offline channels. Applied to HR, this suggests looking beyond the portal dashboard.",
       "source": "metrics",
-      "perspective": "A fast closure can mean success, an employee giving up, or a problem being pushed to a manager. Pair operational measures with a sampled outcome check. Did the payroll correction arrive? Was the policy understood? Did the employee have to repeat their story? Each question reveals something a response-time average cannot.",
-      "action": "For one service, track end-to-end resolution time, recontacts, employee effort and confirmed completion. Segment by channel and case complexity. Review a few failed journeys alongside the numbers each month.",
-      "watch": "Avoid comparing complex employee-relations cases with password-style requests. A target that discourages necessary escalation makes the service look better while making it worse.",
+      "perspective": "A closure tells us something about the process, but not enough about the outcome. Was the payment corrected? Did the manager understand the guidance? Did the employee contact another team because the first answer was unusable? A small sample of real cases can make the numbers much more meaningful.",
+      "action": "For one service, track elapsed time to resolution, repeat contacts, employee effort and confirmed completion. Review difficult cases with the team each month. Keep complexity and channel visible so the comparison remains fair.",
+      "watch": "Do not create a target that rewards avoiding escalation. Some cases need more time and specialist attention; that is part of the service.",
       "related": [
         "value-scorecard",
         "expert-escalation",
         "copilot-pilot"
-      ]
+      ],
+      "opening": "An HR team can meet its response target while an employee is still waiting for a correction. The dashboard is green. The experience is not. We need to understand that gap before celebrating the result.",
+      "perspectiveHeading": "Read the result behind the metric",
+      "actionHeading": "Bring a few real journeys into the review"
     },
     {
       "id": "copilot-pilot",
       "topic": "AI in HR",
-      "title": "Give the service agent a copilot first.",
-      "deck": "Assistance is a useful starting point before autonomous employee advice.",
+      "title": "Start with the people answering the questions.",
+      "deck": "An internal HR assistant is a practical place to test value before expanding automation.",
       "evidence": "Research on 5,172 customer-support agents found uneven gains from AI assistance: less experienced workers benefited more, while experienced workers saw smaller speed gains and some quality declines. This was not an HR trial.",
       "source": "support",
-      "perspective": "The transferable question is not whether HR can claim the same productivity uplift. It is whether a tool can help an agent find approved guidance and draft a clearer response without weakening judgement. Start with a narrow, low-risk queue. Keep the employee-facing response under an accountable person's control.",
-      "action": "Compare a baseline with a time-limited pilot. Have reviewers assess sampled answers for accuracy, applicability and clarity without knowing whether AI helped. Include review time and rework in the cost calculation.",
-      "watch": "Average improvements can hide harm to a subgroup or a difficult case type. Look at performance by experience level and request category.",
+      "perspective": "An assistant may help with the search and drafting, while the agent keeps responsibility for the answer. That gives the organisation a bounded opportunity to learn. Research from customer support is encouraging in some respects, but it is not an HR business case. We still need evidence from our own work.",
+      "action": "Choose a low-risk queue and establish the baseline. During the pilot, review a sample of answers for accuracy, applicability and clarity without identifying which used AI. Include the time spent checking and correcting the output.",
+      "watch": "Look beyond the average. Experienced agents, new starters and difficult case categories may experience quite different results.",
       "related": [
         "grounded-answers",
         "value-scorecard",
         "early-careers"
-      ]
+      ],
+      "opening": "Before putting an AI adviser in front of every employee, I would look at the colleagues already handling the service. Where do they lose time? Finding the right policy, interpreting an exception or preparing a clear response?",
+      "perspectiveHeading": "A manageable first use case",
+      "actionHeading": "Make the comparison credible"
     },
     {
       "id": "grounded-answers",
       "topic": "AI in HR",
-      "title": "An HR answer should come with its evidence.",
-      "deck": "Fluent policy advice is not the same as correct policy advice.",
+      "title": "Which policy supports that answer?",
+      "deck": "A confident response still needs the right source and context.",
       "evidence": "NIST's Generative AI Profile provides cross-sector guidance for identifying and managing generative-AI risks. It is voluntary guidance, not a guarantee that a particular system is reliable.",
       "source": "genai",
-      "perspective": "For policy questions, a useful answer should identify the approved source, its effective date and who it applies to. Retrieval can help a system find relevant material, but displaying a citation does not prove the answer follows that material. Sometimes the most competent response is to ask for missing context or refer the case.",
-      "action": "Create a test set covering ordinary questions, contradictory policies, outdated documents and situations where no approved answer exists. Score both correctness and appropriate refusal. Re-run it after policy or model changes.",
-      "watch": "Do not let an assistant infer a person's location, employment status or benefit eligibility from an ambiguous question. Confirm the minimum context needed.",
+      "perspective": "I would expect a policy assistant to identify the approved document, its effective date and the population it covers. A link helps, but the answer must actually reflect the source. If essential context is missing, asking a further question is better service than filling the gap with an assumption.",
+      "action": "Test ordinary questions alongside outdated guidance, contradictory documents and cases with no approved answer. Check whether the assistant knows when to stop. Repeat those tests when either the policy or the model changes.",
+      "watch": "Confirm the minimum information needed. Do not guess an employee’s location, contract status or eligibility from an ambiguous request.",
       "related": [
         "knowledge-layer",
         "bounded-agents",
         "vendor-evidence"
-      ]
+      ],
+      "opening": "A polished answer can be reassuring, especially when somebody needs a quick decision. In HR, that is precisely why we need to see what supports it. Confidence in the language is not enough.",
+      "perspectiveHeading": "What a trustworthy response needs",
+      "actionHeading": "Test uncertainty as well as correctness"
     },
     {
       "id": "bounded-agents",
       "topic": "AI in HR",
-      "title": "An agent needs a job description—and limits.",
-      "deck": "Reading a policy and changing a person's record are different kinds of authority.",
+      "title": "What is this HR agent allowed to change?",
+      "deck": "An automation needs clear authority before it receives access.",
       "evidence": "NIST's AI Risk Management Framework addresses risks through the design, development, use and evaluation of systems. It is a voluntary framework; local obligations need separate assessment.",
       "source": "rmf",
-      "perspective": "Treat an HR agent as a bounded workflow, not a digital employee with unlimited discretion. Drafting a letter, proposing a transaction and committing that transaction should have different permissions. Payroll, access rights and employee records are not sensible places to discover an agent's limits through live experimentation.",
-      "action": "For a proposed leave-administration agent, list permitted reads, permitted drafts and actions requiring approval. Use synthetic cases first. Record the requested action, approver and system result; define a manual fallback and a way to stop the workflow.",
-      "watch": "Human approval is weak when the reviewer cannot see what will change. Show the exact transaction, not just an AI-written assurance that it is safe.",
+      "perspective": "I would define an agent through its permitted tasks and controls, rather than describe it as a digital colleague and leave the boundaries implied. Reading, proposing and committing a transaction require different permissions. The business owner should be able to explain those differences without referring everyone to a technical specification.",
+      "action": "For a leave-administration use case, list what the agent may read, what it may draft and which actions need approval. Test with synthetic cases. Keep a record of the requested change, the decision and the system result, with a manual fallback.",
+      "watch": "The reviewer must see the actual change before approving it. A reassuring summary from the same assistant is insufficient.",
       "related": [
         "human-accountability",
         "vendor-evidence",
         "grounded-answers"
-      ]
+      ],
+      "opening": "There is a significant difference between drafting a letter and changing an employee record. Both may look like a simple instruction in a chat interface. Operationally, they carry very different consequences.",
+      "perspectiveHeading": "Define authority in operational terms",
+      "actionHeading": "Agree the controls before the pilot"
     },
     {
       "id": "structured-hiring",
       "topic": "AI in HR",
-      "title": "Better hiring starts with better questions.",
-      "deck": "Use AI to support structure—not to manufacture certainty about people.",
+      "title": "Agree what good looks like before interviewing.",
+      "deck": "AI can help prepare an interview. It cannot resolve an unclear hiring brief.",
       "evidence": "US Office of Personnel Management guidance links structured, job-related interviews with stronger rater agreement and validity than loosely structured interviews. Structure includes consistent questions and scoring criteria.",
       "source": "interviews",
-      "perspective": "AI can help draft an interview guide, but a fluent question is not automatically relevant to the job. The essential work is agreeing what good performance requires and what evidence would demonstrate it. Keep assessment criteria explicit before the first candidate arrives, rather than rationalising a preferred candidate afterwards.",
-      "action": "Choose three critical job competencies. Develop comparable questions and behaviour-based scoring anchors, then have interviewers independently score fictional answers and discuss differences. Review any AI suggestions with a subject-matter expert.",
-      "watch": "Do not confuse style, accent or confidence with competence. Provide appropriate accommodations and avoid unsupported inferences about personality or emotion from video.",
+      "perspective": "The first conversation should be about the work: what must this person deliver, which capabilities are critical and what evidence would demonstrate them? An AI-generated interview guide can support that discussion. It should not replace it, or provide a sophisticated justification for a preference formed afterwards.",
+      "action": "Agree three critical competencies and comparable questions. Ask interviewers to score fictional answers independently against clear behavioural criteria, then discuss the differences. Have a subject-matter expert review any AI suggestions.",
+      "watch": "Style, accent and confidence can influence impressions without demonstrating capability. Keep the assessment job-related, accessible and explicit.",
       "related": [
         "candidate-transparency",
         "skills-evidence",
         "human-accountability"
-      ]
+      ],
+      "opening": "A hiring team wants stronger candidates, faster decisions and fewer rounds. Yet the interviewers may still be assessing different versions of the job. Adding AI at that point can produce more material without improving alignment.",
+      "perspectiveHeading": "Start with the business requirement",
+      "actionHeading": "Calibrate the interviewers"
     },
     {
       "id": "candidate-transparency",
       "topic": "AI in HR",
-      "title": "Tell candidates where AI enters the process.",
-      "deck": "Trust begins before a person joins the organisation.",
+      "title": "Candidates should know where AI is involved.",
+      "deck": "Clear communication is part of a credible recruitment process.",
       "evidence": "The UK ICO's 2024 recruitment-tool audits highlighted fair processing, data minimisation and clear explanations to candidates. These findings concern UK data protection, not a universal legal checklist.",
       "source": "ico",
-      "perspective": "A candidate should not need to guess whether a tool transcribed an interview, summarised a CV or helped rank applicants. Those uses have different consequences. Plain-language explanations make it easier to identify an error and ask a useful question; a generic statement that the company uses innovative technology does not.",
-      "action": "Map each AI-supported hiring step and write a short explanation of purpose, data used and the responsible contact. Offer a workable route to raise concerns. Ask privacy and employment specialists to check jurisdiction-specific requirements before launch.",
-      "watch": "Do not promise that a human reviews every outcome unless the workflow actually guarantees it. Operational truth matters more than reassuring language.",
+      "perspective": "I would explain the purpose of each relevant tool, what information it uses and who can address a concern. This is also an operational test. If the recruiting team cannot describe the process clearly, it may not yet have enough clarity to manage it.",
+      "action": "Map the AI-supported steps with recruitment, privacy and employment specialists. Prepare short, accurate explanations and a workable contact route. Check the requirements in each jurisdiction before launch.",
+      "watch": "Only promise human review where the process actually provides it. Warm language cannot compensate for an inaccurate commitment.",
       "related": [
         "structured-hiring",
         "vendor-evidence",
         "human-accountability"
-      ]
+      ],
+      "opening": "Summarising a CV, transcribing an interview and helping rank applicants are different activities. A candidate deserves a more useful explanation than a statement that the organisation uses innovative technology.",
+      "perspectiveHeading": "Make the process understandable",
+      "actionHeading": "Align the explanation with the workflow"
     },
     {
       "id": "work-design",
       "topic": "Skills & talent",
-      "title": "AI changes tasks. Leadership changes work.",
-      "deck": "Exposure to AI is a starting point for redesign—not a redundancy forecast.",
+      "title": "Which parts of the job are actually changing?",
+      "deck": "Start workforce discussions with the work, rather than an AI exposure score.",
       "evidence": "The ILO's 2025 occupational-exposure index combines task-level analysis, expert input and model predictions. It measures potential exposure; it does not establish that an exposed occupation will disappear.",
       "source": "ilo",
-      "perspective": "A job combines production, judgement, relationships and accountability. Automating one component changes the balance but does not settle what the role should become. HR can move the conversation from headcount speculation to concrete choices: which activities improve, which new responsibilities appear and what support workers need.",
-      "action": "Ask one team to map its recurring tasks. For each, discuss whether AI might assist, automate under controls or add little value. Estimate the review burden and dependencies before making a workforce assumption.",
-      "watch": "Do not turn an occupational exposure score into an individual performance label. People doing the same job title may perform very different work.",
+      "perspective": "A role combines tasks, relationships, judgement and accountability. Automating a first draft may leave more time for analysis, or create additional review. The business still needs to decide what the role should deliver, which responsibilities remain and what people need to learn. Those choices cannot be read directly from an occupational exposure index.",
+      "action": "Map one team’s recurring activities. Identify where assistance could help, where controlled automation might be appropriate and where it adds little. Include dependencies, review effort and implementation timing before translating the exercise into workforce assumptions.",
+      "watch": "Two people with the same title may do substantially different work. Avoid applying a generic score to individual capability or performance.",
       "related": [
         "skills-evidence",
         "workforce-scenarios",
         "time-dividend"
-      ]
+      ],
+      "opening": "When a leadership team asks what AI means for headcount, it is tempting to reach for a forecast. I would first ask the team to describe the work that needs to be done and where the current constraints sit.",
+      "perspectiveHeading": "Translate capability into a work decision",
+      "actionHeading": "Build the view with the team"
     },
     {
       "id": "skills-evidence",
       "topic": "Skills & talent",
-      "title": "Skills are useful when they have evidence.",
-      "deck": "A vocabulary is a beginning. Demonstrated capability is the point.",
+      "title": "What tells us this person can do the work?",
+      "deck": "A useful skills profile connects capability with something observable.",
       "evidence": "OECD research finds that most workers in AI-exposed occupations will not need specialist AI-development skills, although their tasks and skill requirements may change. Demand patterns are not uniform.",
       "source": "skills",
-      "perspective": "A skills profile should help answer a practical question: who can do this work, who could learn it and what evidence would give us confidence? A long taxonomy can create the illusion of precision. A smaller set of skills connected to real assignments is easier to challenge and maintain.",
-      "action": "For one job family, define a few capabilities with examples of observable work. Distinguish self-reported interest, demonstrated proficiency and willingness to move. Let employees correct their profiles and discuss development gaps with a manager.",
-      "watch": "Do not infer proficiency from a job title or a training completion alone. Record where the evidence came from and when it was last checked.",
+      "perspective": "I would keep the practical question in view: who can deliver this work now, who could develop into it and what would give us confidence? Interest, proficiency and willingness to move are all useful, but they are different information. Combining them into one score can obscure the talent conversation.",
+      "action": "Choose one job family and define a manageable set of capabilities through examples of work. Record the source and date of the evidence. Give employees a way to correct their profile and discuss development opportunities with their manager.",
+      "watch": "A course completion shows participation. A job title shows a position held. Neither, on its own, establishes the level of capability required for a new assignment.",
       "related": [
         "ai-literacy",
         "internal-mobility",
         "structured-hiring",
         "junior-work-ai"
-      ]
+      ],
+      "opening": "A system may list hundreds of skills and still leave a leader unsure who could take on a critical assignment. The missing element is often evidence, rather than a more detailed taxonomy.",
+      "perspectiveHeading": "Keep the profile connected to decisions",
+      "actionHeading": "Use evidence people can discuss"
     },
     {
       "id": "ai-literacy",
       "topic": "Skills & talent",
-      "title": "AI literacy is a work skill, not a prompt contest.",
-      "deck": "Teach people how to decide when to use AI—and when not to.",
+      "title": "Can people use AI well in their actual job?",
+      "deck": "Training needs to go beyond knowing what to type.",
       "evidence": "CIPD's 2026 AI skills-planning guide connects changing work with skills planning and provides different routes for organisations at different stages of adoption.",
       "source": "planning",
-      "perspective": "For an HR professional, competence includes framing the task, choosing an approved tool, protecting information, checking the output and recognising when specialist judgement is needed. Prompting matters, but only inside that larger practice. A person who can reject a convincing wrong answer may be more capable than one who produces an impressive demo.",
-      "action": "Build a short practice session around fictional HR cases: a policy summary, an ambiguous employee question and an unsupported recommendation. Ask participants to explain what they would verify and what they would not put into the tool.",
-      "watch": "Completion rates tell you who attended. Use a safe, job-relevant assessment to learn who can apply the judgement afterwards.",
+      "perspective": "For HR, I would define AI literacy through a few practical decisions: when to use an approved tool, what information to protect, how to check a result and when to involve a specialist. Prompting belongs inside that practice. It should not become the main measure of capability.",
+      "action": "Use fictional situations from everyday work: an ambiguous policy question, a document summary and an unsupported recommendation. Ask colleagues what they would verify, what they would withhold and whether they would use AI at all.",
+      "watch": "Attendance is useful administration, not evidence of application. Check whether people can explain their decisions after the session.",
       "related": [
         "learning-loop",
         "manager-rehearsal",
         "grounded-answers",
         "junior-work-ai"
-      ]
+      ],
+      "opening": "Someone can write an excellent prompt and still put confidential information into the wrong tool or accept an answer that does not apply. That is a training gap with operational consequences.",
+      "perspectiveHeading": "Define the capability through decisions",
+      "actionHeading": "Practise with realistic situations"
     },
     {
       "id": "internal-mobility",
       "topic": "Skills & talent",
-      "title": "A talent marketplace needs time, not just matching.",
-      "deck": "Opportunity is not real if a manager cannot release the person.",
+      "title": "The match is good. Can the person actually move?",
+      "deck": "Internal opportunity depends on workload, manager support and timing.",
       "evidence": "The World Economic Forum's 2025 employer survey places skills disruption and workforce adaptation at the centre of its 2030 outlook. It reports employer expectations, not proof that talent marketplaces work.",
       "source": "wef",
-      "perspective": "An internal matching engine can suggest a project, but it cannot by itself resolve workload, manager incentives or the cost of learning. A credible mobility model makes those choices visible. The question is not only who matches; it is who gets a fair opportunity to try.",
-      "action": "Pilot a small set of short assignments with explicit time allocation, release agreements and a named learning sponsor. Invite applications as well as algorithmic suggestions. Review who receives opportunities, who is repeatedly excluded and why.",
-      "watch": "Historical role and performance data may reproduce old access patterns. Treat matching as a starting point for conversation, not an objective verdict on potential.",
+      "perspective": "A talent marketplace needs agreements around capacity and business priorities. Who covers the current work? How much time can the assignment take? What does the manager gain from developing talent for another team? These are leadership choices that a matching engine cannot settle.",
+      "action": "Pilot a few short assignments with agreed time allocation, release conditions and a learning sponsor. Allow people to apply as well as be suggested by the system. Review who gets access and which groups keep missing out.",
+      "watch": "Past assignments reflect past access to opportunity. Use those records thoughtfully; they are not a complete assessment of somebody’s potential.",
       "related": [
         "early-careers",
         "skills-evidence",
         "workforce-scenarios"
-      ]
+      ],
+      "opening": "A colleague is identified for a development assignment. The fit looks strong, the employee is interested and the project sponsor is ready. Then the current manager cannot release them. The opportunity exists in the system, but not in practice.",
+      "perspectiveHeading": "Resolve the operating conditions",
+      "actionHeading": "Make a small set of opportunities real"
     },
     {
       "id": "early-careers",
       "topic": "Skills & talent",
-      "title": "Protect the apprenticeship inside the job.",
-      "deck": "When AI takes the first draft, where does a beginner learn judgement?",
+      "title": "Where will the next generation learn the job?",
+      "deck": "Removing routine work also means examining what people used to learn from it.",
       "evidence": "The customer-support study by Brynjolfsson and colleagues reports evidence of learning alongside uneven productivity effects. Its setting does not establish what happens to every profession's early-career development.",
       "source": "support",
-      "perspective": "Some routine work is waste; some is how people learn to recognise exceptions. Removing both indiscriminately risks leaving junior colleagues supervising outputs they cannot yet evaluate. The leadership choice is to redesign practice, not preserve every manual task for its own sake.",
-      "action": "In one role, identify the exercises that build judgement. Let a learner attempt a case, compare it with AI assistance and explain the differences to an experienced colleague. Include occasional unaided practice where appropriate and safe.",
-      "watch": "Faster delivery is not the same as growing expertise. Review whether the person can explain their reasoning and handle an unfamiliar case, not only reproduce a polished answer.",
+      "perspective": "Some repetitive work deserves to disappear. Some also exposes people to the details through which judgement develops. I would separate those two functions before changing an entry-level role. The aim is to give newcomers useful practice and proper feedback, rather than preserve manual effort for its own sake.",
+      "action": "Identify a few assignments that develop judgement. Ask the learner to attempt a case, compare approaches and discuss the differences with an experienced colleague. Include safe opportunities to work with less assistance and handle a variation.",
+      "watch": "Watch whether understanding is growing alongside output. A polished answer can hide a gap that only becomes visible when the situation changes.",
       "related": [
         "learning-loop",
         "manager-rehearsal",
         "work-design",
         "junior-work-ai"
-      ]
+      ],
+      "opening": "A junior colleague can now produce a convincing first draft very quickly. The difficult question comes afterwards: can they explain it, recognise an exception and know when the result should not be used?",
+      "perspectiveHeading": "Design the learning as well as the output",
+      "actionHeading": "Check what the person can explain"
     },
     {
       "id": "onboarding",
       "topic": "Employee experience",
-      "title": "Onboarding ends when someone can contribute.",
-      "deck": "A completed checklist is only the administrative beginning.",
+      "title": "What is stopping the new colleague from contributing?",
+      "deck": "Equipment and access matter. So do priorities, relationships and permission to ask.",
       "evidence": "The Government Service Standard emphasises joining related services into a journey that makes sense to the user. Applying this to onboarding is an editorial design proposal, not a measured HR result.",
       "source": "journeys",
-      "perspective": "The new colleague experiences equipment, access, role clarity and social connection as one arrival. HR can coordinate that experience without pretending to own every task. AI may help personalise a guide or answer routine questions, but it cannot replace a manager explaining priorities or a teammate making space for questions.",
-      "action": "Define the first meaningful contribution for a role. Work backwards to the access, knowledge and relationships it requires. Give the manager a short conversation guide and ask the new hire what blocked progress after the first week.",
-      "watch": "Time-to-contribution should not become pressure to skip learning or safety checks. Pair it with role clarity and the quality of support.",
+      "perspective": "HR can help connect the preparation without taking ownership of every task. The manager still needs to explain expectations, and colleagues need to make room for questions. AI may support a guide or routine information; it cannot create the working relationship on the manager’s behalf.",
+      "action": "Define an appropriate first contribution for the role. Work backwards through the access, knowledge and relationships it requires. After the first week, ask the new colleague which obstacles the planned process missed.",
+      "watch": "Do not turn speed into pressure to skip learning. Contribution should grow with clarity, support and the safeguards the role requires.",
       "related": [
         "journey-owner",
         "accessibility",
         "early-careers"
-      ]
+      ],
+      "opening": "The onboarding checklist can be complete while a new starter remains unsure what to do first or whom to approach. From their perspective, the experience is one arrival, even if several functions deliver it.",
+      "perspectiveHeading": "Look at the arrival from the employee’s side",
+      "actionHeading": "Work backwards from a useful first assignment"
     },
     {
       "id": "employee-voice",
       "topic": "Employee experience",
-      "title": "Consult people before the workflow is fixed.",
-      "deck": "Participation is a design input—not a launch communication.",
+      "title": "Ask the team while the decision is still open.",
+      "deck": "People can improve a workflow before they are asked to adopt it.",
       "evidence": "OECD surveys in finance and manufacturing across seven countries found training and worker consultation associated with better reported AI outcomes. The association does not prove that consultation caused the improvement.",
       "source": "voice",
-      "perspective": "People doing the work can reveal exceptions, unofficial workarounds and trust concerns that a process diagram misses. Involvement matters most while choices are still open. Asking for feedback after procurement can feel like an invitation to endorse a decision rather than influence it.",
-      "action": "Before a pilot, hold separate sessions with frontline users, managers and relevant employee representatives. Show a realistic workflow, including failure cases. Publish what changed because of their input and what remains unresolved.",
-      "watch": "A workshop is not representative by default. Include less digitally confident colleagues and people on different shifts, not only enthusiastic volunteers.",
+      "perspective": "That knowledge is valuable before procurement and design decisions are fixed. Asking for feedback afterwards can leave people feeling they are being invited to endorse a choice. I would make clear what they can influence, what is constrained and how the input will reach the decision-makers.",
+      "action": "Bring frontline users, managers and relevant employee representatives into the design discussion. Show realistic failures as well as the intended process. Afterwards, explain what changed, what did not and why.",
+      "watch": "Enthusiastic volunteers are not the whole workforce. Include different shifts, levels of digital confidence and ways of accessing the service.",
       "related": [
         "workload",
         "algorithmic-management",
         "ninety-days"
-      ]
+      ],
+      "opening": "A process diagram rarely captures all the workarounds that keep a service running. The people doing the job can usually explain where the formal process stops and the practical judgement begins.",
+      "perspectiveHeading": "Be clear about the room for influence",
+      "actionHeading": "Close the feedback loop"
     },
     {
       "id": "accessibility",
       "topic": "Employee experience",
-      "title": "Self-service must work for people unlike its designers.",
-      "deck": "An elegant portal can still be an obstacle.",
+      "title": "Can everyone actually use the new service?",
+      "deck": "A good digital experience needs to work outside the design team’s assumptions.",
       "evidence": "W3C's forms guidance recommends clear, properly associated labels so people can understand and operate controls, including through assistive technology. This is one component of accessibility, not a complete compliance test.",
       "source": "access",
-      "perspective": "HR services are used on phones, shared devices and during stressful moments. A chatbot-only experience adds a new burden: the person must know how to ask the right question. Keep a clear route for common tasks and an alternative way to get help. Essential services should not depend on prompt-writing skill.",
-      "action": "Observe a small, varied group completing one real task using keyboard navigation, mobile and their usual assistive setup where relevant. Check instructions, errors and recovery as well as the happy path. Include frontline employees without a desk.",
-      "watch": "A technically accessible page can still be incomprehensible. Test whether employees understand what happens next, not only whether they can submit the form.",
+      "perspective": "I would keep common tasks easy to find and provide another route to help. A chatbot asks the employee to formulate the right question before the service can begin. That can be useful, but should not become a condition for accessing essential support.",
+      "action": "Observe a varied group completing a task with their usual devices and assistive tools where relevant. Check keyboard use, instructions, error messages and recovery. Include people who do not normally work at a computer.",
+      "watch": "Technical accessibility and understandable communication both matter. Ask people what they think will happen next, rather than checking only whether the form was submitted.",
       "related": [
         "expert-escalation",
         "onboarding",
         "candidate-transparency"
-      ]
+      ],
+      "opening": "Consider an employee using a shared phone during a shift, or trying to understand a request while already worried about a personal issue. An interface that feels straightforward at a desk may be much harder in that situation.",
+      "perspectiveHeading": "Design for the conditions of use",
+      "actionHeading": "Watch the complete task"
     },
     {
       "id": "manager-rehearsal",
       "topic": "Employee experience",
-      "title": "Let AI rehearse the conversation, not have it.",
-      "deck": "A proposed use case for better preparation with clear boundaries.",
+      "title": "Help the manager prepare for the conversation.",
+      "deck": "AI role-play may support preparation, with clear limits on the information and advice involved.",
       "evidence": "NIST's generative-AI guidance provides a risk-management reference for evaluating proposed uses. It does not demonstrate that AI coaching improves management outcomes.",
       "source": "genai",
-      "perspective": "A fictional role-play can help a manager notice unclear language or prepare open questions. That is different from asking a system to judge a real employee's motivation, health or future. The manager remains responsible for listening, checking assumptions and having the actual conversation.",
-      "action": "Pilot with invented situations and an approved conversation framework. Have HR reviewers assess whether the practice encourages clarity, curiosity and appropriate escalation. Ask managers to describe what they changed, rather than rate whether the tool felt clever.",
-      "watch": "Do not upload identifiable case histories or treat generated scripts as employee-relations advice. Sensitive situations need the appropriate human expertise and local policy checks.",
+      "perspective": "I would use this to practise language, questions and listening, not to diagnose the employee’s motivation or predict their reaction. The manager still has to understand the context and remain open to what the colleague says. A generated script should never become a substitute for that attention.",
+      "action": "Test invented scenarios against an approved conversation framework. Ask HR reviewers whether the exercise encourages clarity, curiosity and sensible escalation. Have managers explain what they would change in their preparation.",
+      "watch": "Keep identifiable case material out of unapproved tools. Sensitive employee-relations matters need the relevant human expertise and policy checks.",
       "related": [
         "ai-literacy",
         "human-accountability",
         "workload"
-      ]
+      ],
+      "opening": "A manager has a difficult conversation ahead and is struggling to find a clear way to begin. There may be value in rehearsing a fictional version before meeting the person. The preparation needs boundaries.",
+      "perspectiveHeading": "Prepare without pre-judging the person",
+      "actionHeading": "Evaluate the quality of the preparation"
     },
     {
       "id": "workload",
       "topic": "Employee experience",
-      "title": "Do not automate your way to a heavier workload.",
-      "deck": "Wellbeing belongs in work design, not just the benefits catalogue.",
+      "title": "Has the tool improved the working day?",
+      "deck": "Time saved in one task can be absorbed by review, coordination or higher demand.",
       "evidence": "WHO recommends addressing workplace psychosocial risks through organisational interventions that target working conditions, with meaningful worker involvement. Individual support alone is not the whole response.",
       "source": "who",
-      "perspective": "An AI tool may remove drafting time while increasing review, coordination and exception handling. If every saving is immediately converted into higher volume, employees may experience acceleration rather than relief. HR should ask what the redesigned day feels like, not just what the output chart shows.",
-      "action": "During a pilot, review workload, after-hours demands, interruptions and perceived control alongside quality and speed. Agree what work will stop and where released time may go. Use aggregated feedback rather than intrusive individual monitoring.",
-      "watch": "Do not use AI to diagnose employees from communication patterns. Concerns about distress require appropriate support, privacy and qualified advice—not a speculative risk score.",
+      "perspective": "I would look at the redesigned day as well as the output. What has genuinely stopped? Which new demands have appeared? Can employees exercise more control, or are they simply processing more work? This is a work-design discussion, with wellbeing built into it.",
+      "action": "During a pilot, review interruptions, after-hours demands, perceived control and quality alongside speed. Agree how released capacity will be used. Use appropriate aggregated feedback, rather than monitoring individual behaviour unnecessarily.",
+      "watch": "Avoid speculative assessments of employees’ health or distress from their communications. Concerns need appropriate support and qualified advice.",
       "related": [
         "time-dividend",
         "employee-voice",
         "value-scorecard"
-      ]
+      ],
+      "opening": "A team starts drafting faster with AI. Soon there is more material to check, more decisions to coordinate and an expectation that the team can take on additional volume. The original promise was to make work easier.",
+      "perspectiveHeading": "Look at the whole workload",
+      "actionHeading": "Agree what will change for the team"
     },
     {
       "id": "hybrid-work",
       "topic": "Future of work",
-      "title": "Hybrid work deserves evidence, not ideology.",
-      "deck": "Design around the work—and test what actually changes.",
+      "title": "What do we need shared time for?",
+      "deck": "A useful hybrid-work discussion starts with delivery, coordination and development.",
       "evidence": "A randomised trial of 1,612 Trip.com employees found that two home-working days per week reduced attrition and improved satisfaction without damaging measured performance. The study concerned graduate employees in one company, not every role or remote model.",
       "source": "hybrid",
-      "perspective": "The useful question is which activities benefit from being together and which need uninterrupted focus. A blanket attendance count cannot answer it. Nor does one successful trial justify assuming the same arrangement will work in a laboratory, hospital or newly formed team.",
-      "action": "Agree team-level purposes for shared time, response expectations and decision documentation. Review delivery quality, collaboration and retention over a meaningful period. Check whether people outside the office receive comparable information and development access.",
-      "watch": "Avoid treating presence as a proxy for performance. Equally, do not dismiss real coordination problems simply because flexibility is popular.",
+      "perspective": "I would ask the team where physical presence improves the work: difficult decisions, practical learning, relationship building or activities that depend on shared equipment. Then identify what needs uninterrupted focus. Research can inform the discussion, but the operating context still matters.",
+      "action": "Agree the purpose of shared time, response expectations and how decisions are documented. Review delivery, collaboration and access to development over a meaningful period. Check whether colleagues outside the room receive the information they need.",
+      "watch": "Neither presence nor remote status is a reliable assessment of contribution on its own. Address the actual delivery problem rather than using location as its proxy.",
       "related": [
         "time-dividend",
         "onboarding",
         "decision-analytics"
-      ]
+      ],
+      "opening": "An attendance target is easy to communicate. It is less useful when a team has not agreed which activities benefit from being together. Equally, flexibility alone will not resolve a real coordination problem.",
+      "perspectiveHeading": "Make the purpose of presence explicit",
+      "actionHeading": "Review the arrangement against the work"
     },
     {
       "id": "time-dividend",
       "topic": "Future of work",
-      "title": "Who gets the time that AI saves?",
-      "deck": "The answer is a leadership decision, not a software feature.",
+      "title": "What will we do with the time AI releases?",
+      "deck": "Capacity only becomes value when the organisation makes use of it.",
       "evidence": "A six-month experiment across 66 firms found time savings among users given an integrated AI tool, but no detected shift in task quantity or composition from individual-level access. The NBER paper was revised in November 2025.",
       "source": "patterns",
-      "perspective": "A saved hour may become deeper work, learning, better customer attention—or more email. Access to a tool does not decide which. HR can help teams make the allocation explicit and separate time released from financial savings actually realised.",
-      "action": "Ask a pilot team to choose one use for released capacity before rollout. Track whether that activity actually happens. Include verification, training and rework when estimating net time; record a range rather than a falsely precise number.",
-      "watch": "Do not multiply self-reported minutes by salary and call the result cash savings. Capacity, output and budget reductions are distinct outcomes.",
+      "perspective": "Released capacity may support better service, deeper analysis, learning or additional volume. It may also disappear into fragmented schedules and more messages. I would agree the intended use with the business owner before rollout, rather than assume that a tool will create the organisational change for us.",
+      "action": "Choose one activity the team wants to do more of, or one backlog it needs to reduce. Track whether that happens. Include verification, training and corrections in the time estimate, and be honest about the range.",
+      "watch": "Time released, output increased and budget reduced are different outcomes. Multiplying estimated minutes by salary does not establish a cash saving.",
       "related": [
         "value-scorecard",
         "work-design",
         "workload"
-      ]
+      ],
+      "opening": "A pilot reports time savings. The next question should be straightforward: what happened with that time? If nobody can answer, the business case is still incomplete.",
+      "perspectiveHeading": "Agree the intended benefit",
+      "actionHeading": "Follow the capacity through"
     },
     {
       "id": "workforce-scenarios",
       "topic": "Future of work",
-      "title": "Workforce planning needs scenarios, not one AI forecast.",
-      "deck": "Prepare for different adoption speeds without pretending to know the future.",
+      "title": "Build a workforce plan we can adjust.",
+      "deck": "Different adoption speeds need different responses, not false precision.",
       "evidence": "The Future of Jobs Report 2025 captures expectations from more than 1,000 employers for 2025–2030. These are survey-based outlooks across multiple drivers of change, not measured AI job losses.",
       "source": "wef",
-      "perspective": "A useful plan separates demand for work, the technology's capability, actual adoption and the organisation's ability to redesign processes. Those variables move at different speeds. The aim is to identify decisions that remain sensible across futures, and signals that tell leaders when to change course.",
-      "action": "Build three scenarios for one function: limited assistance, widespread assistance and bounded automation. Describe the work, skills, implementation constraints and review load in each. Set triggers for training investment, hiring or redeployment rather than locking in a single headcount number.",
-      "watch": "External forecasts provide context, not permission to skip local task analysis or consultation. Document assumptions so the plan can be revised when evidence changes.",
+      "perspective": "Those factors will not move together. I would separate them and identify which decisions remain sensible across several scenarios. The value of the exercise is knowing what to do now and what evidence would change the plan, rather than defending a forecast after its assumptions have moved.",
+      "action": "For one function, compare limited assistance, widespread assistance and controlled automation. Describe the skills, delivery constraints and review workload in each. Agree practical triggers for hiring, development or redeployment.",
+      "watch": "External forecasts provide context. They do not replace local work analysis or the appropriate discussions with affected employees.",
       "related": [
         "work-design",
         "internal-mobility",
         "learning-loop"
-      ]
+      ],
+      "opening": "A long-term workforce number can look reassuring in a presentation. Its usefulness depends on the assumptions underneath: demand, technology, adoption, process change and the capacity to train or redeploy people.",
+      "perspectiveHeading": "Make the assumptions discussable",
+      "actionHeading": "Define the signals for a change of course"
     },
     {
       "id": "algorithmic-management",
       "topic": "Future of work",
-      "title": "When software allocates work, it is doing management.",
-      "deck": "Scheduling and scoring systems deserve the same scrutiny as visible AI tools.",
+      "title": "Who can challenge the scheduling system?",
+      "deck": "Software decisions about work need clear ownership, whether or not the product is called AI.",
       "evidence": "OECD research defines algorithmic management broadly as software automating managerial tasks, with or without AI. Its employer survey highlights both perceived benefits and concerns about accountability and worker impacts.",
       "source": "algorithmic",
-      "perspective": "An organisation may debate a chatbot while overlooking a scheduling engine that determines someone's hours. Allocation rules, targets and automated flags shape the employee experience. HR's remit should include the consequences of those systems, not only whether they are labelled AI.",
-      "action": "Inventory tools that allocate, monitor or evaluate work. For each, identify the person who can explain an outcome and correct an error. Ask workers which decisions feel opaque, then test those examples with the system owner.",
-      "watch": "A manager who cannot override a flawed recommendation is not meaningful oversight. Look at actual authority and incentives, not only the approval box in a workflow.",
+      "perspective": "I would include allocation, monitoring and evaluation tools in the people-governance discussion. Who understands the rules? Who can explain an outcome? Who can correct it? These questions matter to employees regardless of the technology label.",
+      "action": "Inventory the systems that allocate or evaluate work. Name the accountable owner and correction route for each. Ask employees for examples they find difficult to understand, then examine those cases with the system owner.",
+      "watch": "A manager who can approve a recommendation but cannot challenge it has limited authority. Test the practical ability to intervene.",
       "related": [
         "human-accountability",
         "employee-voice",
         "decision-analytics"
-      ]
+      ],
+      "opening": "An organisation can spend considerable time debating a chatbot while a scheduling system already shapes employees’ hours and opportunities. The second may have a much more direct effect on their working lives.",
+      "perspectiveHeading": "Follow the decision, not the label",
+      "actionHeading": "Start with decisions people experience"
     },
     {
       "id": "learning-loop",
       "topic": "Future of work",
-      "title": "Reskilling is a loop, not a launch campaign.",
-      "deck": "Connect learning to changing tasks and return to the question regularly.",
+      "title": "Give people time to apply the new skill.",
+      "deck": "A development plan needs an assignment, feedback and room in the working week.",
       "evidence": "CIPD's 2026 AI skills-planning guide recommends reviewing the skills frameworks and technology assumptions used in planning, ideally at least every six months.",
       "source": "planning",
-      "perspective": "A course catalogue can become obsolete while a transformation programme is still running. The better unit is a cycle: notice a task changing, identify a capability gap, practise it in real work and review what improved. Learning teams need access to those workflow changes, not just a request to train everybody on a tool.",
-      "action": "Choose one team and a capability needed for its next work change. Agree protected practice time, a real assignment and feedback from a capable colleague. Revisit the need after the assignment rather than assuming the training plan remains correct.",
-      "watch": "Do not put all responsibility on the learner. Without time, access and manager support, a reskilling promise can become an unpaid second job.",
+      "perspective": "I would connect development to the team’s next work change and return to it after the first assignment. What can the person now do? Where do they still need support? Learning teams need visibility of those changes early enough to contribute, rather than receive a late request to train everyone.",
+      "action": "Agree one capability, protected practice time and a relevant assignment with a named reviewer. Use the feedback to adjust the next step. Revisit the requirement instead of treating the original training plan as fixed.",
+      "watch": "Without time, access and manager support, development becomes additional work the employee is expected to absorb. That is not a credible investment plan.",
       "related": [
         "ai-literacy",
         "early-careers",
         "workforce-scenarios"
-      ]
+      ],
+      "opening": "A course can be completed while the work remains unchanged. Sometimes the employee has learned something useful but has no opportunity to apply it. Sometimes the requirement has already moved.",
+      "perspectiveHeading": "Connect learning to the next requirement",
+      "actionHeading": "Put the support into the plan"
     },
     {
       "id": "human-accountability",
       "topic": "Governance & value",
-      "title": "Human oversight needs power, time and evidence.",
-      "deck": "A person clicking approve is not necessarily exercising judgement.",
+      "title": "Can the reviewer really say no?",
+      "deck": "Human oversight depends on authority, information and enough time to use both.",
       "evidence": "NIST's voluntary AI Risk Management Framework treats trustworthiness as a lifecycle concern. It is not a legal safe harbour or a certification that human review makes a system acceptable.",
       "source": "rmf",
-      "perspective": "For a consequential people decision, name the decision-maker and make sure they can understand the recommendation, challenge it and obtain further evidence. They also need enough time and authority to disagree. A process that penalises overrides encourages ceremonial approval rather than accountability.",
-      "action": "For one proposed use, document who recommends, who decides, who can pause and who handles a challenge. Run a fictional case with a deliberately plausible but wrong recommendation. Observe whether the process catches it.",
-      "watch": "Do not assume every use becomes appropriate with a human in the loop. Some uses should be narrowed or rejected after legal, ethical and operational review.",
+      "perspective": "For an important people decision, I would want a named decision-maker who can inspect the evidence, ask further questions and pause the process. They need the authority to disagree without being treated as an obstacle. Accountability has to work under normal operating pressure, not only in the design document.",
+      "action": "Clarify who recommends, decides, pauses and responds to a challenge. Test a fictional case containing a plausible error. Observe whether the reviewer can identify it and get it resolved.",
+      "watch": "Some proposed uses should be narrowed or rejected. Adding an approval step does not automatically make them appropriate.",
       "related": [
         "bounded-agents",
         "algorithmic-management",
         "candidate-transparency",
         "torvalds-ai-expertise"
-      ]
+      ],
+      "opening": "A workflow may contain an approval step and still leave nobody in a realistic position to challenge the recommendation. The reviewer is busy, the rationale is unclear and the process rewards fast acceptance.",
+      "perspectiveHeading": "Make the decision-maker effective",
+      "actionHeading": "Test the right to challenge"
     },
     {
       "id": "decision-analytics",
       "topic": "Governance & value",
-      "title": "Start people analytics with a decision.",
-      "deck": "A dashboard is useful only if someone can act differently because of it.",
+      "title": "What decision will this analysis improve?",
+      "deck": "Start with the business question before commissioning another dashboard.",
       "evidence": "CIPD defines people analytics around solving business problems and distinguishes correlation from causation. It also cautions that employee monitoring can be intrusive even where lawful.",
       "source": "analytics",
-      "perspective": "Before requesting a predictive model, write the decision it would inform. If a team has high attrition, what action is available and what else could explain the pattern? A model cannot repair an unclear question. Descriptive analysis plus employee conversations may be more useful than a sophisticated score.",
-      "action": "Create a decision brief: question, accountable owner, available actions, minimum data, alternative explanations and review date. Prefer aggregated analysis where it can answer the question. Evaluate the intervention, not only the model's apparent accuracy.",
-      "watch": "An individual flight-risk label can affect how a manager treats someone. Do not turn a statistical association into a story about that person's intentions.",
+      "perspective": "That discussion can lead to a much more useful brief. Sometimes a descriptive analysis and conversations with employees are enough to identify the next step. Greater technical sophistication is valuable when it improves the decision, rather than simply making the output look more authoritative.",
+      "action": "Write down the question, owner, available actions, minimum data and alternative explanations. Use aggregated information where it is sufficient. Review whether the intervention helped, not just whether the model produced an interesting result.",
+      "watch": "Be particularly careful with individual labels. A statistical association does not establish an employee’s intention and can influence how their manager treats them.",
       "related": [
         "value-scorecard",
         "hybrid-work",
         "algorithmic-management"
-      ]
+      ],
+      "opening": "A team has high attrition. It is tempting to request a predictive model immediately. I would first ask what action the leader can take, what the available data can tell us and what else may explain the pattern.",
+      "perspectiveHeading": "Keep the analysis connected to action",
+      "actionHeading": "Agree a short decision brief"
     },
     {
       "id": "vendor-evidence",
       "topic": "Governance & value",
-      "title": "Buy evidence, not an impressive demo.",
-      "deck": "The procurement question is what happens on your difficult cases.",
+      "title": "Show us where the tool struggles.",
+      "deck": "A useful procurement discussion includes difficult cases and the cost of operating the service.",
       "evidence": "The ICO's recruitment-tool audits identified concerns including excessive data collection and unclear candidate information. Their UK findings show why a polished product demonstration is not enough due diligence.",
       "source": "ico",
-      "perspective": "Ask a vendor to show failure modes, not just the best answer. Which data leaves the organisation? What changes after a model update? Can a customer inspect the basis of a recommendation and export records on exit? HR, IT, security, privacy and procurement need a shared view of the answers.",
-      "action": "Use a synthetic evaluation pack representing your languages, policy exceptions and ambiguous cases. Agree acceptance criteria and change-notification expectations before contracting. Document data handling, access controls, support ownership and the exit route with specialists.",
-      "watch": "A generic benchmark or claim of being compliant does not validate your use case. Jurisdiction, purpose, configuration and actual operation all matter.",
+      "perspective": "I would bring HR, IT, security, privacy and procurement around one evaluation. We need shared answers on data handling, access, failure modes, support and exit. A generic assurance is not enough when the consequences sit across several functions.",
+      "action": "Give the vendor synthetic cases covering your languages, exceptions and incomplete requests. Agree acceptance criteria and change-notification expectations before contracting. Make ownership of the ongoing checks explicit.",
+      "watch": "A benchmark or compliance claim does not validate the organisation’s particular use. Purpose, configuration, jurisdiction and day-to-day operation still need assessment.",
       "related": [
         "grounded-answers",
         "bounded-agents",
         "candidate-transparency"
-      ]
+      ],
+      "opening": "The demonstration works well. The important questions begin when the request is ambiguous, the policy is local or the model changes after implementation. That is the version of the product the organisation will have to manage.",
+      "perspectiveHeading": "Evaluate the operating reality",
+      "actionHeading": "Use your difficult cases"
     },
     {
       "id": "value-scorecard",
       "topic": "Governance & value",
-      "title": "The AI scorecard should include what got worse.",
-      "deck": "Count value, quality, effort and risk on the same page.",
+      "title": "What improved—and what became harder?",
+      "deck": "An AI investment needs a view of quality, effort, experience and risk.",
       "evidence": "The Government Service Standard recommends defining success, combining metrics with user research and revising measures as understanding improves. The HR scorecard below is an editorial adaptation of that principle.",
       "source": "metrics",
-      "perspective": "A pilot can be faster and still be a bad investment. Review labour, exceptions, employee frustration and ongoing content maintenance can absorb the apparent gain. A balanced decision makes trade-offs visible rather than turning a productivity estimate into the entire business case.",
-      "action": "Before launch, agree a baseline and a scorecard covering net effort, answer quality, employee experience and significant incidents. Include licence, integration, training and review costs. Decide what evidence would justify continuing, changing or stopping the pilot.",
-      "watch": "Do not move the success criteria after seeing disappointing results. Record limitations and compare like-for-like cases; a small pilot may not establish a reliable financial return.",
+      "perspective": "I would put the gains and the additional demands on the same page. Include ongoing knowledge maintenance, exceptions, employee experience and incidents, alongside delivery speed. The purpose is to reach an honest decision about value, including whether a promising idea needs redesign.",
+      "action": "Agree a baseline and success criteria before the pilot. Include licence, integration, training, review and support costs. Define what evidence would justify continuing, changing scope or stopping.",
+      "watch": "Keep the criteria stable when results disappoint. A small pilot can produce useful learning without yet supporting a reliable financial return.",
       "related": [
         "service-metrics",
         "time-dividend",
         "ninety-days",
         "torvalds-ai-expertise"
-      ]
+      ],
+      "opening": "A pilot can produce answers faster while creating more review work for specialists. If that effort sits in another budget, it is easy to miss. The business still pays for it.",
+      "perspectiveHeading": "Assess the complete service",
+      "actionHeading": "Agree the decision criteria early"
     },
     {
       "id": "ninety-days",
       "topic": "Governance & value",
-      "title": "A practical first 90 days for HR and AI.",
-      "deck": "One useful service, one bounded experiment, one honest decision.",
+      "title": "Give the first AI pilot a clear business purpose.",
+      "deck": "A practical 90-day starting plan, with room to slow down when the evidence requires it.",
       "evidence": "CIPD's operating-model research describes the importance of planning, stakeholder involvement and reviewing outcomes after implementation. The timeline here is a proposed working plan, not a validated formula.",
       "source": "cipd-model",
-      "perspective": "The first objective should be learning how to change work responsibly, not announcing an AI-first function. Choose a service important enough to matter but bounded enough to evaluate. Keep a named business owner and involve the people who will use and support it.",
-      "action": "Days 1–30: map the journey, consult users, establish a baseline and fix the source knowledge. Days 31–60: test with synthetic cases, train a small group and pilot with clear escalation. Days 61–90: review quality, effort and employee feedback; decide whether to scale, redesign or stop.",
-      "watch": "The dates are not a promise of production readiness. Sensitive data, unresolved controls or weak evidence are reasons to slow down—not hide the uncertainty.",
+      "perspective": "A named business owner, a clear service problem and access to the people doing the work are more valuable than an ambitious launch statement. The objective is to learn how to improve delivery responsibly, then decide whether the approach deserves further investment.",
+      "action": "In the first month, map the service, involve users, establish the baseline and repair the knowledge. In the second, test safely and pilot with clear support and escalation. In the third, review quality, total effort and employee feedback, then make the next investment decision.",
+      "watch": "The timetable is a planning aid, not a commitment to launch regardless. Unresolved data, controls or service risks are reasons to pause.",
       "related": [
         "service-model",
         "employee-voice",
         "value-scorecard",
         "future-hr-service-delivery"
-      ]
+      ],
+      "opening": "The first pilot sets expectations for what follows. I would choose something important enough to matter, but narrow enough to understand when it works and when it fails.",
+      "perspectiveHeading": "Choose a problem we can evaluate",
+      "actionHeading": "Use the first three months to earn the next decision"
     },
     {
       "id": "future-hr-service-delivery",
       "topic": "HR service delivery",
       "featured": true,
-      "title": "The future of HR service delivery is a portfolio—not a single model.",
-      "deck": "Beyond the chatbot and the org chart: four service patterns, clearer accountability, and a practical route from AI experiments to better work.",
+      "title": "What should the next HR service model actually deliver?",
+      "deck": "AI is changing the delivery options. The harder work is agreeing the service, the accountability and where the capacity should go.",
       "evidence": "Consulting perspectives offer useful design hypotheses, not one agreed blueprint for HR in 2030. The proposals below are an original synthesis, not a forecast or a report of measured results.",
       "source": "hr-debate",
       "perspective": "Design the service around the consequence of getting it wrong, not around the novelty of the technology.",
@@ -850,145 +944,125 @@
         "ninety-days"
       ],
       "intro": [
-        "Will AI make HR leaner, or give it the capacity to do more? Carlos Larracilla’s LinkedIn post frames that tension by comparing different visions of the future HR function. It is a useful starting question. But it is not yet a service-delivery design.",
-        "My view: the next HR model should be a portfolio of services, with different degrees of automation and different kinds of human involvement. A request for a standard employment letter and a difficult employee-relations case should not travel through the same machinery just because both belong to HR."
+        "Consider an internal transfer. The manager wants a confirmed date, the employee wants to understand the changes, and several teams need to update their part of the process. Each team may complete its task on time. The move can still be late.",
+        "That is the problem I would put at the centre of the next HR operating-model discussion. Not because structure is unimportant, but because the business needs the whole service to work. Adding AI to individual steps will not resolve a gap in accountability between them.",
+        "Carlos Larracilla’s LinkedIn post raises a useful question: will AI make HR leaner, or create capacity for a broader contribution? My view is that we first need to be more specific about the services we intend to deliver. Different work will need different arrangements."
       ],
       "sections": [
         {
-          "heading": "01 / Read the debate as choices, not a prediction",
+          "heading": "The research points to choices, rather than one destination",
           "paragraphs": [
-            "Three primary sources help separate the underlying choices. These are perspectives on how HR could change—not proof that a particular structure will work in every organisation."
+            "The published perspectives do not describe one agreed future. They help frame decisions about capability, automation and investment."
           ],
           "cards": [
             {
-              "title": "McKinsey / capability and role mix",
-              "text": "McKinsey describes a leaner, more flexible function with stronger strategic, scientific and technological capabilities. Its argument is not simply “make HR bigger”: more sophisticated expertise can coexist with a smaller administrative footprint.",
+              "title": "McKinsey: a different capability mix",
+              "text": "McKinsey describes a leaner, more flexible function with stronger strategic, scientific and technological capabilities. More sophisticated expertise does not necessarily mean a larger HR organisation.",
               "source": "mck-hr-model"
             },
             {
-              "title": "Bain / redesign the work",
-              "text": "Bain links automation and augmentation to reallocating HR time and redefining roles across operations, business partnering and centres of excellence. Its estimated time savings are modelling, not a guaranteed saving for an individual organisation.",
+              "title": "Bain: change the roles as well as the tasks",
+              "text": "Bain connects automation and augmentation with reallocating time and redefining responsibilities across HR. Its time-saving estimates are not a guaranteed outcome for a particular organisation.",
               "source": "bain-hr-model"
             },
             {
-              "title": "Gartner / beyond isolated pilots",
-              "text": "Gartner’s public abstract calls for an operating-model transformation rather than disconnected AI pilots. The abstract alone does not establish a particular headcount trajectory; the full subscriber research is not used here.",
+              "title": "Gartner: move beyond isolated pilots",
+              "text": "Gartner’s public abstract calls for operating-model transformation. It does not, on its own, establish a particular headcount direction; this note does not rely on the subscriber research.",
               "source": "gartner-hr-model"
             }
           ],
           "after": [
-            "My interpretation: technology choices, capability choices and investment choices are related, but they are not the same decision. Automating a transaction does not tell you whether to reinvest the capacity, reduce cost or improve service. Leadership has to make that choice explicitly."
+            "The business decision remains ours: which service needs to improve, which capabilities we need to retain or build, and what we intend to do with any released capacity. These questions need alignment before a productivity estimate becomes a workforce commitment."
           ]
         },
         {
-          "heading": "02 / Replace the single model with four service patterns",
+          "heading": "Design around the kind of help people need",
           "paragraphs": [
-            "Here is a proposed design lens—not another maturity ladder. Choose a pattern according to how clearly the work can be specified and what happens when it goes wrong. A service may combine several patterns."
+            "I would distinguish four service patterns. They can sit within the same function, and one employee journey may use all four."
           ],
           "patterns": [
             {
-              "title": "Inform / reliable answers",
-              "text": "For straightforward policy questions, help people find an approved answer that applies to their location and situation. Require a named knowledge owner, a review date and a route to a person when context is missing. Success is a usable answer—not merely a closed chat."
+              "title": "Clear information",
+              "text": "Make approved guidance easy to find and apply. The answer needs the right context, a source that is maintained and a route to help when the situation is unclear."
             },
             {
-              "title": "Execute / bounded transactions",
-              "text": "For repeatable requests, such as producing a standard letter, connect approved inputs to a controlled workflow. Give automation narrow permissions, validation checks and a visible completion status. Separate generating an answer from authorising a system change; provide a way to correct mistakes."
+              "title": "Repeatable transactions",
+              "text": "Use controlled workflows for well-defined requests. Specify the permitted changes, approval points and how an error is corrected. Confirm the outcome to the person who requested it."
             },
             {
-              "title": "Resolve / human-led cases",
-              "text": "For conflict, distress or ambiguous circumstances, make qualified human support easy to reach. AI may assist with permitted administrative preparation, but a named professional owns the case and its judgement. A chatbot should not become a compulsory obstacle to sensitive support."
+              "title": "Cases requiring judgement",
+              "text": "Give sensitive or unusual situations a named professional with the right expertise. AI may support preparation, but the employee needs access to someone who can understand the circumstances and take responsibility."
             },
             {
-              "title": "Shape / strategic work",
-              "text": "For workforce planning or organisation design, bring business leaders, HR partners and specialists together around a defined problem. Use AI to explore evidence and scenarios, not to manufacture certainty. The accountable leader must still explain the choice and its trade-offs."
+              "title": "Strategic business work",
+              "text": "Bring HRBPs, specialists and business leaders together around a defined organisational question. Use technology to support analysis and explore options. Keep the decision and its trade-offs with the accountable leader."
             }
           ],
           "after": [
-            "The important boundary is not “digital versus human”. It is whether the service can recognise when it has reached the limits of its knowledge, authority or competence—and move the case without making the employee start again."
+            "The practical test is the handoff. Can the service recognise that a request needs a different level of support, and move it without asking the employee to start again?"
           ]
         },
         {
-          "heading": "03 / Keep the front door simple. Make ownership explicit.",
+          "heading": "Give the transfer one owner, even if several teams deliver it",
           "paragraphs": [
-            "One front door should mean a coherent experience, not a single compulsory channel. Employees may need a portal, an accessible conversation, a telephone call or direct specialist contact. Behind those channels, maintain one understandable status and a clear next step.",
-            "Give each end-to-end service an owner with authority to improve it across functional boundaries. Shared services can operate workflows; centres of expertise can own specialist standards; HR partners can connect priorities to business needs. The service owner connects those contributions and resolves gaps between them.",
-            "Underneath, fund the less visible work: approved knowledge, data stewardship, identity and access controls, vendor oversight, testing and incident response. These are ongoing responsibilities, not tasks that disappear after a successful demonstration. For each automated action, specify who can approve it, who can stop it and who fixes a failure."
+            "Return to the internal move. An assistant might explain the process. A workflow could collect confirmed details and obtain approvals. Payroll and IT would complete their respective changes, while a specialist handles any exception. This is an illustrative design, not a report of a deployed system.",
+            "Who confirms that the move can take place? That is the accountability to settle. The owner needs visibility of dependencies and an agreed route to resolve conflicts between teams. A coordinator who can only send reminders will struggle when priorities compete.",
+            "The technology behind the service needs ownership too. Approved knowledge, data quality, access controls, testing and incident response require capacity after launch. I would include that work in the operating model and the budget from the beginning."
           ]
         },
         {
-          "heading": "04 / Follow one employee journey all the way through",
+          "heading": "Agree what the capacity is for",
           "paragraphs": [
-            "Consider a hypothetical internal transfer. The employee wants to know what changes, the manager wants a confirmed start date, and the organisation needs the right records, pay and access. None of them is asking for five completed tickets.",
-            "An assistant could explain the process using approved guidance. A workflow could collect confirmed details and route the required approvals. HR, payroll and IT would complete their respective actions. A specialist would handle exceptions, such as conflicting conditions or an unclear contractual change, before the process proceeds.",
-            "The journey is complete only when the agreed change has taken effect and the employee can work as intended. Give one owner visibility of outstanding dependencies. Measure the whole elapsed time and the corrections needed afterwards—not just how quickly HR closed its part. This is an illustrative design, not a claim about a deployed system."
+            "If the service becomes more efficient, the next discussion is about how to use the benefit. It may mean a shorter backlog, more access to specialists, better workforce planning or lower cost. Those are different commitments.",
+            "Small amounts of time released across many people do not automatically become a removable position or a new strategic capability. Work has to be reorganised, priorities changed and, often, skills developed. The business case needs to show how that happens.",
+            "Include time transferred to employees, managers and other functions. Otherwise, HR can report an improvement while the organisation experiences more work elsewhere."
           ]
         },
         {
-          "heading": "05 / Decide where the capacity goes",
+          "heading": "Start with one journey and a decision we can make",
           "paragraphs": [
-            "“Hours saved” is an input to a business case, not its conclusion. Small fragments of time do not automatically become a new strategic role—or a removable position. Someone must redesign the work, consolidate capacity where appropriate and build the skills required for its next use.",
-            "Before a pilot, agree a capacity decision with the people who own the budget and the service: will gains reduce a backlog, increase access to expertise, strengthen workforce planning or lower operating cost? Make the intended benefit visible, and involve affected teams in how roles change.",
-            "Count the complete cost: software, integration, knowledge maintenance, assurance, exception handling and time shifted to managers or employees. A cheaper HR transaction is not an improvement if people spend longer repairing it elsewhere. Treat quality and access as constraints, not benefits to be assumed."
-          ]
-        },
-        {
-          "heading": "06 / A 90-day test of the model—not just the tool",
-          "paragraphs": [
-            "Start with one manageable journey and a bounded group of users. The following is a suggested experiment, not a universal implementation timetable."
+            "A 90-day pilot can be a useful planning frame, provided the scope is realistic and the timetable does not override unresolved risk."
           ],
           "cards": [
             {
-              "title": "Days 1–30 / establish the service",
-              "text": "Map the real journey, including exceptions and informal workarounds. Talk to employees and service teams. Name the owner, baseline time and effort, repair the knowledge, and define which actions need approval. Agree the conditions that would stop the pilot."
+              "title": "First month: understand the service",
+              "text": "Map the journey with users and delivery teams. Agree the owner and baseline, repair the source knowledge and define the limits of automation."
             },
             {
-              "title": "Days 31–60 / test within limits",
-              "text": "Test ordinary, incomplete and difficult cases with synthetic data before any live use. Pilot within a defined scope with appropriate access controls and a visible human route. Log failures, handoffs and corrections; do not silently widen the system’s authority."
+              "title": "Second month: test and learn",
+              "text": "Use synthetic cases before a bounded live pilot. Test exceptions and escalation. Track review effort, errors and corrections alongside speed."
             },
             {
-              "title": "Days 61–90 / decide on evidence",
-              "text": "Compare outcomes with the baseline and, where feasible, a comparable non-pilot group. Include the additional maintenance and oversight work. Ask whose experience improved and whose worsened. Scale, redesign or stop; do not treat deployment itself as the success criterion."
+              "title": "Third month: make the investment decision",
+              "text": "Compare complete outcomes with the baseline and, where feasible, a comparable group. Include maintenance and oversight. Decide whether to extend the service, change it or stop."
             }
-          ]
-        },
-        {
-          "heading": "07 / Put a balanced scorecard beside the dashboard",
-          "paragraphs": [
-            "Use a small set of measures together. Each needs a baseline, a clear definition and an owner. A high automation rate alone cannot tell you whether the service is good."
-          ],
-          "items": [
-            "Outcome: share of journeys completed correctly; elapsed time to a verified result; repeat contacts and reopened cases.",
-            "Experience: employee effort, manager effort and ease of reaching a person, including people who cannot use the default digital route.",
-            "Quality and control: sampled answer accuracy, inappropriate actions, failed escalations and time to correct an incident.",
-            "Economics and capacity: total cost per completed journey, maintenance and exception workload, and evidence that released capacity reached its intended use."
           ],
           "after": [
-            "Review differences between user groups where appropriate and lawful, rather than allowing an average to hide a poor experience. Pair every efficiency claim with a quality check."
+            "I would review completion quality, elapsed time, repeat contacts, employee effort and total cost together. Then read a few difficult cases with the numbers. They often explain where the process is still creating work."
           ]
         },
         {
-          "heading": "08 / The leadership decision",
+          "heading": "The question for the leadership team",
           "paragraphs": [
-            "The question is not whether HR in 2030 will be larger or smaller everywhere. The useful question is which service promises your organisation needs, what it will take to fulfil them and where human accountability must remain visible.",
-            "Start with one journey. Name its owner. Set the limits of automation. Decide what better means for the employee and the business. Then earn the right to scale.",
-            "Automate work that can be specified. Keep ownership of the consequences."
+            "We do not need to agree today whether HR everywhere will be larger or smaller in 2030. We do need to agree what our business requires from HR, who owns the delivery and how we will know it has improved.",
+            "Start there. The structure and technology choices will be more useful once the service commitment is clear."
           ]
         }
       ],
-      "readingMinutes": 7,
+      "readingMinutes": 5,
       "publishedAt": "2026-10-13",
-      "homeTitle": "Beyond the chatbot. A new service portfolio.",
-      "homeDeck": "Four service patterns. One accountable experience."
+      "homeTitle": "What should the next HR service model deliver?",
+      "homeDeck": "Start with the employee journey. Be clear about ownership."
     },
     {
       "id": "junior-work-ai",
       "topic": "Skills & talent",
       "featured": true,
       "publishedAt": "2026-10-13",
-      "homeTitle": "Be junior. Don’t start from zero.",
-      "homeDeck": "Use AI to close the experience gap—not to hide it.",
-      "title": "You can be junior without starting from zero.",
-      "deck": "Use AI intensively. Build things sooner. But make sure the expertise is becoming yours—not just appearing in your output.",
+      "homeTitle": "Starting a career in the age of AI.",
+      "homeDeck": "Use the tools seriously. Make the learning visible.",
+      "title": "Starting a career when AI can already do the first draft.",
+      "deck": "New entrants can attempt more work sooner. Employers still need to give them a credible route to expertise.",
       "source": "next-generation",
       "evidence": "McKinsey highlights a tension: automation can remove tasks through which newcomers develop judgement. It argues for deliberate development rather than assuming expertise will emerge. The article also notes that AI’s contribution to weaker entry-level hiring remains contested. This is not evidence that junior jobs are disappearing everywhere.",
       "perspective": "Use technology to expand what you can attempt, while keeping a clear account of what you understand and what still needs review.",
@@ -1002,159 +1076,120 @@
         "torvalds-ai-expertise"
       ],
       "intro": [
-        "Imagine applying for your first analyst role. You can produce a dashboard, a research brief and a prototype before lunch. Then someone asks why the numbers do not reconcile, whether the sample is representative, or what would happen if the recommendation were wrong. That is where the interview becomes interesting.",
-        "My view is optimistic, but demanding: new entrants should use technology boldly to attempt useful work earlier. Not to impersonate an experienced colleague. To arrive with better questions, tangible experiments and evidence that they can learn. The ambition is not “look senior”. It is “become useful, and know your limits”."
+        "Imagine arriving at an interview with a dashboard, a research brief and a working prototype. AI helped you prepare all three. The interviewer changes one assumption and asks you to explain what happens next. Can you still make sense of the work?",
+        "That is the opportunity, and the challenge, for people entering the world of work. I would encourage them to use the technology seriously. Explore, build, ask better questions and attempt things that were previously out of reach. But be clear about what you understand and what you still need to learn.",
+        "For employers, there is a corresponding responsibility. We cannot raise the expectations of junior roles and quietly remove the support that helps people meet them."
       ],
       "sections": [
         {
-          "heading": "01 / The signal is broader than “learn to prompt”",
+          "heading": "The skills signal needs a careful reading",
           "paragraphs": [
-            "In McKinsey’s HR Monitor exhibit, digital literacy rose by 15 percentage points, problem-solving by 9 and creativity by 6 in top-five future-skill mentions between 2025 and 2026. These are directional comparisons: country coverage changed, and the samples comprised 1,303 HR professionals in 2026 versus 1,925 in 2025. They are neither vacancy counts nor measured hiring outcomes."
+            "McKinsey’s HR Monitor exhibit shows increases in top-five future-skill mentions for digital literacy, problem-solving and creativity: 15, 9 and 6 percentage points respectively between 2025 and 2026. The comparisons are directional. Country coverage changed, with 1,303 respondents in 2026 and 1,925 in 2025.",
+            "These are reported priorities, not vacancy counts or hiring results. My practical reading is that tool fluency needs to sit alongside the ability to frame a problem, explore alternatives and explain a decision."
           ],
-          "cards": [
-            {
-              "title": "Digital literacy / +15 percentage points",
-              "text": "Know what the tools can do—and where their answers need checking."
-            },
-            {
-              "title": "Problem-solving / +9 percentage points",
-              "text": "Turn a vague request into a question you can actually test."
-            },
-            {
-              "title": "Creativity / +6 percentage points",
-              "text": "Generate alternatives, then explain why one fits the constraints."
-            }
+          "source": "next-generation"
+        },
+        {
+          "heading": "Finishing the task and learning the task are different outcomes",
+          "paragraphs": [
+            "A completed output can hide an important gap. Does the person know why a calculation works, which assumptions matter and what would make the answer unreliable? That gap matters when the next assignment arrives.",
+            "Shen and Tamkin’s experiments with developers learning an unfamiliar coding library found poorer learning outcomes with AI assistance and no significant average efficiency gain. Some cognitively engaged usage patterns preserved learning. This is a bounded coding study, not a verdict on every tool or profession."
           ],
-          "source": "next-generation",
+          "source": "skill-formation",
           "after": [
-            "The numbers are sourced; the practical translations above are my interpretation. A useful career strategy combines a domain worth understanding with the ability to investigate, build and verify—not a collection of impressive prompts."
+            "For a learner, I would keep a simple record beside the work: what I can explain, what I checked and what still needs review. The point is to make progress visible, rather than conceal the uncertainty behind a polished result."
           ]
         },
         {
-          "heading": "02 / Borrow capability. Build your own understanding.",
+          "heading": "Use AI for more than the application letter",
           "paragraphs": [
-            "There is a difference between finishing a task with assistance and being able to supervise that assistance. Treat the gap as something to investigate, not something to conceal."
-          ],
-          "cards": [
-            {
-              "title": "A caution from experimental research",
-              "text": "Shen and Tamkin’s coding experiments found poorer learning outcomes with AI assistance on an unfamiliar library, without a significant average efficiency gain. Some cognitively engaged usage patterns preserved learning. This is a bounded research finding, not proof that every AI tool harms learning or that the result applies to every job.",
-              "source": "skill-formation"
-            }
-          ],
-          "after": [
-            "My practical rule: keep a short “I can explain / I need to check” list beside each project. If a tool gives you a formula, explain its inputs and test an edge case. If it gives you a recommendation, identify the assumption that could reverse it. Confidence should follow those checks, not the fluency of the answer."
-          ]
-        },
-        {
-          "heading": "03 / Use the technology aggressively—but give it different jobs",
-          "paragraphs": [
-            "Do not restrict AI to polishing a CV. Here are four proposed uses that turn access to a tool into something you can practise. They are exercises, not promises of faster promotion."
+            "There are practical ways to make the tools part of a serious preparation effort. These are suggestions for practice, not a formula for getting hired."
           ],
           "patterns": [
             {
-              "title": "Map the territory",
-              "text": "Choose a specific role and ask for a glossary, a sample workflow and a list of common mistakes. Check the result against current documentation and conversations with practitioners. Build a one-page map of who uses the work, what good looks like and what failure costs."
+              "title": "Understand the work",
+              "text": "Choose a role and build a simple map of its tasks, language and stakeholders. Use AI to surface questions, then verify important answers through documentation and conversations with practitioners."
             },
             {
-              "title": "Build a small working thing",
-              "text": "Use spreadsheets, code assistants or no-code tools to make a narrow prototype: a data-quality checker, a searchable public reading list or a simple service dashboard. Prefer something you can inspect over a sprawling demonstration you cannot maintain."
+              "title": "Build something small",
+              "text": "Create a narrow prototype with public or synthetic data. A data-quality check or simple dashboard is enough if you can explain the choices and maintain it."
             },
             {
-              "title": "Stress-test the result",
-              "text": "Ask the model for counterexamples, missing inputs and reasons the approach might fail. Then test those claims independently. A second model’s agreement is not independent evidence; a reconciled total, a source document or a reproducible test is more useful."
+              "title": "Find the weaknesses",
+              "text": "Ask for counterexamples and then test them. Agreement from another model is not a substitute for checking a source, reconciling a total or running a reproducible test."
             },
             {
-              "title": "Prepare for the human conversation",
-              "text": "Rehearse explaining your project to a busy manager, a sceptical user and a colleague who must maintain it. Ask for objections, then rewrite your explanation in your own words. Practise saying what you do not know and what you would check next."
+              "title": "Explain it to a person",
+              "text": "Practise describing the result, its limits and the next decision. A manager needs to understand what the work supports, not just see an impressive demonstration."
             }
           ],
           "after": [
-            "Use public or synthetic material for personal practice. At work, use approved tools and follow data-handling rules. Never paste candidate records, employee cases, client documents or confidential source code into an unapproved service. Access to a powerful tool is not permission to use every input."
+            "Personal practice should use non-sensitive material. At work, follow the organisation’s approved tools and data rules. Curiosity is valuable; access to a tool does not authorise access to every input."
           ]
         },
         {
-          "heading": "04 / A portfolio should show the debugging, not just the demo",
+          "heading": "A modest portfolio can support a much better conversation",
           "paragraphs": [
-            "Consider a hypothetical junior HR analyst building an onboarding dashboard. Start with a synthetic dataset and a clear question: where are start-date preparations getting stuck? Let AI help create the data and draft the calculations. Then introduce duplicate records, missing dates and a department with only two cases.",
-            "Does the dashboard count people or tasks? Does a missing completion date mean “late” or “unknown”? Does a small group’s average justify a recommendation? Record the decisions. Ask a practitioner to review the definitions before you claim the dashboard would support a real business decision.",
-            "Package the result as a short case: the question, the dataset’s limitations, what AI contributed, what failed, how you tested it and what remains unresolved. Label it as a simulated project. Do not imply that an employer deployed it or that it produced savings.",
-            "That makes the conversation about your reasoning. It also gives an interviewer a fair way to explore your contribution: change one condition and ask you to adapt the work. A smaller project that survives this conversation is worth more than an elaborate artefact you cannot explain."
+            "Take a hypothetical junior HR analyst building an onboarding dashboard. Use synthetic records and start with a practical question: where is preparation for the start date getting delayed? AI can help draft the calculations. The analyst still needs to define the measures.",
+            "Introduce duplicate entries, missing dates and a department with only two cases. Is the dashboard counting people or tasks? Does a blank date mean late, or simply unknown? Does that small sample support the recommendation?",
+            "Keep those questions and corrections with the final result. Explain what AI contributed and where a practitioner’s review changed the approach. Label the project as simulated; do not imply an employer used it or that it delivered savings.",
+            "Now the interview can explore the person’s reasoning and development. That is a stronger proposition than presenting an elaborate project they cannot explain."
           ]
         },
         {
-          "heading": "05 / Enter the market with a specific offer",
+          "heading": "Look for a role with a real development commitment",
           "paragraphs": [
-            "Instead of “I am passionate about AI”, try a precise, honest proposition: “I built a prototype that flags inconsistent dates in a synthetic onboarding dataset. Here is how I checked it, and here is what I would need to learn before using it in your environment.”",
-            "Choose a target problem and learn enough of its vocabulary to have a useful conversation. That does not mean picking a lifelong specialism before your first job. It means giving your curiosity a concrete starting point. Ask practitioners which apparently simple tasks are harder than they look.",
-            "In applications and interviews, follow the stated rules on AI assistance and disclose its role when relevant. Do not invent placements, references, client results or expertise. Use technology to improve the quality of your preparation, not to automate a fictional professional identity."
-          ],
-          "items": [
-            "Ask: which tools may I use here, and what data may they access?",
-            "Ask: who reviews a new starter’s work, and how often?",
-            "Ask: what should I be able to handle independently after three months?",
-            "Ask: can you describe a recent mistake a junior learned from—and how the team helped?"
-          ],
-          "after": [
-            "Evaluate the employer as well as the job title. Tools, feedback and realistic expectations matter. Not everyone has paid subscriptions, spare time or a professional network; a fair selection process should not confuse access to those resources with potential."
+            "A candidate can bring preparation and initiative. They should also ask what the employer will provide. Which tools are approved? Who reviews a new starter’s work? What should the person be able to handle independently after three months?",
+            "I would listen carefully to the answers. A team that can describe the support and progression is offering something more concrete than a promise of exposure to AI. Candidates do not all have the same money, time or networks; selection should not mistake those advantages for potential.",
+            "For HR leaders, the role specification should set out both the contribution expected and the learning the organisation will support. Review time needs to be planned. Independence should be earned against sound criteria, not measured by agreement with an AI answer that may itself be wrong."
           ]
         },
         {
-          "heading": "06 / HR leaders have a job to redesign, too",
+          "heading": "Make the first month manageable",
           "paragraphs": [
-            "The answer cannot be “graduates should arrive fully trained with AI”. My recommendation for HR leaders is a two-part entry-level role specification: what the person must deliver, and what the organisation commits to helping them learn. Give both parts an owner.",
-            "For each proposed automation, ask what a newcomer used to discover while doing that work. Decide whether that exposure was genuinely valuable or simply repetitive effort. Do not preserve busywork for nostalgia—but do not remove it without deciding how the valuable learning will happen.",
-            "Fund review time rather than asking mentors to fit it invisibly around a full workload. For hiring exercises, provide the same tool access and clear rules to every candidate, and use a short follow-up conversation to examine their decisions. Reward a well-identified uncertainty, not only a confident presentation.",
-            "Do not define progress as increasingly close agreement with an AI answer. The system can be wrong. Assess work against validated criteria and expert review, including whether the person notices a bad answer and asks for help before it causes harm."
-          ]
-        },
-        {
-          "heading": "07 / A first-month experiment",
-          "paragraphs": [
-            "A suggested plan for a student, career changer or new starter. Adjust it to your time and access; this is a learning exercise, not an unpaid production assignment."
+            "For a student, career changer or new starter, I would suggest one small learning project rather than several unfinished demonstrations."
           ],
           "cards": [
             {
-              "title": "Week 1 / choose and understand",
-              "text": "Pick one small problem. Read the relevant primary documentation. Write a glossary and define a result you could test. Use AI to surface questions, then verify the answers that matter."
+              "title": "Understand",
+              "text": "Choose the problem, read the relevant guidance and define a result you can test. Write down the questions you cannot yet answer."
             },
             {
-              "title": "Week 2 / build and break",
-              "text": "Create a prototype with non-sensitive data. Keep a log of AI contributions. Add deliberately awkward inputs and document what fails. Fix one important weakness before adding more features."
+              "title": "Build and check",
+              "text": "Create the prototype with safe data. Test awkward inputs, keep a contribution log and fix a meaningful weakness before adding features."
             },
             {
-              "title": "Week 3 / invite scrutiny",
-              "text": "Seek a short review from a tutor, peer or practitioner. Show the uncertain parts, not just the finished screen. Record which criticism changed your approach and which still needs investigation."
+              "title": "Get feedback",
+              "text": "Ask a tutor, peer or practitioner to review the uncertain parts. Record what changed and which points remain open."
             },
             {
-              "title": "Week 4 / prove what transferred",
-              "text": "Tackle a small variation with less assistance and explain your choices. Keep the new result alongside the first one. Update your portfolio with specific learning, not a claim that you have mastered the profession."
+              "title": "Try a variation",
+              "text": "Change the conditions and use less assistance. Explain your decisions. Update the portfolio with what you learned, rather than a claim to have mastered the profession."
             }
           ],
           "after": [
-            "The aim is not to close every experience gap in a month. It is to make the next gap visible and give yourself a credible way to work on it."
+            "Adjust this to the time and access available. It is a development exercise, not an expectation that candidates do unpaid production work."
           ]
         },
         {
-          "heading": "08 / Be ambitious about the tools. Honest about the gap.",
+          "heading": "The ambition is to become useful, and keep growing",
           "paragraphs": [
-            "Technology can help you make an earlier contribution. It cannot supply every piece of context, every relationship or the experience of being accountable when something goes wrong. Those remain things to build with other people.",
-            "For new entrants: bring working examples, thoughtful checks and questions worth answering. For employers: make room for those people to become better, not merely faster.",
-            "Use AI to reach beyond what you can do today. Keep learning until you can tell whether the result deserves to be trusted."
+            "AI can help a newcomer contribute sooner. It cannot provide every relationship, every piece of business context or the experience of taking responsibility when the result is wrong.",
+            "Use the tools with energy. Bring evidence, questions and the willingness to be corrected. Employers need to meet that effort with opportunities to learn the job properly."
           ]
         }
       ],
-      "readingMinutes": 8
+      "readingMinutes": 5
     },
     {
       "id": "torvalds-ai-expertise",
       "topic": "Future of work",
       "featured": true,
       "publishedAt": "2026-10-13",
-      "homeTitle": "Even Linus Torvalds uses AI.",
-      "homeDeck": "Elite expertise, evolving tools—and what productivity really means.",
-      "title": "Even Linus Torvalds uses AI. Expertise is the multiplier.",
-      "deck": "Claude Code, the Linux kernel, and a more useful way to think about productivity: powerful tools in the hands of people who know what good looks like.",
+      "homeTitle": "Linus Torvalds, AI and the value of expertise.",
+      "homeDeck": "A real engineering problem. Promising results. Important work still to do.",
+      "title": "Linus Torvalds is using AI on the kernel. That changes the conversation.",
+      "deck": "The Linux creator’s experiment with Claude Code is more interesting than a headline about faster coding. It shows both the opportunity and the work required to make it useful.",
       "source": "torvalds-page-cache",
       "evidence": "In his 10 October 2026 patch write-up, Torvalds credits Claude Code with code, test programs, review assistance and the initial explanatory draft, under his direction. He ran the measurements on his own machine. The proposal targets contention when multiple threads make small reads from the same cached file.",
       "perspective": "AI use is not evidence of weak expertise. Expert judgement can help turn generated work into something worth using.",
@@ -1167,107 +1202,96 @@
         "future-hr-service-delivery"
       ],
       "intro": [
-        "There is a lazy story about AI at work: beginners use it because they cannot do the job, while the real experts do everything themselves. Linus Torvalds’s use of Claude Code is a useful challenge to that story. The creator of Linux is not learning what a kernel is. He is an elite developer choosing another tool.",
-        "For me, the interesting question is not whether using AI makes somebody less of an expert. It is what becomes possible when substantial expertise and increasingly capable tools work together. That is a more productive conversation for engineering—and for HR."
+        "Linus Torvalds is using Claude Code to help develop Linux kernel patches. For anyone who still associates AI assistance mainly with beginners, that is worth taking seriously. This is a highly experienced developer working on a demanding technical problem.",
+        "The experiment addresses a bottleneck in how the kernel handles simultaneous reads. The results are promising, but the engineering is unfinished. Both points matter: this is a serious use of AI, and it still requires the judgement and scrutiny that serious work demands."
       ],
       "sections": [
         {
-          "heading": "01 / A real engineering experiment, not a magic upgrade",
+          "heading": "The problem: several cores competing over the same bookkeeping",
           "paragraphs": [
-            "The reported eight-thread test on an i7-8565U laptop reduced kernel cycles per 16-byte read from 2,937–2,975 to 725–726. Reported throughput rose from 9.9–10.4 million to 30–33 million reads per second. Torvalds cautions that thermal throttling makes cost per read the better comparison. Mitigations and hardened usercopy were disabled.",
-            "The write-up lists unresolved issues and missing tests, including a contiguous-memory-allocation regression. Treat this as experimental work, not an upgrade already delivered to Linux users. These results do not establish a general system-wide speedup."
+            "Linux keeps file data in memory so it can be read without repeatedly returning to storage. In the workload Torvalds describes, several threads make small reads from the same cached file. Updating the shared reference counter becomes a source of contention.",
+            "The proposed change delays reuse of removed cache memory until an RCU grace period has passed. That allows a protected reader to copy the data without taking a folio reference. The trade-off is that memory can remain temporarily unavailable for reuse."
           ],
           "source": "torvalds-page-cache"
         },
         {
-          "heading": "02 / Separate two very different kinds of productivity",
+          "heading": "A substantial result, within a narrow test",
           "paragraphs": [
-            "Software performance asks how efficiently the resulting program runs. Developer productivity asks how much useful, accepted work a person or team produces for the effort involved. Improving the first does not tell us how much the second changed.",
-            "This example is not a controlled comparison of Torvalds working with and without AI. We cannot infer a personal “three-times productivity” gain from a throughput chart. That distinction makes the story more credible, not less exciting.",
-            "My hypothesis is that AI’s value for an expert can include a wider range of experiments, easier investigation and less effort spent preparing supporting material. Those are worthwhile possibilities. They still need to be measured against review, correction, integration and maintenance costs."
+            "On his i7-8565U laptop, the eight-thread, 16-byte-read test went from 2,937–2,975 kernel cycles per read to 725–726. Throughput rose from 9.9–10.4 million reads per second to 30–33 million. He cautions that thermal throttling makes cost per read the better comparison; mitigations and hardened usercopy were disabled.",
+            "Those are promising experimental results, not a claim that Linux as a whole is three times faster. The write-up also identifies unfinished work, including a memory-allocation regression. The experimental result should not be confused with an improvement already delivered to users."
+          ],
+          "source": "torvalds-page-cache"
+        },
+        {
+          "heading": "What AI contributed—and what the figures do not tell us",
+          "paragraphs": [
+            "Torvalds credits Claude Code with code, tests, review assistance and the explanatory draft, under his direction. That is a broader role than suggesting the next line of code.",
+            "It is also important to separate the performance of the software from the productivity of the developer. A faster read operation does not tell us how much engineering time was saved. We do not have a controlled comparison of Torvalds doing this work with and without AI.",
+            "The opportunity is that an experienced person may be able to investigate more options, prepare more supporting material or attempt work they would otherwise defer. Whether that becomes a net gain depends on the checking and correction required."
           ]
         },
         {
-          "heading": "03 / The evolution: from suggesting text to participating in work",
+          "heading": "The tool is moving further into the work",
           "paragraphs": [
-            "Anthropic describes Claude Code as able to read a codebase, edit files and run commands. This extends the interaction beyond receiving a snippet in a chat window: the tool can take actions within a development workflow. That is a capability description, not a guarantee of correctness."
+            "Claude Code’s documentation describes a tool that can read a codebase, edit files and run commands. The interaction can therefore extend beyond a chat response into a cycle of implementation and testing."
           ],
           "source": "claude-code-tools",
           "after": [
-            "A useful way to think about this evolution is through three levels: suggest an answer; help produce an artefact; participate in an iterative cycle of building and checking. These modes coexist. More autonomy is not automatically the right choice for every task.",
-            "The organisational implication is larger than a better interface. Once a tool can act, leaders need to define what it may change, what evidence it must produce and where a person must approve the next step. Permission, observability and rollback become part of productive use—not obstacles to it."
+            "That is the evolution I find significant. We are increasingly discussing what a tool can do within a workflow, rather than only what it can say. The practical questions become more operational: which actions are allowed, what evidence is required and who approves the result?",
+            "There is no reason to assume that greater autonomy is always better. The appropriate level depends on the task, the consequences of failure and the quality of the controls. A useful assistant should help the expert work, without making responsibility harder to see."
           ]
         },
         {
-          "heading": "04 / Why elite developers still matter",
+          "heading": "Expertise gives the assistance direction",
           "paragraphs": [
-            "Torvalds is a concrete example of a highly skilled practitioner working with AI, not a substitute for evidence about every developer. But he helps puncture the status anxiety around assistance: choosing to use a tool does not cancel the expertise of the person using it.",
-            "My interpretation is that expertise becomes especially valuable at four points in an AI-assisted workflow. None disappears because a model can generate a plausible implementation."
+            "Torvalds’s example challenges the idea that using AI is an admission of weak capability. A highly skilled developer can choose assistance precisely because they understand the problem well enough to direct and question it.",
+            "That does not make expertise a guarantee of productivity. It does explain why replacing the expert is the wrong starting assumption. Someone still needs to choose the problem, define what must remain true and judge whether the evidence supports the change."
           ],
           "patterns": [
             {
-              "title": "Choose the right problem",
-              "text": "Decide which constraint is worth attacking. A beautifully generated solution to the wrong problem is still wasted work."
+              "title": "Set the problem",
+              "text": "Identify the constraint worth addressing and the result that would matter. Generating more work is easy to confuse with making progress."
             },
             {
-              "title": "Specify what must remain true",
-              "text": "Make the requirements and unacceptable failure modes explicit. The fastest route is not useful if it breaks a guarantee the system depends on."
+              "title": "Define the limits",
+              "text": "Make requirements and unacceptable failure modes explicit before the tool starts changing things."
             },
             {
-              "title": "Challenge the evidence",
-              "text": "Ask whether the test exercises the real risk, whether the comparison is fair and what the result fails to measure. A passing test is an observation, not blanket permission to trust."
+              "title": "Examine the result",
+              "text": "Check the comparison, the tests and the conditions they leave out. A strong result in one setting does not settle every use case."
             },
             {
-              "title": "Own the decision",
-              "text": "Accept, revise or reject the output. Someone must remain answerable for what reaches users and for what happens after release."
+              "title": "Take the decision",
+              "text": "Accept, revise or reject the work, with someone accountable for the consequences after it reaches users."
             }
-          ],
-          "after": [
-            "This is the sense in which I see expertise as a multiplier: not a mathematical promise of higher output, but a source of direction, discrimination and restraint. Knowing when to stop is part of using a powerful tool well."
           ]
         },
         {
-          "heading": "05 / Measure value after the review—not before it",
+          "heading": "The HR implication: include the experienced people",
           "paragraphs": [
-            "For a team exploring AI, I would start with a small, representative set of tasks and record the whole journey to acceptance. Compare like with like where possible. Keep the quality bar stable. Do not count a draft as a completed result merely because it arrived quickly."
-          ],
-          "items": [
-            "Useful output: which changes were accepted, and what problem did they actually solve?",
-            "Total effort: time spent framing, generating, reviewing, testing, correcting and integrating—including colleagues’ time.",
-            "Quality: defects, regressions, rejected suggestions and follow-up maintenance.",
-            "Capacity: did the team finish sooner, investigate more alternatives, or tackle work it previously deferred?",
-            "Learning: can people explain and maintain what they accepted, or has dependence grown?"
-          ],
-          "after": [
-            "A productivity gain may be more quality at the same cost, not simply fewer minutes. Conversely, more generated work can overload the people reviewing it. The bottleneck may move rather than disappear."
+            "I would not limit AI development programmes to people who need help with basic tasks. Experienced colleagues should have the opportunity to test where the tools improve their work. They can help define realistic use cases and distinguish a convincing demonstration from a reliable service.",
+            "At the same time, avoid an expectation that everyone must use AI on everything. Ask for an informed choice and evidence of value. A team may gain speed, improve quality or explore more alternatives. It may also create additional review work elsewhere.",
+            "For an expert-led pilot, measure the complete effort through to acceptance: preparation, generation, review, testing, corrections and maintenance. Keep quality and incidents beside the output measure. Decide what the released capacity is intended to achieve.",
+            "The implications for junior colleagues are different. They are still building the judgement experienced people bring to the tool. The organisation needs to support that learning while improving today’s delivery."
           ]
         },
         {
-          "heading": "06 / What HR leaders should take from this",
+          "heading": "A more useful productivity discussion",
           "paragraphs": [
-            "Do not position AI training only as remedial support for people who struggle. Invite experienced practitioners to explore it too. They can help identify valuable tasks, define credible acceptance criteria and expose failure modes a polished demonstration would miss.",
-            "Nor should the message become “everyone must use AI for everything”. The useful expectation is that people learn to make an informed choice. Give teams approved tools, clear boundaries and time to compare results. Reward effective judgement, including a justified decision not to automate.",
-            "In role design, distinguish work a person must understand from work they must always perform manually. An experienced HR specialist might use assistance to prepare a service analysis while retaining responsibility for definitions, evidence and the recommendation. That is an illustrative application—not evidence that kernel-development results transfer to HR.",
-            "Keep the apprenticeship question open. Experienced workers bring a base of judgement to these tools; new entrants are still building it. The previous field note explored that difference. An organisation needs both immediate output and people who will be capable of reviewing tomorrow’s output."
+            "What matters here is not that a prominent developer has endorsed a product. It is that AI assistance is being used in demanding work, with the result exposed to technical scrutiny rather than accepted on appearance.",
+            "For business leaders, that is a constructive position: give capable people good tools, make the boundaries clear and look closely at the outcome. Be ambitious about the opportunity, and specific about the evidence.",
+            "The next question is where this combination could improve our own work—and how we would know."
           ]
         },
         {
-          "heading": "07 / Optimism without the shortcut",
+          "heading": "Sources and context",
           "paragraphs": [
-            "The evolution worth watching is not simply that AI writes more code. It is that capable professionals can incorporate it into more demanding work. That opens a serious opportunity to expand what teams can attempt, while making the quality of direction and verification more important.",
-            "For me, the right response is neither embarrassment about using AI nor blind faith in it. It is curiosity with standards: try the tool, inspect the work, measure the outcome and keep the responsibility visible.",
-            "The future of productivity is not expertise versus AI. It is finding where expertise and AI make each other more useful."
-          ]
-        },
-        {
-          "heading": "08 / Reading behind this note",
-          "paragraphs": [
-            "The Punto Informatico report prompted this article. Technical details were checked against Torvalds’s own repository write-up, available through a Linux source mirror. The wider workplace implications are my interpretation, not claims made by Torvalds."
+            "The Punto Informatico report prompted this article. The technical account is based on Torvalds’s repository write-up, read through a Linux source mirror. The workplace and HR implications are my interpretation."
           ],
           "source": "punto-torvalds"
         }
       ],
-      "readingMinutes": 6
+      "readingMinutes": 5
     }
   ]
 }
@@ -1309,7 +1333,7 @@
   }
   function library(){
     const terms=state.query.trim().toLowerCase().split(/\s+/).filter(Boolean);
-    const matches=notes.filter(n=>(state.topic==='all'||n.topic===state.topic)&&terms.every(term=>[n.title,n.deck,n.topic,n.evidence,n.perspective,n.action,n.watch,...(n.intro||[]),JSON.stringify(n.sections||[])].join(' ').toLowerCase().includes(term))).sort((a,b)=>Number(!!b.featured)-Number(!!a.featured)||(a.featured&&b.featured?newestFirst(a,b):0));
+    const matches=notes.filter(n=>(state.topic==='all'||n.topic===state.topic)&&terms.every(term=>[n.title,n.deck,n.topic,n.opening,n.evidence,n.perspective,n.action,n.watch,...(n.intro||[]),JSON.stringify(n.sections||[])].join(' ').toLowerCase().includes(term))).sort((a,b)=>Number(!!b.featured)-Number(!!a.featured)||(a.featured&&b.featured?newestFirst(a,b):0));
     const pages=Math.max(1,Math.ceil(matches.length/6));state.index=Math.min(state.index,pages-1);
     const start=state.index*6;const shown=matches.slice(start,start+6);
     grid.innerHTML=shown.map(n=>`<button class="ox-library-card cursor-interaction" data-article="${n.id}"><span class="ox-card-meta"><span>${escape(n.topic)}${n.sections?' · Deep dive':''}</span><span>${String(notes.indexOf(n)+1).padStart(2,'0')} / ${notes.length}</span></span><h2>${escape(n.title)}</h2><p>${escape(n.deck)}</p><span class="ox-note-bottom">Read field note <span>↗</span></span></button>`).join('');
@@ -1328,12 +1352,12 @@
   function longForm(n){
     const paragraphs=ps=>(ps||[]).map(p=>`<p>${escape(p)}</p>`).join('');
     const cards=(cs,pattern=false)=>`<div class="${pattern?'ox-service-patterns':'ox-research-cards'}">${cs.map((c,i)=>`<div class="ox-research-card">${pattern?`<span class="ox-pattern-number">0${i+1}</span>`:''}<h3>${escape(c.title)}</h3><p>${escape(c.text)}</p>${c.source?sourceLink(c.source):''}</div>`).join('')}</div>`;
-    return `<p class="ox-long-meta">DEEP DIVE · ${n.readingMinutes} MIN READ · 13 OCTOBER 2026</p>${paragraphs(n.intro)}<div class="ox-evidence"><h2>READING THIS NOTE</h2><p>${escape(n.evidence)}</p>${sourceLink(n.source)}</div>${n.sections.map(sec=>`<section class="ox-long-section"><h2>${escape(sec.heading)}</h2>${paragraphs(sec.paragraphs)}${sec.cards?cards(sec.cards):''}${sec.patterns?cards(sec.patterns,true):''}${sec.items?`<ul>${sec.items.map(item=>`<li>${escape(item)}</li>`).join('')}</ul>`:''}${sec.source?sourceLink(sec.source):''}${paragraphs(sec.after)}</section>`).join('')}`;
+    return `<p class="ox-long-meta">DEEP DIVE · ${n.readingMinutes} MIN READ · 13 OCTOBER 2026</p>${paragraphs(n.intro)}${n.sections.map(sec=>`<section class="ox-long-section"><h2>${escape(sec.heading)}</h2>${paragraphs(sec.paragraphs)}${sec.cards?cards(sec.cards):''}${sec.patterns?cards(sec.patterns,true):''}${sec.items?`<ul>${sec.items.map(item=>`<li>${escape(item)}</li>`).join('')}</ul>`:''}${sec.source?sourceLink(sec.source):''}${paragraphs(sec.after)}</section>`).join('')}<details class="ox-editorial-source"><summary>Research context and limitations</summary><p>${escape(n.evidence)}</p>${sourceLink(n.source)}</details>`;
   }
   function article(){
     const n=byId.get(state.article);if(!n)return;
     const src=data.sources[n.source];
-    reader.innerHTML=`<p class="ox-eyebrow">FIELD NOTE ${String(notes.indexOf(n)+1).padStart(2,'0')} / ${escape(n.topic.toUpperCase())}</p><h1>${escape(n.title)}</h1><p class="ox-deck">${escape(n.deck)}</p>${n.sections?longForm(n):`<div class="ox-evidence"><h2>THE EVIDENCE</h2><p>${escape(n.evidence)}</p><a class="ox-source" href="${escape(src.url)}" target="_blank" rel="noopener noreferrer">${escape(src.title)} ↗</a><p class="ox-source-year">${escape(src.year)}</p></div><h2>The leadership implication</h2><p>${escape(n.perspective)}</p><h2>Try this in practice</h2><p>${escape(n.action)}</p><h2>Watch for</h2><p>${escape(n.watch)}</p>`}<section class="ox-related" aria-label="Connected field notes"><h2>Follow the thread</h2>${n.related.map(id=>{const r=byId.get(id);return `<button class="cursor-interaction" data-article="${id}"><span><small>${escape(r.topic)}</small>${escape(r.title)}</span><span aria-hidden="true">→</span></button>`;}).join('')}</section><p class="ox-reader-meta">Research-led perspectives · evidence and practical proposals kept distinct.<br>Source checked 13 October 2026. Not a personal case study or legal advice.</p>`;
+    reader.innerHTML=`<p class="ox-eyebrow">FIELD NOTE ${String(notes.indexOf(n)+1).padStart(2,'0')} / ${escape(n.topic.toUpperCase())}</p><h1>${escape(n.title)}</h1><p class="ox-deck">${escape(n.deck)}</p>${n.sections?longForm(n):`<p>${escape(n.opening)}</p><h2>${escape(n.perspectiveHeading)}</h2><p>${escape(n.perspective)}</p><h2>${escape(n.actionHeading)}</h2><p>${escape(n.action)}</p><p>${escape(n.watch)}</p><details class="ox-editorial-source"><summary>Research behind this note</summary><p>${escape(n.evidence)}</p>${sourceLink(n.source)}</details>`}<section class="ox-related" aria-label="Connected field notes"><h2>Follow the thread</h2>${n.related.map(id=>{const r=byId.get(id);return `<button class="cursor-interaction" data-article="${id}"><span><small>${escape(r.topic)}</small>${escape(r.title)}</span><span aria-hidden="true">→</span></button>`;}).join('')}</section><p class="ox-reader-meta">Research-led perspectives · evidence and practical proposals kept distinct.<br>Source checked 13 October 2026. Not a personal case study or legal advice.</p>`;
   }
   function render(){
     appearance();library();
