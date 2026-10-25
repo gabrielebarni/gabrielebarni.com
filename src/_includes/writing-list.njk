@@ -1,0 +1,58 @@
+{%- set essays = [] -%}{%- set shorts = [] -%}
+{%- for n in collections.notes -%}
+{%- if n.data.featured -%}{%- set essays = (essays.push(n), essays) -%}{%- else -%}{%- set shorts = (shorts.push(n), shorts) -%}{%- endif -%}
+{%- endfor -%}
+<div class="wrap"><div class="read" style="padding-top:3.5rem">
+<h1>{{ tagTitle or "Writing" }}</h1>
+<p class="lede">{{ tagLede or "Notes on people, work and AI. Short, with a point of view and sources included." }}</p>
+<ul class="filters" aria-label="Topics">
+<li><a href="/writing/"{% if not tag %} aria-current="page"{% endif %}>All</a></li>
+{%- for t in collections.noteTags %}
+<li><a href="/writing/tags/{{ t }}/"{% if tag == t %} aria-current="page"{% endif %}>{{ t | tagLabel }}</a></li>
+{%- endfor %}
+</ul>
+{%- if not tag %}
+<div class="search" role="search" id="search" hidden>
+<label for="q">Search the writing. Runs in your browser; nothing is sent anywhere.</label>
+<input id="q" type="search" placeholder="e.g. onboarding, agents, pilot" autocomplete="off">
+<p id="search-status" class="search-hint" aria-live="polite"></p>
+<div id="search-results"></div>
+</div>
+{%- endif %}
+<div id="listing">
+{%- macro row(n) %}
+<div class="row"><time datetime="{{ n.date | isoDate }}">{{ n.date | readableDate }}</time><div><h3><a href="{{ n.url }}">{{ n.data.title }}</a></h3><p>{{ n.data.summary }}</p><p class="meta">{{ (n.data.tags | reject("equalto","notes") | first) | tagLabel }} · {{ n.data.readingMinutes }} min read</p></div></div>
+{%- endmacro %}
+{%- if not tag %}
+<h2 class="year">Essays</h2>
+{%- for n in essays %}{{ row(n) }}{% endfor %}
+<h2 class="year">Short notes</h2>
+{%- for n in shorts %}{{ row(n) }}{% endfor %}
+{%- else %}
+<h2 class="year">{{ tag | tagLabel }}</h2>
+{%- for n in collections.notes %}{% if tag in n.data.tags %}{{ row(n) }}{% endif %}{% endfor %}
+{%- endif %}
+</div>
+</div></div>
+{%- if not tag %}
+<script type="module">
+// Progressive enhancement: Pagefind index built at deploy time, served from this site.
+const box = document.getElementById("search"), q = document.getElementById("q");
+const out = document.getElementById("search-results"), status = document.getElementById("search-status");
+const listing = document.getElementById("listing");
+box.hidden = false;
+let pf, t;
+const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+q.addEventListener("input", () => { clearTimeout(t); t = setTimeout(run, 150); });
+async function run() {
+  const term = q.value.trim();
+  if (!term) { out.innerHTML = ""; status.textContent = ""; listing.hidden = false; return; }
+  pf ??= await import("/pagefind/pagefind.js");
+  const res = await pf.search(term);
+  const data = await Promise.all(res.results.slice(0, 10).map((r) => r.data()));
+  listing.hidden = true;
+  status.textContent = res.results.length ? `${res.results.length} result${res.results.length > 1 ? "s" : ""}` : "No results.";
+  out.innerHTML = data.map((d) => `<div class="row"><time>${esc(d.filters?.topic?.[0] || "Note")}</time><div><h3><a href="${esc(d.url)}">${esc(d.meta.title)}</a></h3><p>${d.excerpt}</p></div></div>`).join("");
+}
+</script>
+{%- endif %}

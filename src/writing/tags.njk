@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.noteTags
+  size: 1
+  alias: tag
+permalink: "/writing/tags/{{ tag }}/"
+eleventyComputed:
+  title: "{{ tag | tagLabel }}"
+  tagTitle: "{{ tag | tagLabel }}"
+  tagLede: "Notes on {{ tag | tagLabel | lower }}."
+  description: "Gabriele Barni’s notes on {{ tag | tagLabel | lower }}."
+---
+{% include "writing-list.njk" %}
