@@ -9,7 +9,7 @@
     "start": "eleventy --serve",
     "extract": "node scripts/extract-notes.mjs",
     "import:kreus": "node scripts/import-wording.mjs",
-    "check:links": "linkinator _site --recurse --skip \"^(?!http://localhost)\" --server-root _site"
+    "check:links": "linkinator . --server-root _site --recurse --directory-listing --skip \"^https?://(?!localhost)\""
   },
   "engines": {
     "node": ">=20"
