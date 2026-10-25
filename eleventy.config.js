@@ -44,7 +44,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("tagLabel", (slug) => site.tags[slug] || slug);
   /** Resolve legacy note ids (from the old single-page site) to current note URLs. */
   eleventyConfig.addFilter("findByLegacyId", (notes, id) =>
-    (notes || []).find((n) => noteLegacyIds(n).includes(legacyId(id))));
+    (notes || []).find((n) => noteLegacyIds(n).includes(legacyId(id))) ||
+    (notes || []).find((n) => noteSlug(n.page.fileSlug) === String(id)));
 
   eleventyConfig.addCollection("notes", (api) =>
     api.getFilteredByGlob("src/notes/*.md").filter((n) => !n.data.draft).sort((a, b) => b.date - a.date || !!b.data.featured - !!a.data.featured || a.inputPath.localeCompare(b.inputPath)));
