@@ -1,0 +1,24 @@
+{
+  "name": "gabrielebarni.com",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Personal website of Gabriele Barni. A website at the crossroads of technology and humanity.",
+  "type": "module",
+  "scripts": {
+    "build": "eleventy && pagefind --site _site --glob \"writing/**/*.html\"",
+    "start": "eleventy --serve",
+    "extract": "node scripts/extract-notes.mjs",
+    "import:kreus": "node scripts/import-wording.mjs",
+    "check:links": "linkinator _site --recurse --skip \"^(?!http://localhost)\" --server-root _site"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.7",
+    "@11ty/eleventy-plugin-rss": "3.1.0",
+    "axe-core": "4.14.0",
+    "linkinator": "7.6.1",
+    "pagefind": "1.5.2"
+  }
+}
