@@ -133,7 +133,6 @@ figcaption{font-size:.9rem;color:var(--muted);margin-top:.5rem}
 .prose details{font:400 .98rem/1.55 var(--sans);background:var(--surface);border-radius:6px;padding:.8rem 1.1rem;margin:2rem 0}
 .prose details summary{cursor:pointer;font-weight:600}
 .prose details p{margin:.6rem 0 0}
-.disclaimer{font-size:.9rem;color:var(--muted);margin-top:2rem}
 .empty-404{padding:5rem 0}
 .search-hint{font-size:.92rem;color:var(--muted);margin:1rem 0 .4rem}
 .search-hint:empty{display:none}
