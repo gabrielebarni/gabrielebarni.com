@@ -94,9 +94,8 @@ a branch"). The custom domain stays `www.gabrielebarni.com` (`src/static/CNAME`)
 ## License
 
 - Code (templates, CSS, scripts): MIT, see `LICENSE`.
-- Writing (notes and page text): **to be decided by Gabriele.** Suggested:
-  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), so people can
-  quote and reuse the notes with attribution. Until decided, all rights reserved.
+- Writing, page text and images: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/),
+  see `LICENSE-CONTENT`. Reuse is welcome with attribution to Gabriele Barni.
 - IBM Plex fonts: SIL Open Font License 1.1, see `src/assets/fonts/OFL-IBM-Plex.txt`.
 
 Views are my own.

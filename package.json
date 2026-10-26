@@ -2,6 +2,7 @@
   "name": "gabrielebarni.com",
   "version": "2.0.0",
   "private": true,
+  "license": "MIT",
   "description": "Personal website of Gabriele Barni. A website at the crossroads of technology and humanity.",
   "type": "module",
   "scripts": {
