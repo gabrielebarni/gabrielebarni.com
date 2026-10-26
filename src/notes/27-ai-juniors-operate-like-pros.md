@@ -22,8 +22,6 @@ see_also:
 wording: kreus
 ---
 
-*AI gives every junior a patient bench of advisors and gives seniors leverage on their judgment. Whether that builds careers or deletes them is a design choice.*
-
 Most of the conversation about AI and early careers is about loss. Which entry-level jobs disappear first, and how fast. That question is real and I'll come back to it. But I think it hides a bigger one: what happens when someone at the start of their career has access to expertise that used to take years, and a lot of luck, to reach?
 
 ## The junior with three advisors
@@ -73,5 +71,3 @@ Juniors will still exist. If we design it well, their work can become more meani
 The technology doesn't choose between those outcomes. Leaders do.
 
 *This started as a short [post on X](https://x.com/gabrielebarni/status/2114827007309553995). It's a new reflection on a theme I wrote about earlier, in [Starting a career when AI can do the first draft](/writing/starting-a-career-with-ai/), which covers the practical side for people starting out and for employers.*
-
-Views are my own.
