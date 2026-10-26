@@ -15,10 +15,15 @@ layout: layouts/base.njk
 {%- if noteTags.length %}
 <ul class="tags" aria-label="Topics" data-pagefind-ignore>{% for t in noteTags %}<li><a href="/writing/tags/{{ t }}/">{{ t | tagLabel }}</a></li>{% endfor %}</ul>
 {%- endif %}
+{%- set seeAlso = [] -%}
+{%- for id in see_also or [] -%}
+  {%- set r = collections.notes | findByLegacyId(id) -%}
+  {%- if r and r.url != page.url -%}{%- set seeAlso = (seeAlso.push(r), seeAlso) -%}{%- endif -%}
+{%- endfor %}
 {%- set relatedNotes = [] -%}
 {%- for id in related or [] -%}
   {%- set r = collections.notes | findByLegacyId(id) -%}
-  {%- if r and r.url != page.url and (relatedNotes | length) < 4 and not (r in relatedNotes) -%}{%- set relatedNotes = (relatedNotes.push(r), relatedNotes) -%}{%- endif -%}
+  {%- if r and r.url != page.url and (relatedNotes | length) < 4 and not (r in relatedNotes) and not (r in seeAlso) -%}{%- set relatedNotes = (relatedNotes.push(r), relatedNotes) -%}{%- endif -%}
 {%- endfor %}
 {%- if relatedNotes.length %}
 <nav class="next" aria-label="Related notes" data-pagefind-ignore>
@@ -26,6 +31,9 @@ layout: layouts/base.njk
 <a href="{{ r.url }}"><span class="meta">{{ (r.data.tags | reject("equalto","notes") | first) | tagLabel }}</span><span>{{ r.data.title }}</span></a>
 {%- endfor %}
 </nav>
+{%- endif %}
+{%- if seeAlso.length %}
+<p class="meta see-also" data-pagefind-ignore>Related: {% for r in seeAlso %}{% if not loop.first %} · {% endif %}<a href="{{ r.url }}">{{ r.data.title }}</a>{% endfor %}</p>
 {%- endif %}
 <p class="muted" data-pagefind-ignore>Disagree? Tell me on <a href="{{ site.linkedin }}">LinkedIn</a>. That’s where the discussion happens.</p>
 <p class="disclaimer" data-pagefind-ignore>Personal views, not legal advice. Views are my own.</p>

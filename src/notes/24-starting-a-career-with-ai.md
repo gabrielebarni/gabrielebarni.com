@@ -24,6 +24,8 @@ related:
   - learning-loop
   - manager-rehearsal
   - work-design
+see_also:
+  - ai-juniors-operate-like-pros
 wording: kreus
 ---
 

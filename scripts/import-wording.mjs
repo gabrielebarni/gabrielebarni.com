@@ -56,6 +56,8 @@ for (const f of files) {
     ...(ids.some((id) => oldById[id]?.featured) ? { featured: true } : {}),
     ...(related.length ? { related } : {}),
     ...(fm.date_source ? { date_source: fm.date_source } : {}),
+    // Kreus's hand-picked cross-links (NN-slug or slug), shown as a small "Related" line.
+    ...(fm.related?.length ? { see_also: [].concat(fm.related).map((s) => String(s).replace(/^\d+-/, "")) } : {}),
     wording: "kreus",
   };
   writeFileSync(`src/notes/${f}`, "---\n" + dump(out) + "---\n\n" + body.trim() + "\n");
