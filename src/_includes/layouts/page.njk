@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
-<div class="wrap"><div class="read article">
+<div class="wrap"><div class="read article" data-pagefind-body data-pagefind-meta="kind:{{ title }}">
 {%- if not hideTitle %}<h1>{{ title }}</h1>{% endif %}
 {%- if lede %}<p class="lede">{{ lede }}</p>{% endif %}
 <div class="prose">
