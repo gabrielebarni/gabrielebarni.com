@@ -1,5 +1,5 @@
 import { readFileSync } from "node:fs";
-import { RenderPlugin } from "@11ty/eleventy";
+import { RenderPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import site from "./src/_data/site.js";
 
@@ -20,6 +20,8 @@ const slugify = (s) =>
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(RenderPlugin);
+  // Lets the site build under a sub-path (e.g. --pathprefix=/preview/); a no-op at "/".
+  eleventyConfig.addPlugin(HtmlBasePlugin);
   // Curly quotes and dashes in Markdown text; raw HTML is left alone.
   eleventyConfig.amendLibrary("md", (md) => md.set({ typographer: true }));
   eleventyConfig.ignores.add("src/fragments/**");
