@@ -70,7 +70,8 @@ if (existsSync(`${dir}/home-intro.md`)) {
 // About: drop the leading H1 (the layout renders the title).
 if (existsSync(`${dir}/about.md`)) {
   const [fm, body] = split(readFileSync(`${dir}/about.md`, "utf8"));
-  const text = body.replace(/^\s*# .*\n+/, "").replace(/\*Audentes Fortuna iuvat\.\*/, '<i lang="la">Audentes Fortuna iuvat.</i>');
+  // The footer already carries the content license, so drop a license sentence from the body.
+  const text = body.replace(/^\s*# .*\n+/, "").replace(/ ?[^.\n]*\blicensed\b[^\n]*CC BY[^\n]*$/gm, "").replace(/\*Audentes Fortuna iuvat\.\*/, '<i lang="la">Audentes Fortuna iuvat.</i>');
   const out = { title: fm.title || "About", description: "Gabriele Barni: Senior Director HR at Lonza, from Milan, based near Basel. On people, work and AI." };
   writeFileSync("src/pages/about.md", "---\n" + dump(out) + "---\n\n" + curly(text.trim()) + "\n");
 }

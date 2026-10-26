@@ -3,13 +3,15 @@ title: About
 description: "Gabriele Barni: Senior Director HR at Lonza, from Milan, based near Basel. On people, work and AI."
 ---
 
-I’m Gabriele Barni, Senior Director HR and Global HR Business Partner for Lonza’s Integrated Biologics business. Before that I spent about twelve years in senior international HR roles at Thermo Fisher Scientific.
+I started in IT and cybersecurity. My first jobs were in software, in Milan and then with an open-source company in California. At Pfizer in Berlin I worked as an IT business analyst, bringing HR systems together after an acquisition. That’s where technology and HR met for me, and I’ve worked at that crossing ever since.
 
-My work sits close to the business. I care about clear accountability, fair decisions and HR that shows up in results. I bring the same lens to AI: what actually changes in the work, who owns the outcome, and what people need to make the move.
+In 2013 I moved fully into HR. Since then I’ve worked in Italy, the UK, the US, Germany, the Netherlands and Switzerland, and covered employee relations across more than 26 countries in Europe, the Middle East and Africa. Every country brings its own rules, its own culture of work and its own sense of what a fair decision looks like. What holds across all of them: people decisions work when they’re clear, owned and explained.
 
-I’m also a hands-on tech enthusiast. I run Linux, work with Docker and Python, experiment with open models on Hugging Face and multi-agent setups, and help grow a Meshtastic network across Switzerland.
+Today I’m in Basel, responsible for HR across several sites and functions in Lonza’s Integrated Biologics business, after about twelve years with Patheon and Thermo Fisher Scientific.
 
-I’m from Milan and live near Basel. I work in English and Italian, use German at work and get by in Spanish.
+I never left the tech side. I run Linux and build with Docker and Python, experiment with open models and multi-agent setups, and help grow a Meshtastic mesh network. It keeps me honest about what AI can and can’t do in real work.
+
+I’m from Milan, married with two children, and live near Basel. I work in English and Italian, use German every day and get by in Spanish.
 
 <i lang="la">Audentes Fortuna iuvat.</i> Fortune favors the bold.
 
