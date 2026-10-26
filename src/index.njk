@@ -31,10 +31,11 @@ permalink: /
 (function () {
   var h = location.hash.replace(/^#\/?/, "");
   if (!h) return;
+  var base = "{{ '/' | htmlBaseUrl }}"; // "/" or a path prefix such as "/preview/"
   var notes = {{ collections.legacyRedirects | json | safe }};
   var pages = { home: null, notes: "/writing/", projects: "/lab/", about: "/about/" };
   var m = h.match(/^notes\/([a-z0-9-]+)/);
   var to = m ? (notes[m[1]] || "/writing/") : pages[h];
-  if (to) location.replace(to);
+  if (to) location.replace(base + to.replace(/^\//, ""));
 })();
 </script>
