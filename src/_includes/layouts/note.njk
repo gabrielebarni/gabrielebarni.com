@@ -4,7 +4,7 @@ layout: layouts/base.njk
 {%- set noteTags = tags | reject("equalto", "notes") -%}
 <article class="wrap" data-pagefind-body><div class="read article">
 <header>
-<p class="meta"><a href="/writing/" data-pagefind-ignore>Writing</a>{% for t in noteTags %} · <span data-pagefind-filter="topic">{{ t | tagLabel }}</span>{% endfor %}</p>
+<p class="meta" data-pagefind-ignore><a href="/writing/">Writing</a>{% for t in noteTags %} · <span data-pagefind-filter="topic">{{ t | tagLabel }}</span>{% endfor %}</p>
 <h1 data-pagefind-meta="title">{{ title }}</h1>
 {%- if summary %}<p class="lede">{{ summary }}</p>{% endif %}
 <p class="meta"><time datetime="{{ page.date | isoDate }}">{{ page.date | longDate }}</time> · {{ readingMinutes }} min read</p>
