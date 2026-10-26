@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  
+  <title>Gabriele Barni — Writing</title>
+  <subtitle>A website at the crossroads of technology and humanity.</subtitle>
+  <link href="https://www.gabrielebarni.com/preview/feed.xml" rel="self" />
+  <link href="https://www.gabrielebarni.com/preview/" />
+  <updated>2026-10-18T00:00:00Z</updated>
+  <id>https://www.gabrielebarni.com/preview/</id>
+  <author>
+    <name>Gabriele Barni</name>
+  </author>
+  <entry>
+    <title>Abundance won’t distribute itself</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/abundance-future-of-work/" />
+    <updated>2026-10-18T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/abundance-future-of-work/</id>
+    <summary>Whatever happens to Musk’s 2036 prediction, how AI-driven abundance reaches people and work depends on decisions leaders make.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Musk says money won’t matter by 2036. Whatever you think of the date, the decisions about work are still ours.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On a slow Peloton ride I listened to Elon Musk’s long interview with The Economist. One line stayed with me: “Money won’t matter in 2036.”&lt;/p&gt;
+&lt;p&gt;I’m not going to defend the date. The question underneath is the interesting one: if AI makes expertise cheap and robotics scales what we can produce, what happens to work?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;My view: scarcity shifts. It doesn’t vanish.&lt;/strong&gt; Cheaper intelligence doesn’t make energy, materials, good locations or human attention unlimited. Producing more doesn’t settle who owns the assets or who gets access to the output. Smith and Ricardo’s questions about production and distribution still apply, even if some of their assumptions don’t.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For most people, a job is how economic output becomes income.&lt;/strong&gt; If some work needs less human labor, how do those people share in the value? Lower prices, new work, wider ownership or income transfers could all help. None of them follows automatically from a better model. A promise of future abundance doesn’t pay the bills during a career transition.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Work is also more than income.&lt;/strong&gt; It gives structure, relationships, recognition and a place to contribute. More freedom could be very positive. Losing a valued role without a credible next step is a different experience.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Inside a company, the same question shows up at a smaller scale.&lt;/strong&gt; When a team can deliver the same result with less effort, someone has to decide how to use that capacity: better service, growth, learning or a lighter workload. That’s a leadership decision. The technology won’t make it for us.&lt;/p&gt;
+&lt;p&gt;What I’d put on the leadership agenda now, whatever you think of 2036:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Start with tasks and bottlenecks before deciding which jobs change.&lt;/li&gt;
+&lt;li&gt;Agree upfront how productivity gains will be used, including the investment to move people into new work.&lt;/li&gt;
+&lt;li&gt;Protect entry-level routes and supervised learning.&lt;/li&gt;
+&lt;li&gt;Say what’s changing, what’s still uncertain and when decisions will be reviewed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What stayed with me after the ride wasn’t a world without money. It was the idea that human labor may stop being the main constraint on what we can achieve. Whether that’s good news for most people depends on the organizations and institutions we build around it.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sources: &lt;a href=&quot;https://www.youtube.com/watch?v=XuoqKYxDHVc&quot;&gt;The Economist · The full-length interview with Elon Musk&lt;/a&gt;; &lt;a href=&quot;https://www.linkedin.com/posts/the-economist_elon-musk-money-wont-matter-in-10-years-activity-7486721951076421632-V4k6&quot;&gt;The Economist · Musk’s prediction about money in 2036&lt;/a&gt;. The workplace implications are my interpretation of a possible scenario, not a forecast.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>What the next HR service model should deliver</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/next-hr-service-model/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/next-hr-service-model/</id>
+    <summary>Design the next HR service model around the services employees need, one owner per journey and a 90-day pilot that earns the next decision.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;AI is changing the delivery options. The harder work is agreeing the service, who owns it and where any freed capacity goes.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Take an internal transfer. The manager wants a confirmed date, the employee wants to understand what changes, and several teams each update their part. Every team can finish on time and the move can still be late.&lt;/p&gt;
+&lt;p&gt;That’s the problem I’d put at the center of any HR operating-model discussion. Adding AI to individual steps won’t close an accountability gap between them. Carlos Larracilla’s LinkedIn post raised a good question about how AI will reshape HR’s contribution. My view: first be specific about the services HR intends to deliver. Different work needs different arrangements.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The research offers choices, not a blueprint.&lt;/strong&gt; McKinsey describes a more flexible function with stronger strategic, scientific and technological capabilities. Bain links automation and augmentation to reallocating time and redefining responsibilities across HR. Gartner’s public abstract calls for operating-model transformation beyond isolated pilots. None of it tells a given organization which service must improve, which capabilities to build or what to do with any freed capacity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Design around the kind of help people need.&lt;/strong&gt; I see four patterns, often within one journey:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Clear information:&lt;/strong&gt; approved guidance that’s easy to find, maintained, and backed by a route to help when the situation is unclear.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Repeatable transactions:&lt;/strong&gt; controlled workflows with defined permissions, approval points and error correction, and confirmation to the person who asked.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cases that need judgment:&lt;/strong&gt; a named professional who understands the circumstances and takes responsibility. AI can help them prepare.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strategic business work:&lt;/strong&gt; HRBPs, specialists and leaders on a defined organizational question, with the decision and its trade-offs staying with the accountable leader.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The test is the handoff. Can the service move a request to the right level without making the employee start again?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Give each journey one owner.&lt;/strong&gt; Someone confirms the transfer can happen, sees the dependencies and has an agreed route to resolve conflicts between teams. A coordinator who can only send reminders will struggle when priorities compete. The technology needs owners too. Knowledge, data quality, access controls, testing and incident response all need capacity after launch and belong in the budget from day one.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Agree what the capacity is for.&lt;/strong&gt; A shorter backlog, more access to specialists and better workforce planning are different commitments. Small time savings spread across many people don’t automatically become a new capability. Work has to be reorganized and skills built. Count the time shifted to employees, managers and other functions, or HR reports an improvement while the organization absorbs more work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use 90 days to earn the next decision.&lt;/strong&gt; Pick a problem important enough to matter and narrow enough to evaluate, with a named business owner and access to the people doing the work.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Month one:&lt;/strong&gt; map the journey with users and delivery teams, agree the owner and baseline, repair the source knowledge and set the limits of automation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Month two:&lt;/strong&gt; test with synthetic cases, then run a bounded live pilot. Track review effort, errors and corrections next to speed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Month three:&lt;/strong&gt; compare complete outcomes with the baseline, including maintenance and oversight. Extend, change or stop.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The timetable is a planning aid, not a launch commitment. Unresolved data, controls or service risks are reasons to pause.&lt;/p&gt;
+&lt;p&gt;A leadership team doesn’t need to settle HR’s future shape today. It does need to agree what the business requires from HR, who owns delivery and how improvement will be measured. Start there. The structure and technology choices get easier once the service commitment is clear.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sources: &lt;a href=&quot;https://www.linkedin.com/feed/update/urn:li:activity:7515411448320319488/&quot;&gt;Carlos Larracilla · LinkedIn discussion on future HR operating models&lt;/a&gt; (prompt for this note); &lt;a href=&quot;https://www.mckinsey.com/capabilities/people-and-organization/our-insights/a-new-operating-model-for-people-management-more-personal-more-tech-more-human/&quot;&gt;McKinsey · A new operating model for people management: More personal, more tech, more human&lt;/a&gt;; &lt;a href=&quot;https://www.bain.com/insights/better-faster-leaner-reinventing-hr-with-generative-ai/&quot;&gt;Bain · Better, Faster, Leaner: Reinventing HR with Generative AI&lt;/a&gt;; &lt;a href=&quot;https://www.gartner.com/en/documents/7425462&quot;&gt;Gartner · Preparing the Transformation to an AI-Infused HR Operating Model&lt;/a&gt;; &lt;a href=&quot;https://www.cipd.org/uk/views-and-insights/thought-leadership/insight/transforming-operating-models&quot;&gt;CIPD · Transforming HR operating models&lt;/a&gt;. The service patterns and 90-day plan are my synthesis, not a forecast or a validated formula.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Starting a career when AI can do the first draft</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/starting-a-career-with-ai/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/starting-a-career-with-ai/</id>
+    <summary>New entrants should use AI seriously and make their learning visible, while employers protect a real route to expertise.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;New entrants can attempt more, sooner. Employers still owe them a real route to expertise.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A candidate arrives at an interview with a dashboard, a research brief and a working prototype, all prepared with AI. The interviewer changes one assumption and asks what happens next. That’s the moment that counts.&lt;/p&gt;
+&lt;p&gt;My advice to people starting out: use the tools seriously. Explore, build and attempt work that used to be out of reach. Be clear about what you understand and what you still need to learn.&lt;/p&gt;
+&lt;p&gt;Employers carry the other half. We can’t raise the expectations of junior roles and quietly remove the support that helps people meet them.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Read the skills signal carefully.&lt;/strong&gt; McKinsey’s HR Monitor exhibit shows rising top-five future-skill mentions for digital literacy, problem-solving and creativity (15, 9 and 6 percentage points) between 2025 and 2026. These are reported priorities, not hiring data, and country coverage changed between the surveys. My reading: tool fluency has to come with the ability to frame a problem, weigh options and explain a decision.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Finishing a task and learning it are different outcomes.&lt;/strong&gt; A finished output can hide a gap. Does the person know why the calculation works, which assumptions matter and what would make the answer unreliable? Shen and Tamkin’s experiments with developers learning an unfamiliar coding library found weaker learning with AI assistance and no significant average efficiency gain, though some engaged ways of using it preserved learning. It’s one bounded coding study. The customer-support research by Brynjolfsson and colleagues also reports learning, with uneven productivity effects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Some routine work should go. Some of it is where judgment forms.&lt;/strong&gt; Separate the two before changing an entry-level role. The aim is real practice and proper feedback, not manual effort for its own sake.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For people starting out, I’d suggest one small project:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Understand the work:&lt;/strong&gt; map a role’s tasks, language and stakeholders. Use AI to surface questions, then verify the important answers with documentation and practitioners.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build and check:&lt;/strong&gt; create a narrow prototype with public or synthetic data. Test awkward inputs and fix a real weakness before adding features.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Find the weaknesses:&lt;/strong&gt; ask for counterexamples and test them. Agreement from another model doesn’t replace checking a source or running a reproducible test.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Explain it to a person:&lt;/strong&gt; describe the result, its limits and the next decision. Then try a variation with less assistance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Keep a log of what AI contributed, what you checked and what changed after review. Label simulated work as simulated, and never present AI-generated experience as work you performed. Use non-sensitive material, and at work follow the approved tools and data rules. This is a development exercise, not unpaid production work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For employers:&lt;/strong&gt; write role specs that state both the contribution expected and the learning you’ll support, and plan the review time. Build assignments where a newcomer attempts a case, compares approaches with an experienced colleague and handles a variation with less help. Candidates should ask which tools are approved, who reviews a new starter’s work and what they should handle independently after three months. Selection shouldn’t mistake money, time or networks for potential.&lt;/p&gt;
+&lt;p&gt;AI can help a newcomer contribute sooner. It can’t supply every relationship, the business context or the experience of owning a result that went wrong. Bring energy, evidence and a willingness to be corrected. Employers need to meet that with the chance to learn the job properly.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sources: &lt;a href=&quot;https://www.mckinsey.com/capabilities/people-and-organization/our-insights/building-expertise-in-the-age-of-ai-who-trains-the-next-generation&quot;&gt;McKinsey · Building expertise in the age of AI: Who trains the next generation?&lt;/a&gt;; &lt;a href=&quot;https://arxiv.org/abs/2601.20245v2&quot;&gt;Shen &amp;amp; Tamkin · How AI Impacts Skill Formation&lt;/a&gt;; &lt;a href=&quot;https://arxiv.org/abs/2304.11771v2&quot;&gt;Brynjolfsson, Li &amp;amp; Raymond · Generative AI at Work&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Experts should use AI too. Linus Torvalds does.</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/torvalds-ai-expertise/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/torvalds-ai-expertise/</id>
+    <summary>Torvalds using AI on kernel work shows that expertise is what makes AI useful, with direct implications for how HR runs AI programs.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;A top engineer using AI on hard work, and checking every result, is the model to copy.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Linus Torvalds is using Claude Code to help develop Linux kernel patches. That should retire the idea that AI assistance is mainly for beginners.&lt;/p&gt;
+&lt;p&gt;In his 10 October 2026 write-up, he credits the tool with code, test programs, review help and the first draft of the explanation, all under his direction. The patch targets a bottleneck when several threads make small reads from the same cached file. In his laptop test, the cost per read fell roughly fourfold. He’s clear that it’s experimental, with open issues still to fix.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The key point: expertise is what makes the tool useful.&lt;/strong&gt; Torvalds can direct and challenge the output because he understands the problem. Someone still has to choose the problem, define what must not break and judge whether the evidence holds. That job doesn’t go away.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The tools are also moving from answering to doing.&lt;/strong&gt; Claude Code can read a codebase, edit files and run commands. So the questions become operational: what is it allowed to change, what evidence do we need, and who signs off?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For HR, I’d draw four conclusions:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Include experienced people in AI programs. They’re the ones who can tell a good demo from a reliable service.&lt;/li&gt;
+&lt;li&gt;Don’t mandate AI for everything. Ask for an informed choice and evidence of value.&lt;/li&gt;
+&lt;li&gt;Measure the full effort to an accepted result (preparation, review, testing, fixes), not the volume generated.&lt;/li&gt;
+&lt;li&gt;Treat junior colleagues differently. They’re still building the judgment experts bring to the tool.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A faster benchmark isn’t a measured productivity gain, and an experimental patch isn’t a shipped feature. The right stance for leaders is simple: give capable people good tools, set clear boundaries and look hard at the outcome. Then ask where the same combination could improve an organization’s own work, and how you’d know.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Prompted by &lt;a href=&quot;https://www.punto-informatico.it/linus-torvalds-usa-claude-code-ottimizzare-linux-svolta/&quot;&gt;Punto Informatico · Linus Torvalds usa Claude Code per ottimizzare Linux, la svolta&lt;/a&gt;. Technical details from &lt;a href=&quot;https://mirrors.hust.edu.cn/git/linux.git/commit/?id=4c0f3697118eb3a708ea79175f7f07c43339bfab&quot;&gt;Linus Torvalds · Page-cache patch write-up (Linux repository mirror)&lt;/a&gt;; tool capabilities from &lt;a href=&quot;https://code.claude.com/docs/en/overview&quot;&gt;Anthropic · Claude Code overview&lt;/a&gt;. The HR reading is mine.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Every employee move needs one owner</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/one-owner-per-journey/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/one-owner-per-journey/</id>
+    <summary>Start an HR redesign with the service and give each employee journey one accountable owner.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Agree the service and who owns it before you redraw the org chart.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;An HR transformation can spend months on structure and still leave a manager asking the same question: who can help me get this done?&lt;/p&gt;
+&lt;p&gt;Take a colleague moving country. HR has issued the documents, payroll has opened a case, IT has the request. Everyone has done their part, and the employee still can’t confirm a start date.&lt;/p&gt;
+&lt;p&gt;My view: start the redesign with the service, and give each journey one owner. Agree a few commitments first. Simple requests are easy to complete, difficult cases reach the right expert, and leaders get real support with organizational change. Then decide how shared services, HRBPs and specialist teams deliver them. There’s no universally right structure. It has to answer a business question.&lt;/p&gt;
+&lt;p&gt;The journey owner doesn’t manage every specialist. They need visibility of the whole move, the authority to resolve competing priorities and a fast route to a decision when the process stalls.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; map one transfer from the first request to the employee’s first productive day. Agree what information passes at each handoff, who receives it and when a delay gets escalated. Give the employee one view of progress.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; if the owner can only chase other teams, we’ve added a coordinator and left the gap open. Also check where the effort lands. A saving in HR can simply become more admin for line managers.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sources: &lt;a href=&quot;https://www.cipd.org/uk/views-and-insights/thought-leadership/insight/transforming-operating-models&quot;&gt;CIPD · Transforming HR operating models&lt;/a&gt;; &lt;a href=&quot;https://www.gov.uk/service-manual/service-standard/point-2-solve-a-whole-problem&quot;&gt;GOV.UK · Solve a whole problem for users&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>A policy bot is only as good as the policy behind it</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/policy-before-chatbot/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/policy-before-chatbot/</id>
+    <summary>Reliable AI answers in HR depend on owned, current policy knowledge and an assistant that knows when to stop.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Reliable HR answers start with knowledge someone owns.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A manager asks a simple question about leave. The answer depends on the country, the employee group and which version of the policy the assistant finds. The technology can respond perfectly to the wrong document.&lt;/p&gt;
+&lt;p&gt;Treat knowledge quality as part of service delivery, with an owner and ongoing capacity. HR needs to know which source is current, where local exceptions apply and who can approve a correction. A better interface won’t fix contradictory guidance.&lt;/p&gt;
+&lt;p&gt;A trustworthy answer names the approved document, its effective date and the population it covers. A link helps, but the answer must actually reflect the source. When essential context is missing, the assistant should ask a follow-up question. It shouldn’t guess an employee’s location, contract status or eligibility.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; take the twenty questions the service team gets most often. Agree a short approved answer for each, with applicability, source policy, owner and review date, and make it easy for agents to flag an answer that no longer works. Then test the assistant on outdated guidance, contradictory documents and questions with no approved answer. Does it know when to stop? Repeat the tests whenever the policy or the model changes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; more articles don’t mean better support. After a policy change, check that the right answer reaches every channel.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sources: &lt;a href=&quot;https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide&quot;&gt;Consortium for Service Innovation · KCS v6 Practices Guide&lt;/a&gt;; &lt;a href=&quot;https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence&quot;&gt;NIST · Generative AI Profile, AI 600-1&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Make it easy to reach the right person</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/reach-the-right-person/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/reach-the-right-person/</id>
+    <summary>Self-service should make HR easier to reach, with a simple route to a specialist when a case turns sensitive.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Self-service should make HR easier to reach, especially when a case turns sensitive.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A routine query can turn serious fast. A missing payment may be a technical fix for payroll and an immediate financial worry for the employee. The service has to recognize both.&lt;/p&gt;
+&lt;p&gt;I support self-service where it helps. But employees shouldn’t have to prove to a chatbot that their problem matters. Clear information, generalist support and specialist expertise should work as one service, with a simple route between them and no need to repeat the whole story.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; agree escalation triggers with the specialists. Run test cases on sensitive concerns and urgent payroll issues. Confirm who receives the case, what context travels with it and when the employee can expect real contact.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; the route only works if the receiving team has capacity. Measure the time to real help, not the speed of transferring a ticket.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.cipd.org/uk/views-and-insights/thought-leadership/insight/transforming-operating-models&quot;&gt;CIPD · Transforming HR operating models&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>A closed ticket isn’t a solved problem</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/closed-ticket/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/closed-ticket/</id>
+    <summary>HR service metrics should show what happened to the employee, not just whether a ticket closed on time.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;A service dashboard should show what happened to the employee.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;An HR team can hit its response target while an employee is still waiting for a correction. The dashboard is green. The experience isn’t.&lt;/p&gt;
+&lt;p&gt;A closure tells you about the process, not the outcome. Was the payment corrected? Did the manager understand the guidance? Did the employee go to another team because the first answer didn’t work? A small sample of real cases makes the numbers far more telling.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; for one service, track elapsed time to resolution, repeat contacts, employee effort and confirmed completion. Review difficult cases with the team every month. Keep complexity and channel visible so comparisons stay fair.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; don’t build a target that rewards avoiding escalation. Some cases need more time and a specialist. That’s part of the service.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.gov.uk/service-manual/service-standard/point-10-define-success-publish-performance-data&quot;&gt;GOV.UK · Define success and publish performance data&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Start AI with the people who answer the questions</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/start-with-the-agents/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/start-with-the-agents/</id>
+    <summary>Test an internal assistant with HR service agents before putting AI in front of every employee.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;An internal HR assistant is a sensible first test before automating for every employee.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Before putting an AI adviser in front of every employee, look at the colleagues already running the service. Where do they lose time: finding the right policy, interpreting an exception, drafting a clear reply?&lt;/p&gt;
+&lt;p&gt;My recommendation is to start there. The assistant helps with search and drafting, and the agent stays responsible for the answer. That gives the organization a bounded way to learn.&lt;/p&gt;
+&lt;p&gt;The evidence is encouraging, not conclusive. A study of 5,172 customer-support agents found uneven gains. Less experienced workers benefited most, while experienced workers saw smaller speed gains and some quality declines. That’s customer support, not HR, so the case has to be proven in HR work itself.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; pick a low-risk queue and set the baseline. During the pilot, review a sample of answers for accuracy, applicability and clarity without knowing which used AI. Count the time spent checking and correcting output.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; look past the average. Experienced agents, new starters and hard case types may see very different results.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://arxiv.org/abs/2304.11771v2&quot;&gt;Brynjolfsson, Li &amp;amp; Raymond · Generative AI at Work&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Authority before access</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/authority-before-access/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/authority-before-access/</id>
+    <summary>Define what an HR agent may change before it gets access, and make sure a human reviewer can actually say no.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Automation needs defined permissions. Oversight needs a reviewer who can actually say no.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Drafting a letter and changing an employee record can look like the same instruction in a chat window. Operationally, they carry very different consequences.&lt;/p&gt;
+&lt;p&gt;Define an agent by its permitted tasks and controls, not as a “digital colleague” with implied boundaries. Reading, proposing and committing a transaction need different permissions. The business owner should be able to explain the difference without pointing everyone to a technical spec.&lt;/p&gt;
+&lt;p&gt;Oversight has the same problem. A workflow can include an approval step and still leave nobody in a position to challenge the recommendation: the reviewer is busy, the rationale is unclear and the process rewards fast acceptance. For an important people decision, I want a named decision-maker who can inspect the evidence, ask questions and pause the process without being treated as an obstacle.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; for a leave-administration use case, list what the agent may read, what it may draft and which actions need approval. Clarify who recommends, decides, pauses and handles a challenge. Test with synthetic cases, including one with a plausible error, and check whether the reviewer catches it and gets it fixed. Log the requested change, the decision and the system result, with a manual fallback.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; the reviewer must see the actual change, not a reassuring summary from the same assistant. Some uses should be narrowed or rejected. An approval step doesn’t make them acceptable.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.nist.gov/itl/ai-risk-management-framework&quot;&gt;NIST · AI Risk Management Framework&lt;/a&gt; (voluntary guidance, not a legal safe harbor)&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Agree what good looks like before the interview</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/structured-hiring/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/structured-hiring/</id>
+    <summary>AI can help prepare interviews, but only a clear, structured hiring brief makes the assessment fair and valid.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;AI can help prepare an interview. It can’t fix an unclear hiring brief.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A hiring team wants stronger candidates, faster decisions and fewer rounds, while the interviewers are still assessing different versions of the job. Adding AI at that point produces more material, not more alignment.&lt;/p&gt;
+&lt;p&gt;Start with the work. What must this person deliver, which capabilities are critical and what evidence would show them? An AI-generated interview guide can support that conversation. It shouldn’t replace it, or dress up a preference formed afterward. Structured, job-related interviews with consistent questions and scoring show stronger rater agreement and validity than loosely structured ones.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; agree three critical competencies and comparable questions. Have interviewers score sample answers independently against clear behavioral criteria, then discuss the differences. Ask a subject-matter expert to review any AI suggestions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; style, accent and confidence shape impressions without proving capability. Keep the assessment job-related, accessible and explicit.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.opm.gov/policy-data-oversight/assessment-and-selection/other-assessment-methods/structured-interviews/&quot;&gt;US OPM · Structured interviews&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Tell candidates where AI is involved</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/candidate-transparency/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/candidate-transparency/</id>
+    <summary>Candidates deserve a specific, accurate explanation of where AI is used in recruiting and who to contact with concerns.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Clear explanations are part of a recruiting process people can trust.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Summarizing a CV, transcribing an interview and helping rank applicants are different activities. Candidates deserve a better explanation than “we use innovative technology.”&lt;/p&gt;
+&lt;p&gt;Explain the purpose of each tool, what information it uses and who to contact with a concern. It’s also an operational test. If the recruiting team can’t describe the process clearly, it isn’t ready to manage it.&lt;/p&gt;
+&lt;p&gt;The UK ICO’s 2024 audits of recruitment tools highlighted fair processing, data minimization and clear explanations to candidates. That’s UK data protection, so check each jurisdiction.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; map the AI-supported steps with recruiting, privacy and employment specialists. Write short, accurate explanations and a contact route that works. Check local requirements before launch.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; only promise human review where the process actually provides it. Warm language can’t make up for an inaccurate commitment.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/11/ico-intervention-into-ai-recruitment-tools-leads-to-better-data-protection-for-job-seekers&quot;&gt;ICO · Findings from AI recruitment audits&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Workforce decisions start with the work</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/work-design/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/work-design/</id>
+    <summary>An AI exposure score can’t tell leaders what a role should deliver; mapping the team’s actual work can.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;An AI exposure score can’t tell a leadership team what a role should deliver.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When leaders ask what AI means for headcount, the reflex is to reach for a forecast. I’d start by asking the team to describe the work and where the current constraints sit.&lt;/p&gt;
+&lt;p&gt;A role combines tasks, relationships, judgment and accountability. Automating a first draft may free time for analysis, or create more review. The business still has to decide what the role delivers, which responsibilities stay and what people need to learn. No exposure index makes those choices. The ILO’s 2025 index measures potential exposure. It doesn’t say an exposed occupation will disappear.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; map one team’s recurring activities. Mark where assistance helps, where controlled automation could fit and where it adds little. Include dependencies, review effort and timing before turning any of it into workforce assumptions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; two people with the same title can do very different work. Never apply a generic score to an individual’s capability or performance.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure&quot;&gt;ILO · A refined index of occupational exposure to GenAI&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>A skills profile needs evidence</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/skills-evidence/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/skills-evidence/</id>
+    <summary>Skills data becomes useful for talent decisions when it is tied to observable evidence of work.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Connect capability to something you can observe.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A system can list hundreds of skills and still leave a leader unsure who could take on a critical assignment. What’s usually missing is evidence, not a finer taxonomy.&lt;/p&gt;
+&lt;p&gt;Keep the real question in view: who can do this work now, who could grow into it and what gives us confidence? Interest, proficiency and willingness to move are all worth knowing, but they’re different information. Blend them into one score and you blur the talent conversation. OECD research finds most workers in AI-exposed occupations won’t need specialist AI-development skills, though their tasks and skill needs may change.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; pick one job family and define a manageable set of capabilities through examples of work. Record the source and date of each piece of evidence. Let employees correct their profile and discuss development with their manager.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; a course completion shows participation. A job title shows a position held. Neither proves the capability a new assignment needs.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.oecd.org/en/publications/artificial-intelligence-and-the-changing-demand-for-skills-in-the-labour-market_88684e36-en.html&quot;&gt;OECD · AI and changing demand for skills&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Train for decisions, then make room to apply them</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/ai-skills-in-real-work/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/ai-skills-in-real-work/</id>
+    <summary>AI literacy means sound decisions in real work, and new skills only stick with time, an assignment and feedback.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;AI skills count when people use them well on the job.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Someone can write an excellent prompt and still put confidential data into the wrong tool or accept an answer that doesn’t apply. That’s a training gap with operational consequences. And a course can be completed while the work stays exactly the same.&lt;/p&gt;
+&lt;p&gt;For HR, I define AI literacy through a few decisions: when to use an approved tool, what information to protect, how to check a result and when to bring in a specialist. Prompting sits inside that. It isn’t the measure.&lt;/p&gt;
+&lt;p&gt;Then connect learning to the team’s next real change in work, and come back to it after the first assignment. What can the person do now? Where do they still need support? Learning teams need to see those changes early, not get a late request to train everyone. CIPD’s 2026 guide recommends reviewing skills frameworks and technology assumptions at least every six months.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; run sessions on everyday situations: an ambiguous policy question, a document summary, an unsupported recommendation. Ask what people would verify, what they’d withhold and whether they’d use AI at all. Then agree one capability, protected practice time and a real assignment with a named reviewer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; attendance is administration, not evidence. Check whether people can explain their decisions afterward. Without time, access and manager support, development is extra work the employee absorbs. That isn’t an investment plan.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.cipd.org/uk/knowledge/guides/ai-skills-planning/&quot;&gt;CIPD · AI skills planning for people professionals&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Internal mobility runs on release conditions</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/internal-mobility/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/internal-mobility/</id>
+    <summary>A talent marketplace only works when leaders agree capacity, time and release conditions for internal moves.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Opportunity depends on workload, manager support and timing.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A colleague is identified for a development assignment. The fit is strong, the employee is keen and the sponsor is ready. Then the current manager can’t release them. The opportunity exists in the system, not in practice.&lt;/p&gt;
+&lt;p&gt;A talent marketplace needs agreements on capacity and priorities. Who covers the current work? How much time can the assignment take? What does the manager gain by developing talent for another team? These are leadership choices. A matching engine can’t settle them.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; pilot a few short assignments with agreed time allocation, release conditions and a learning sponsor. Let people apply, not just be suggested by the system. Review who gets access and which groups keep missing out.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; past assignments reflect past access to opportunity. They’re not a full read of someone’s potential.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.weforum.org/publications/the-future-of-jobs-report-2025/&quot;&gt;World Economic Forum · Future of Jobs Report&lt;/a&gt; (employer expectations, not proof that talent marketplaces work)&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Onboarding is done when the new colleague can contribute</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/onboarding/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/onboarding/</id>
+    <summary>Design onboarding backward from a first real contribution, with the manager owning expectations.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Equipment and access matter. So do priorities, relationships and permission to ask.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The onboarding checklist can be complete while a new starter still doesn’t know what to do first or who to ask. To them it’s one arrival, even if several functions deliver it.&lt;/p&gt;
+&lt;p&gt;HR can connect the preparation without owning every task. The manager still sets expectations, and colleagues still need to make room for questions. AI can support a guide or routine information. It can’t build the working relationship on the manager’s behalf.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; define a sensible first contribution for the role and work backward through the access, knowledge and relationships it requires. After week one, ask the new colleague which obstacles the plan missed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; don’t turn speed into pressure to skip learning. Contribution should grow with clarity, support and the safeguards the role needs.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.gov.uk/service-manual/service-standard/point-2-solve-a-whole-problem&quot;&gt;GOV.UK · Solve a whole problem for users&lt;/a&gt; (applied here as a design proposal, not a measured HR result)&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Ask the team while the decision is still open</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/employee-voice/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/employee-voice/</id>
+    <summary>Involve the people doing the work before AI and workflow decisions are locked, and close the loop afterward.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;People can improve a workflow before they’re asked to adopt it.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A process diagram rarely shows the workarounds that keep a service running. The people doing the job know where the formal process ends and judgment begins.&lt;/p&gt;
+&lt;p&gt;That knowledge matters most before procurement and design are locked. Ask for feedback afterward and people feel invited to endorse a done deal. Be clear about what they can influence, what’s fixed and how their input reaches the decision-makers. OECD surveys in finance and manufacturing across seven countries found training and worker consultation associated with better reported AI outcomes. That’s an association, not proof of cause.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; bring frontline users, managers and relevant employee representatives into the design. Show realistic failures, not just the intended process. Afterward, explain what changed, what didn’t and why.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; enthusiastic volunteers aren’t the whole workforce. Include different shifts, levels of digital confidence and ways of reaching the service.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.oecd.org/en/publications/the-impact-of-ai-on-the-workplace-main-findings-from-the-oecd-ai-surveys-of-employers-and-workers_ea0a0fe1-en.html&quot;&gt;OECD · AI surveys of employers and workers&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Help managers rehearse difficult conversations</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/manager-rehearsal/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/manager-rehearsal/</id>
+    <summary>AI role-play can help managers prepare for hard conversations, within clear limits on data and advice.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;AI role-play can help a manager prepare, within clear limits on data and advice.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A manager has a difficult conversation coming and can’t find a clear way to start. Rehearsing a fictional version first can help. The preparation needs boundaries.&lt;/p&gt;
+&lt;p&gt;Use it to practice language, questions and listening. Don’t use it to diagnose the employee’s motivation or predict their reaction. The manager still has to understand the context and stay open to what the colleague says. A generated script is no substitute for that attention.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; test invented scenarios against an approved conversation framework. Ask HR reviewers whether the exercise encourages clarity, curiosity and sensible escalation. Ask managers what they’d change in their preparation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; keep identifiable case material out of unapproved tools. Sensitive employee-relations matters need human expertise and policy checks.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence&quot;&gt;NIST · Generative AI Profile, AI 600-1&lt;/a&gt; (a risk-management reference, not evidence that AI coaching improves outcomes)&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Check whether the tool improved the working day</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/working-day/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/working-day/</id>
+    <summary>Judge AI tools by the whole working day, since time saved on one task can vanish into review and extra volume.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Time saved on one task can vanish into review, coordination and more volume.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A team starts drafting faster with AI. Soon there’s more to check, more to coordinate and an expectation that the team can take on more. The original promise was to make work easier.&lt;/p&gt;
+&lt;p&gt;Look at the redesigned day, not just the output. What has actually stopped? What new demands appeared? Do people have more control, or are they just processing more? This is a work-design question with wellbeing built in. WHO recommends addressing psychosocial risks through working conditions, with real worker involvement. Individual support alone isn’t the whole response.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; in a pilot, review interruptions, after-hours demands, perceived control and quality next to speed. Agree upfront how freed capacity will be used. Use aggregated feedback instead of monitoring individuals.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; don’t infer anyone’s health or distress from their communications. Concerns need proper support and qualified advice.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work&quot;&gt;WHO · Mental health at work&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Be clear about what shared time is for</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/shared-time/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/shared-time/</id>
+    <summary>Whatever the hybrid arrangement, teams get more from time together when they agree what it is for.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Whatever the arrangement, teams get more from time together when they agree what it’s for.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Any hybrid setup works better when the team has named the work that benefits from being together and the work that needs uninterrupted focus.&lt;/p&gt;
+&lt;p&gt;Ask the team where being in the same place improves the work: difficult decisions, hands-on learning, building relationships, tasks that depend on shared equipment. Then identify what needs focus time. Naming both makes the arrangement easier to use and fairer to review.&lt;/p&gt;
+&lt;p&gt;Research can frame the discussion. A randomized trial with 1,612 Trip.com employees found that two home-working days a week reduced attrition and improved satisfaction without hurting measured performance. It covered graduate employees in one company, so the local operating context still matters.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; agree the purpose of shared time, response expectations and how decisions get documented. Review delivery, collaboration and access to development over a reasonable period. Check that colleagues outside the room get the information they need.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; neither presence nor remote status measures contribution on its own. Solve the actual delivery problem and don’t use location as a proxy for it.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.nature.com/articles/s41586-024-07500-2&quot;&gt;Bloom, Han &amp;amp; Liang · Hybrid work trial&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Decide what saved time is for before rollout</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/time-ai-releases/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/time-ai-releases/</id>
+    <summary>AI time savings only become value when the use of freed capacity is agreed upfront and hidden costs are counted.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Capacity becomes value only when someone decides how to use it and counts what got harder.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A pilot reports time savings. The next question is simple: what happened to that time? If nobody can answer, the business case isn’t finished.&lt;/p&gt;
+&lt;p&gt;Freed capacity can go to better service, deeper analysis, learning or more volume. It can also disappear into fragmented calendars and more messages. Agree the intended use with the business owner before rollout. The tool won’t make the organizational change for you. A six-month experiment across 66 firms found time savings among users of an integrated AI tool, but no detected shift in the quantity or mix of their tasks from individual access.&lt;/p&gt;
+&lt;p&gt;Count the costs as honestly as the gains. A pilot can produce answers faster and create more review work for specialists. If that effort sits in another budget it’s easy to miss, but the business still pays for it. Put both on one page: knowledge maintenance, exceptions, employee experience and incidents next to speed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; pick one activity the team wants more of, or one backlog to reduce, and track whether it happens. Before the pilot, agree a baseline and success criteria. Include license, integration, training, review and support costs, and decide what evidence would justify continuing, rescoping or stopping.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; time released, output increased and budget reduced are different outcomes. Minutes saved multiplied by salary isn’t a cash saving. Keep the criteria stable when results disappoint. A small pilot can teach a lot before it proves a financial return.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sources: &lt;a href=&quot;https://www.nber.org/papers/w33795&quot;&gt;Dillon et al. · Shifting Work Patterns with Generative AI&lt;/a&gt;; &lt;a href=&quot;https://www.gov.uk/service-manual/service-standard/point-10-define-success-publish-performance-data&quot;&gt;GOV.UK · Define success and publish performance data&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Build a workforce plan you can adjust</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/workforce-scenarios/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/workforce-scenarios/</id>
+    <summary>Plan the workforce across adoption scenarios with clear triggers, instead of defending a single long-term number.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Different adoption speeds need different responses, not false precision.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A long-term workforce number looks reassuring on a slide. Its value depends on the assumptions underneath: demand, technology, adoption, process change and the capacity to train or redeploy people.&lt;/p&gt;
+&lt;p&gt;Those factors won’t move together. Separate them and find the decisions that hold up across several scenarios. The point is knowing what to do now and what evidence would change the plan, so nobody ends up defending a forecast after its assumptions have moved.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; for one function, compare three scenarios: limited assistance, widespread assistance and controlled automation. Describe the skills, delivery constraints and review workload in each. Agree clear triggers for hiring, development or redeployment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; external forecasts, like the WEF survey of more than 1,000 employers, give context. They don’t replace local work analysis or proper conversations with affected employees.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.weforum.org/publications/the-future-of-jobs-report-2025/&quot;&gt;World Economic Forum · Future of Jobs Report&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Scheduling software needs an owner too</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/scheduling-owner/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/scheduling-owner/</id>
+    <summary>Systems that allocate or evaluate work need a named owner and a correction route, whether or not they are called AI.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Software that shapes people’s work needs clear ownership, whether or not it’s called AI.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;An organization can spend weeks debating a chatbot while a scheduling system already shapes employees’ hours and opportunities. The second has the more direct effect on their working lives.&lt;/p&gt;
+&lt;p&gt;Bring allocation, monitoring and evaluation tools into people governance. Who understands the rules? Who can explain an outcome? Who can correct it? Those questions matter to employees whatever the technology is called. The OECD defines algorithmic management broadly, as software that automates managerial tasks with or without AI.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; list the systems that allocate or evaluate work. Name an accountable owner and a correction route for each. Ask employees for outcomes they find hard to understand, then review those cases with the system owner.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; a manager who can approve a recommendation but can’t challenge it has limited authority. Test the real ability to intervene.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.oecd.org/en/publications/algorithmic-management-in-the-workplace_287c13c4-en.html&quot;&gt;OECD · Algorithmic management in the workplace&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Start people analytics with the decision</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/analytics-decision/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/analytics-decision/</id>
+    <summary>Agree the business decision and the available actions before commissioning a predictive model.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Agree the business question before commissioning another dashboard.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A team has high attrition, and the first instinct is to request a predictive model. Ask first: what action can the leader take, what can the data actually tell us and what else might explain the pattern?&lt;/p&gt;
+&lt;p&gt;That conversation produces a much better brief. Sometimes descriptive analysis and conversations with employees are enough to find the next step. Technical sophistication earns its place when it improves the decision, not when it makes the output look more authoritative. CIPD frames people analytics around business problems, separates correlation from causation and warns that monitoring can be intrusive even where lawful.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; write a short decision brief: the question, the owner, the available actions, the minimum data and alternative explanations. Use aggregated data where it’s enough. Review whether the intervention helped, not whether the model was interesting.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; be very careful with individual labels. A statistical association doesn’t establish someone’s intent, and it can change how their manager treats them.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://www.cipd.org/en/knowledge/factsheets/analytics-factsheet/&quot;&gt;CIPD · People analytics&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Show us where the tool struggles</title>
+    <link href="https://www.gabrielebarni.com/preview/writing/vendor-evidence/" />
+    <updated>2026-10-13T00:00:00Z</updated>
+    <id>https://www.gabrielebarni.com/preview/writing/vendor-evidence/</id>
+    <summary>Evaluate HR technology on hard cases and running costs, with every affected function in one evaluation.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Good procurement includes the hard cases and the cost of running the service.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The demo works well. The real questions start when the request is ambiguous, the policy is local or the model changes after go-live. That’s the product the organization will actually manage.&lt;/p&gt;
+&lt;p&gt;Bring HR, IT, security, privacy and procurement into one evaluation. You need shared answers on data handling, access, failure modes, support and exit. A generic assurance isn’t enough when the consequences cut across functions. The UK ICO’s audits of recruitment tools found excessive data collection and unclear candidate information, a reminder that a strong demo isn’t due diligence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where I’d start:&lt;/strong&gt; give the vendor synthetic cases that cover your languages, exceptions and incomplete requests. Agree acceptance criteria and change-notification terms before signing. Make ownership of ongoing checks explicit.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The test:&lt;/strong&gt; a benchmark or compliance claim doesn’t validate your specific use. Purpose, configuration, jurisdiction and daily operation still need assessment.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/11/ico-intervention-into-ai-recruitment-tools-leads-to-better-data-protection-for-job-seekers&quot;&gt;ICO · Findings from AI recruitment audits&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+</feed>
