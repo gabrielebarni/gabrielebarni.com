@@ -112,4 +112,8 @@ Views are my own.
 
 ## Credits
 
-Tux, the Linux penguin, was created by Larry Ewing (lewing@isc.tamu.edu) using The GIMP. The About page shows a small Tux in an HR T-shirt as a nod to that.
+Tux, the Linux penguin, was created by Larry Ewing (lewing@isc.tamu.edu) using The GIMP. The About page shows Tux in an HR T-shirt as a nod to that (`src/assets/img/tux-hr.svg`).
+
+- Source: [File:Tux.svg](https://commons.wikimedia.org/wiki/File:Tux.svg) on Wikimedia Commons, the vector redrawing by Garrett LeSage (CC0, [garrett/Tux](https://github.com/garrett/Tux)) after the earlier vector version by Simon Budig.
+- Terms: use and modification are allowed provided Larry Ewing (lewing@isc.tamu.edu) and The GIMP are acknowledged. The credit is on the About page and in the SVG's `<desc>`.
+- Change: an oxblood T-shirt with "HR" (IBM Plex Sans Bold, outlined as paths), clipped to the body and drawn under the flippers.

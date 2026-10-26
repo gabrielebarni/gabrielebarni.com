@@ -140,17 +140,18 @@ figcaption{font-size:.9rem;color:var(--muted);margin-top:.5rem}
 #search-results .kind{font:400 .85rem/1.9 var(--mono);color:var(--muted)}
 #search-results mark{background:none;color:inherit;font-weight:600;box-shadow:inset 0 -.45em 0 color-mix(in srgb,var(--accent) 22%,transparent)}
 
-/* graphics: Lab line illustration (inline SVG, currentColor), About easter egg */
-.art svg{display:block;width:100%;height:auto;color:var(--muted)}
-.art .acc{stroke:var(--accent)}.art .accf{fill:var(--accent)}
-.art text{font:400 13px var(--mono);fill:var(--muted);paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round}
-figure.art{margin:0 0 2rem}
-.egg{margin:1.75rem 0 0}
-.egg summary{list-style:none;cursor:pointer;display:inline-block;border-radius:6px;line-height:0}
+/* About: Tux easter egg */
+.egg-wrap{position:relative;display:flex;align-items:flex-end;gap:1.25rem;margin:2.5rem 0 0;padding-top:1.5rem;border-top:1px solid var(--rule)}
+.egg{flex:none}
+.egg summary{list-style:none;cursor:pointer;display:block;line-height:0;border-radius:8px;padding:4px;margin:-4px}
 .egg summary::-webkit-details-marker{display:none}
-.egg img{width:74px;height:96px;display:block}
-@media(prefers-color-scheme:dark){.egg img{filter:drop-shadow(0 0 1px rgba(236,231,223,.45))}}
-@media(prefers-reduced-motion:no-preference){.egg img{transition:transform .2s}.egg summary:hover img{transform:rotate(-6deg)}}
-.egg-line{font:400 .9rem/1.4 var(--mono);color:var(--muted);margin:.5rem 0 0}
-.credit{font-size:.8rem;color:var(--muted);margin:.5rem 0 0}
+.egg summary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.egg img{width:88px;height:104px;display:block}
+@media(prefers-color-scheme:dark){.egg img{filter:drop-shadow(0 0 1.5px rgba(236,231,223,.35))}}
+.egg-line{position:absolute;left:calc(88px + 1.25rem);top:calc(1.5rem + 6px);margin:0;font:400 .88rem/1.4 var(--mono);color:var(--text);background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:.35rem .65rem;white-space:nowrap}
+.egg-line>span:first-child{color:var(--accent-ink)}
+@media(max-width:420px){.egg-line{font-size:.78rem;padding:.3rem .5rem}}
+@media(prefers-reduced-motion:no-preference){.egg img{transition:transform .25s ease;transform-origin:50% 90%}.egg summary:hover img{transform:rotate(-5deg)}.egg[open] .egg-line{animation:egg-in .3s ease}}
+@keyframes egg-in{from{opacity:0;transform:translateX(-4px)}}
+.credit{font-size:.8rem;line-height:1.45;color:var(--muted);margin:0 0 .35rem}
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
