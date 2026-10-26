@@ -3,7 +3,7 @@ title: About
 description: "Gabriele Barni: Senior Director HR at Lonza, from Milan, based near Basel. On people, work and AI."
 ---
 
-I started in IT and cybersecurity. My first jobs were in software, in Milan and then with an open-source company in California. At Pfizer in Berlin I worked as an IT business analyst, bringing HR systems together after an acquisition. That’s where technology and HR met for me, and I’ve worked at that crossing ever since.
+I started in cybersecurity and Linux. While studying, I founded several Linux user groups. My first jobs were in IT, in Milan and then with an open-source company in California. At Pfizer in Berlin I worked as an IT business analyst, bringing HR systems together after an acquisition. That’s where technology and HR met for me, and I’ve worked at that crossing ever since.
 
 In 2013 I moved fully into HR. Since then I’ve worked in Italy, the UK, the US, Germany, the Netherlands and Switzerland, and covered employee relations across more than 26 countries in Europe, the Middle East and Africa. Every country brings its own rules, its own culture of work and its own sense of what a fair decision looks like. What holds across all of them: people decisions work when they’re clear, owned and explained.
 
