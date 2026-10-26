@@ -39,7 +39,7 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head"><div class="wrap">
-<a class="brand" href="/"><img class="tile" src="/assets/img/favicon.svg" width="28" height="28" alt="">{{ site.title }}<span aria-hidden="true">.</span></a>
+<a class="brand" href="/">{{ site.title }}<span aria-hidden="true">.</span></a>
 <nav aria-label="Main"><ul>
 {%- for item in [["Writing","/writing/"],["Lab","/lab/"],["About","/about/"]] %}
 <li><a href="{{ item[1] }}"{% if page.url.startsWith(item[1]) %} aria-current="page"{% endif %}>{{ item[0] }}</a></li>
