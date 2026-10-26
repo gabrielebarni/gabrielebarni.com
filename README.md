@@ -83,6 +83,16 @@ This replaces all notes in `src/notes/` with the folder's `NN-slug.md` files
 and updates the home intro and About text from `home-intro.md` and `about.md`.
 Free-form tags become `keywords`; tags matching the six topics become `tags`.
 
+## Preview build under /preview/
+
+```sh
+npm run build:preview   # _preview/: --pathprefix=/preview/, Pagefind index, robots noindex
+```
+
+All internal links, the search bundle and the old-link redirects respect the
+path prefix, so the same source works at `/` and under `/preview/`.
+Copy `_preview/` to `preview/` on the branch Pages serves (without `CNAME`).
+
 ## Deploy (one-time setup)
 
 Deployment runs in GitHub Actions (`.github/workflows/deploy.yml`):
