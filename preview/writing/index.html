@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-<head><meta name="robots" content="noindex">
+<head>
+<meta name="robots" content="noindex">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Writing — Gabriele Barni</title>
@@ -52,11 +53,14 @@
 <li><a href="/preview/writing/tags/hr-service/">HR service</a></li>
 <li><a href="/preview/writing/tags/skills-and-talent/">Skills &amp; talent</a></li>
 </ul>
-<div class="search" role="search" id="search" hidden="">
-<label for="q">Search the writing. Runs in your browser; nothing is sent anywhere.</label>
-<input id="q" type="search" placeholder="e.g. onboarding, agents, pilot" autocomplete="off">
-<p id="search-status" class="search-hint" aria-live="polite"></p>
+<div id="search" hidden="">
+<form class="search" role="search" action="." method="get">
+<label for="q">Search notes and pages. Runs in your browser; nothing is sent anywhere.</label>
+<input id="q" name="q" type="search" placeholder="e.g. onboarding, agents, Meshtastic" autocomplete="off" spellcheck="false" enterkeyhint="search">
+</form>
+<p id="search-status" class="search-hint" role="status" aria-live="polite"></p>
 <div id="search-results"></div>
+</div>
 </div>
 <div id="listing">
 <h2 class="year">Essays</h2>
@@ -88,32 +92,75 @@
 <div class="row"><time datetime="2026-10-13">Oct 13, 2026</time><div><h3><a href="/preview/writing/analytics-decision/">Start people analytics with the decision</a></h3><p>Agree the business decision and the available actions before commissioning a predictive model.</p><p class="meta">Governance &amp; value · 1 min read</p></div></div>
 <div class="row"><time datetime="2026-10-13">Oct 13, 2026</time><div><h3><a href="/preview/writing/vendor-evidence/">Show us where the tool struggles</a></h3><p>Evaluate HR technology on hard cases and running costs, with every affected function in one evaluation.</p><p class="meta">Governance &amp; value · 1 min read</p></div></div>
 </div>
-</div></div>
+</div>
 <script type="module">
-// Progressive enhancement: Pagefind index built at deploy time, served from this site.
-const box = document.getElementById("search"), q = document.getElementById("q");
-const out = document.getElementById("search-results"), status = document.getElementById("search-status");
-const listing = document.getElementById("listing");
-box.hidden = false;
-let pf, t;
-const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
-q.addEventListener("input", () => { clearTimeout(t); t = setTimeout(run, 150); });
-async function run() {
-  const term = q.value.trim();
-  if (!term) { out.innerHTML = ""; status.textContent = ""; listing.hidden = false; return; }
-  pf ??= await import("/pagefind/pagefind.js");
-  const res = await pf.search(term);
-  const data = await Promise.all(res.results.slice(0, 10).map((r) => r.data()));
-  listing.hidden = true;
-  status.textContent = res.results.length ? `${res.results.length} result${res.results.length > 1 ? "s" : ""}` : "No results.";
-  out.innerHTML = data.map((d) => `<div class="row"><time>${esc(d.filters?.topic?.[0] || "Note")}</time><div><h3><a href="${esc(d.url)}">${esc(d.meta.title)}</a></h3><p>${d.excerpt}</p></div></div>`).join("");
+// Progressive enhancement: without JS (or if the index fails to load) the full list stays.
+// The Pagefind bundle path goes through htmlBaseUrl, so it works at / and under a path prefix
+// (e.g. /preview/); Pagefind then derives result URLs from the bundle's location.
+const BUNDLE = "/preview/pagefind/pagefind.js";
+const $ = (id) => document.getElementById(id);
+const box = $("search"), form = box.querySelector("form"), q = $("q"), out = $("search-results"), status = $("search-status"), listing = $("listing");
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+let pf, seq = 0, timer;
+// Pagefind falls back to very short prefixes for unknown words (a typo like "onbording" matches
+// every "on"), which floods the list with noise. Keep a result only if, for every query word,
+// the page has a word sharing a long enough prefix with it (stemming-friendly, no typos).
+const norm = (s) => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+const words = (s) => norm(s).split(/[^\p{L}\p{N}]+/u).filter(Boolean);
+const shared = (a, b) => { let i = 0; while (i < a.length && i < b.length && a[i] === b[i]) i++; return i; };
+const relevant = (terms, d) => {
+  const vocab = new Set(words(d.meta?.title + " " + d.content));
+  return terms.every((t) => {
+    const need = t.length <= 5 ? t.length : Math.max(5, t.length - 3);
+    for (const w of vocab) if (shared(t, w) >= need) return true;
+    return false;
+  });
+};
+const load = () => (pf ??= import(BUNDLE).then(async (m) => { await m.options({ excerptLength: 24 }); m.init(); return m; }));
+
+function show(term) {
+  const url = new URL(location.href);
+  term ? url.searchParams.set("q", term) : url.searchParams.delete("q");
+  history.replaceState(null, "", url);
 }
+async function run() {
+  const term = q.value.trim(), mine = ++seq;
+  show(term);
+  if (!term) { out.innerHTML = ""; status.textContent = ""; listing.hidden = false; return; }
+  let res, data;
+  try {
+    const m = await load();
+    res = await m.search(term);
+    if (mine !== seq || !res) return; // a newer query is already running
+    data = await Promise.all(res.results.map((r) => r.data()));
+    const terms = words(term);
+    data = data.filter((d) => relevant(terms, d));
+  } catch (e) {
+    if (mine !== seq) return;
+    pf = undefined; // allow a retry
+    listing.hidden = false; out.innerHTML = "";
+    status.textContent = "Search couldn’t load. All notes are listed below.";
+    return;
+  }
+  if (mine !== seq) return;
+  listing.hidden = true;
+  const n = data.length;
+  status.textContent = n ? `${n} result${n === 1 ? "" : "s"} for “${term}”` : `Nothing matches “${term}”. Try a shorter or broader word, or clear the search to see all notes.`;
+  out.innerHTML = (n ? '<h2 class="year">Search results</h2>' : "") + data.map((d) => `<div class="row"><span class="kind">${esc(d.filters?.topic?.[0] || d.meta?.kind || "Note")}</span><div><h3><a href="${esc(d.url)}">${esc(d.meta?.title)}</a></h3><p>${d.excerpt}</p></div></div>`).join("");
+}
+q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(run, 180); });
+q.addEventListener("focus", load, { once: true });
+q.addEventListener("keydown", (e) => { if (e.key === "Escape" && q.value) { q.value = ""; run(); } });
+form.addEventListener("submit", (e) => { e.preventDefault(); clearTimeout(timer); run(); q.blur(); });
+box.hidden = false;
+const initial = new URLSearchParams(location.search).get("q");
+if (initial) { q.value = initial; run(); }
 </script>
 
 
 </main>
 <footer class="site-foot"><div class="wrap">
-<div><p>A website at the crossroads of technology and humanity.</p><p>Views are my own. No cookies, no trackers.</p><p class="motto" lang="la">Audentes Fortuna iuvat.</p></div>
+<div><p>A website at the crossroads of technology and humanity.</p><p>Views are my own. No cookies, no trackers.</p><p>Writing licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>.</p><p class="motto" lang="la">Audentes Fortuna iuvat.</p></div>
 <ul>
 <li><a href="https://www.linkedin.com/in/barni/">LinkedIn</a></li>
 <li><a href="https://x.com/gabrielebarni">X</a></li>

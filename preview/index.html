@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-<head><meta name="robots" content="noindex">
+<head>
+<meta name="robots" content="noindex">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gabriele Barni — A website at the crossroads of technology and humanity.</title>
@@ -44,7 +45,7 @@
 <section class="hero" aria-labelledby="h">
 <p class="kicker">A website at the crossroads of technology and humanity.</p>
 <h1 id="h">AI will change the work. Leaders still decide what it’s for.</h1>
-<div class="who"><p>I’m Gabriele Barni, a global HR leader based in Basel. I write about what AI means for how organizations work: who owns the outcome, where the saved time should go, and how people keep learning the job. Short notes, a clear point of view, sources included. Outside the day job I build things with open-source tools, from Linux and Python projects to a Meshtastic mesh network around Basel.</p>
+<div class="who"><p>I’m Gabriele Barni, a global HR leader based in Basel who started out in IT. I write about what AI means for how organizations work: who owns the outcome, where the saved time should go, and how people keep learning the job. Short notes, a clear point of view, sources included. Outside the day job I build things with open-source tools, from Linux and Python projects to a Meshtastic mesh network around Basel.</p>
 </div>
 <div class="cta"><a class="btn" href="/preview/writing/">Read the writing</a><a href="https://www.linkedin.com/in/barni/">Connect on LinkedIn ↗</a></div>
 </section>
@@ -74,17 +75,18 @@
 (function () {
   var h = location.hash.replace(/^#\/?/, "");
   if (!h) return;
+  var base = "/preview/"; // "/" or a path prefix such as "/preview/"
   var notes = {"service-model":"/writing/one-owner-per-journey/","journey-owner":"/writing/one-owner-per-journey/","knowledge-layer":"/writing/policy-before-chatbot/","expert-escalation":"/writing/reach-the-right-person/","service-metrics":"/writing/closed-ticket/","copilot-pilot":"/writing/start-with-the-agents/","grounded-answers":"/writing/policy-before-chatbot/","bounded-agents":"/writing/authority-before-access/","structured-hiring":"/writing/structured-hiring/","candidate-transparency":"/writing/candidate-transparency/","work-design":"/writing/work-design/","skills-evidence":"/writing/skills-evidence/","ai-literacy":"/writing/ai-skills-in-real-work/","internal-mobility":"/writing/internal-mobility/","early-careers":"/writing/starting-a-career-with-ai/","onboarding":"/writing/onboarding/","employee-voice":"/writing/employee-voice/","accessibility":"/writing/","manager-rehearsal":"/writing/manager-rehearsal/","workload":"/writing/working-day/","hybrid-work":"/writing/shared-time/","time-dividend":"/writing/time-ai-releases/","workforce-scenarios":"/writing/workforce-scenarios/","algorithmic-management":"/writing/scheduling-owner/","learning-loop":"/writing/ai-skills-in-real-work/","human-accountability":"/writing/authority-before-access/","decision-analytics":"/writing/analytics-decision/","vendor-evidence":"/writing/vendor-evidence/","value-scorecard":"/writing/time-ai-releases/","ninety-days":"/writing/next-hr-service-model/","future-hr-service-delivery":"/writing/next-hr-service-model/","junior-work-ai":"/writing/starting-a-career-with-ai/","torvalds-ai-expertise":"/writing/torvalds-ai-expertise/","abundance-future-of-work":"/writing/abundance-future-of-work/"};
   var pages = { home: null, notes: "/writing/", projects: "/lab/", about: "/about/" };
   var m = h.match(/^notes\/([a-z0-9-]+)/);
   var to = m ? (notes[m[1]] || "/writing/") : pages[h];
-  if (to) location.replace(to);
+  if (to) location.replace(base + to.replace(/^\//, ""));
 })();
 </script>
 
 </main>
 <footer class="site-foot"><div class="wrap">
-<div><p>A website at the crossroads of technology and humanity.</p><p>Views are my own. No cookies, no trackers.</p><p class="motto" lang="la">Audentes Fortuna iuvat.</p></div>
+<div><p>A website at the crossroads of technology and humanity.</p><p>Views are my own. No cookies, no trackers.</p><p>Writing licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>.</p><p class="motto" lang="la">Audentes Fortuna iuvat.</p></div>
 <ul>
 <li><a href="https://www.linkedin.com/in/barni/">LinkedIn</a></li>
 <li><a href="https://x.com/gabrielebarni">X</a></li>
