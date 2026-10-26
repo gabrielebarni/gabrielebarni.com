@@ -109,3 +109,7 @@ a branch"). The custom domain stays `www.gabrielebarni.com` (`src/static/CNAME`)
 - IBM Plex fonts: SIL Open Font License 1.1, see `src/assets/fonts/OFL-IBM-Plex.txt`.
 
 Views are my own.
+
+## Credits
+
+Tux, the Linux penguin, was created by Larry Ewing (lewing@isc.tamu.edu) using The GIMP. The About page shows a small Tux in an HR T-shirt as a nod to that.

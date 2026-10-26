@@ -3,11 +3,16 @@ layout: layouts/base.njk
 ---
 <div class="wrap"><div class="about" data-pagefind-body data-pagefind-meta="kind:About">
 <div class="read">
-<div class="mono-badge" aria-hidden="true">GB</div>
+<div class="mono-badge" aria-hidden="true">{% include "art/mark.svg" %}</div>
 <h1>{{ title }}</h1>
 <div class="prose">
 {{ content | safe }}
-</div></div>
+</div>
+<details class="egg" data-pagefind-ignore>
+<summary title="Founded Linux user groups. Ended up in HR. Still running Linux."><picture><source srcset="/assets/img/tux-hr.avif" type="image/avif"><img src="/assets/img/tux-hr.webp" width="74" height="96" alt="Tux, the Linux penguin, wearing an HR T-shirt." loading="lazy" decoding="async"></picture></summary>
+<p class="egg-line"><span aria-hidden="true">$</span> whoami <span aria-hidden="true">→</span><span class="visually-hidden">:</span> people + penguins</p>
+</details>
+<p class="credit">Tux by Larry Ewing (lewing@isc.tamu.edu), made with The GIMP.</p></div>
 <aside aria-label="Quick facts" data-pagefind-ignore><ul class="facts">
 <li><b>Role</b>Senior Director HR, Lonza</li>
 <li><b>Based</b>Near Basel · from Milan</li>
