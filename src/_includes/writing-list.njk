@@ -2,41 +2,58 @@
 {%- for n in collections.notes -%}
 {%- if n.data.featured -%}{%- set essays = (essays.push(n), essays) -%}{%- else -%}{%- set shorts = (shorts.push(n), shorts) -%}{%- endif -%}
 {%- endfor -%}
-<div class="wrap"><div class="read" style="padding-top:3.5rem">
-<h1>{{ tagTitle or "Writing" }}</h1>
-<p class="lede">{{ tagLede or "Notes on people, work and AI. Short, with a point of view and sources included." }}</p>
-<ul class="filters" aria-label="Topics">
-<li><a href="/writing/"{% if not tag %} aria-current="page"{% endif %}>All</a></li>
+<div class="wrap">
+  <div class="read page-head">
+    <h1>{{ tagTitle or "Writing" }}</h1>
+    <p class="lede">{{ tagLede or "Notes on people, work and AI. Short, with a point of view and sources included." }}</p>
+    <nav aria-label="Topics">
+    <ul class="filters">
+      <li><a href="/writing/"{% if not tag %} aria-current="page"{% endif %}>All</a></li>
 {%- for t in collections.noteTags %}
-<li><a href="/writing/tags/{{ t }}/"{% if tag == t %} aria-current="page"{% endif %}>{{ t | tagLabel }}</a></li>
+      <li><a href="/writing/tags/{{ t }}/"{% if tag == t %} aria-current="page"{% endif %}>{{ t | tagLabel }}</a></li>
 {%- endfor %}
-</ul>
+    </ul>
+    </nav>
 {%- if not tag %}
-<div id="search" hidden>
-<form class="search" role="search" action="" method="get">
-<label for="q">Search notes and pages. Runs in your browser; nothing is sent anywhere.</label>
-<input id="q" name="q" type="search" placeholder="e.g. onboarding, agents, Meshtastic" autocomplete="off" spellcheck="false" enterkeyhint="search">
-</form>
-<p id="search-status" class="search-hint" role="status" aria-live="polite"></p>
-<div id="search-results"></div>
-</div>
-</div>
+    <div id="search" hidden>
+      <form class="search" role="search" action="/writing/" method="get">
+        <label for="q">Search notes and pages. Runs in your browser; nothing is sent anywhere.</label>
+        <input id="q" name="q" type="search" placeholder="e.g. onboarding, agents, Meshtastic" autocomplete="off" spellcheck="false" enterkeyhint="search">
+        <button type="submit">Search</button>
+      </form>
+      <p id="search-status" class="search-hint" role="status" aria-live="polite"></p>
+      <div id="search-results"></div>
+    </div>
 {%- endif %}
-<div id="listing">
-{%- macro row(n) %}
-<div class="row"><time datetime="{{ n.date | isoDate }}">{{ n.date | readableDate }}</time><div><h3><a href="{{ n.url }}">{{ n.data.title }}</a></h3><p>{{ n.data.summary }}</p><p class="meta">{{ (n.data.tags | reject("equalto","notes") | first) | tagLabel }} · {{ n.data.readingMinutes }} min read</p></div></div>
-{%- endmacro %}
+  </div>
+  <div id="listing">
+{%- macro row(n) -%}
+    <div class="row">
+      <time datetime="{{ n.date | isoDate }}">{{ n.date | readableDate }}</time>
+      <div>
+        <h3><a href="{{ n.url }}">{{ n.data.title }}</a></h3>
+        <p>{{ n.data.summary }}</p>
+        <p class="meta">{{ (n.data.tags | reject("equalto","notes") | first) | tagLabel }} · {{ n.data.readingMinutes }} min read</p>
+      </div>
+    </div>
+{%- endmacro -%}
 {%- if not tag %}
-<h2 class="year">Essays</h2>
-{%- for n in essays %}{{ row(n) }}{% endfor %}
-<h2 class="year">Short notes</h2>
-{%- for n in shorts %}{{ row(n) }}{% endfor %}
+    <h2 class="year">Essays</h2>
+{%- for n in essays %}
+{{ row(n) }}
+{%- endfor %}
+    <h2 class="year">Short notes</h2>
+{%- for n in shorts %}
+{{ row(n) }}
+{%- endfor %}
 {%- else %}
-<h2 class="year">{{ tag | tagLabel }}</h2>
-{%- for n in collections.notes %}{% if tag in n.data.tags %}{{ row(n) }}{% endif %}{% endfor %}
+    <h2 class="year">{{ tag | tagLabel }}</h2>
+{%- for n in collections.notes %}{% if tag in n.data.tags %}
+{{ row(n) }}
+{%- endif %}{% endfor %}
 {%- endif %}
+  </div>
 </div>
-</div></div>
 {%- if not tag %}
 <script type="module">
 // Progressive enhancement: without JS (or if the index fails to load) the full list stays.
