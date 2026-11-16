@@ -1,0 +1,57 @@
+{%- set personId = site.url + "/#person" -%}
+{%- set websiteId = site.url + "/#website" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ websiteId | json | safe }},
+      "name": {{ site.title | json | safe }},
+      "url": {{ (site.url + "/") | json | safe }},
+      "description": {{ site.description | json | safe }},
+      "inLanguage": {{ site.language | json | safe }},
+      "author": { "@id": {{ personId | json | safe }} },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {{ (site.url + "/writing/?q={search_term_string}") | json | safe }},
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": {{ personId | json | safe }},
+      "name": {{ site.author | json | safe }},
+      "url": {{ (site.url + "/") | json | safe }},
+      "jobTitle": "Senior Director HR",
+      "worksFor": { "@type": "Organization", "name": "Lonza" },
+      "homeLocation": { "@type": "Place", "name": "Basel, Switzerland" },
+      "sameAs": [
+        {{ site.linkedin | json | safe }},
+        {{ site.x | json | safe }}
+      ],
+      "knowsLanguage": ["en", "it", "de"]
+    }{% if layout == "layouts/note.njk" %},
+    {
+      "@type": "BlogPosting",
+      "headline": {{ title | json | safe }},
+      "description": {{ (summary or pageDesc) | json | safe }},
+      "datePublished": {{ (page.date | isoDate) | json | safe }},
+      "url": {{ canonical | json | safe }},
+      "mainEntityOfPage": {{ canonical | json | safe }},
+      "inLanguage": {{ site.language | json | safe }},
+      "author": { "@id": {{ personId | json | safe }} },
+      "publisher": { "@id": {{ personId | json | safe }} },
+      "isPartOf": { "@id": {{ websiteId | json | safe }} }{% if tags %},
+      "keywords": {{ (tags | reject("equalto", "notes") | list) | json | safe }}{% endif %}
+    }{% elif page.url.endsWith("/about/") %},
+    {
+      "@type": "ProfilePage",
+      "url": {{ canonical | json | safe }},
+      "name": {{ pageTitle | json | safe }},
+      "mainEntity": { "@id": {{ personId | json | safe }} },
+      "isPartOf": { "@id": {{ websiteId | json | safe }} }
+    }{% endif %}
+  ]
+}
+</script>
