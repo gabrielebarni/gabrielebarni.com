@@ -6,7 +6,7 @@
   "description": "Personal website of Gabriele Barni. A website at the crossroads of technology and humanity.",
   "type": "module",
   "scripts": {
-    "build": "eleventy && pagefind --site _site",
+    "build": "rm -rf _site && eleventy && pagefind --site _site && node scripts/copy-preview.mjs",
     "start": "eleventy --serve",
     "extract": "node scripts/extract-notes.mjs",
     "import:kreus": "node scripts/import-wording.mjs",

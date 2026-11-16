@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Gabriele Barni">
+  <style>
+    .bg{fill:#8a2c17}
+    .dot{fill:#f6f1ea}
+    @media (prefers-color-scheme:dark){
+      .bg{fill:#e08a6c}
+      .dot{fill:#12110f}
+    }
+  </style>
+  <rect class="bg" width="64" height="64" rx="10"/>
+  <circle class="dot" cx="32" cy="46" r="5.5"/>
+</svg>
