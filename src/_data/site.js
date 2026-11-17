@@ -3,7 +3,7 @@ export default {
   url: "https://www.gabrielebarni.com",
   author: "Gabriele Barni",
   tagline: "A website at the crossroads of technology and humanity.",
-  headline: "AI will change the work. Leaders still decide what it’s for.",
+  headline: "One idea per note. AI and the future of work.",
   description: "A website at the crossroads of technology and humanity. Gabriele Barni, global HR leader in Basel, on people, work and AI.",
   language: "en",
   linkedin: "https://www.linkedin.com/in/barni/",
