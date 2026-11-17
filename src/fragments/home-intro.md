@@ -1,1 +1,3 @@
-I’m Gabriele Barni, a global HR leader based in Basel who started out in IT. I write about what AI means for how organizations work: who owns the outcome, where the saved time should go, and how people keep learning the job. Short notes, a clear point of view, sources included. Outside the day job I build things with open-source tools, from Linux and Python projects to a Meshtastic mesh network around Basel.
+This is a Zettelkasten of notes about AI and the future of work. Zettelkasten is German for "slip box". The sociologist Niklas Luhmann kept one for decades, writing each idea on its own numbered card and linking cards to one another instead of filing them into chapters. Over time the links, not the folders, become where the thinking happens.
+
+The notes here work the same way. Each one is short and makes one point, has a fixed address and links to related notes. There's no reading order, so start anywhere and follow the links.
