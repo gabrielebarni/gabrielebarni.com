@@ -5,7 +5,7 @@ layout: layouts/base.njk
 <article class="wrap" data-pagefind-body>
   <div class="read article">
     <header>
-      <p class="meta" data-pagefind-ignore><a href="/writing/">Writing</a>{% for t in noteTags %} · <span data-pagefind-filter="topic">{{ t | tagLabel }}</span>{% endfor %}</p>
+      <p class="meta" data-pagefind-ignore><a href="/writing/">Writing</a>{% if noteNumber %} · #{{ noteNumber }}{% endif %}{% for t in noteTags %} · <span data-pagefind-filter="topic">{{ t | tagLabel }}</span>{% endfor %}</p>
       <h1 data-pagefind-meta="title">{{ title }}</h1>
 {%- if summary %}
       <p class="lede">{{ summary }}</p>
@@ -34,16 +34,31 @@ layout: layouts/base.njk
   {%- set r = collections.notes | findByLegacyId(id) -%}
   {%- if r and r.url != page.url and (relatedNotes | length) < 4 and not (r in relatedNotes) and not (r in seeAlso) -%}{%- set relatedNotes = (relatedNotes.push(r), relatedNotes) -%}{%- endif -%}
 {%- endfor %}
+{%- set incoming = collections.notes | backlinks(page.url) -%}
 {%- if relatedNotes.length %}
-    <nav class="next" aria-label="Related notes" data-pagefind-ignore>
+    <section class="note-links" data-pagefind-ignore>
+    <h2 class="link-heading">Links to</h2>
+    <nav class="next" aria-label="Links to">
 {%- for r in relatedNotes %}
-      <a href="{{ r.url }}"><span class="meta">{{ (r.data.tags | reject("equalto","notes") | first) | tagLabel }}</span><span>{{ r.data.title }}</span></a>
+      <a href="{{ r.url }}"><span class="meta">{% if r.data.noteNumber %}#{{ r.data.noteNumber }} · {% endif %}{{ (r.data.tags | reject("equalto","notes") | first) | tagLabel }}</span><span>{{ r.data.title }}</span></a>
 {%- endfor %}
     </nav>
+    </section>
+{%- endif %}
+{%- if incoming.length %}
+    <section class="note-links" data-pagefind-ignore>
+    <h2 class="link-heading">Linked from</h2>
+    <ul class="backlink-list">
+{%- for b in incoming %}
+      <li>{% if b.data.noteNumber %}<span class="meta">#{{ b.data.noteNumber }}</span> {% endif %}<a href="{{ b.url }}">{{ b.data.title }}</a></li>
+{%- endfor %}
+    </ul>
+    </section>
 {%- endif %}
 {%- if seeAlso.length %}
     <p class="meta see-also" data-pagefind-ignore>Related: {% for r in seeAlso %}{% if not loop.first %} · {% endif %}<a href="{{ r.url }}">{{ r.data.title }}</a>{% endfor %}</p>
 {%- endif %}
+    <p class="meta" data-pagefind-ignore><a href="/writing/" data-random-note>A random note</a></p>
     <p class="muted" data-pagefind-ignore>Disagree? Tell me on <a href="{{ site.linkedin }}">LinkedIn</a>. That’s where the discussion happens.</p>
   </div>
 </article>

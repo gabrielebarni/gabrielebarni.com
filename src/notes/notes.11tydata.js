@@ -9,5 +9,10 @@ export default {
       return Math.max(1, Math.round(words / 220));
     },
     permalink: (data) => (data.draft ? false : `/writing/${data.page.fileSlug.replace(/^\d+-/, "")}/`),
+    // The NN- prefix is the card number shown in lists and on the note.
+    noteNumber: (data) => {
+      const m = String(data.page.fileSlug || "").match(/^(\d+)/);
+      return m ? String(Number(m[1])) : "";
+    },
   },
 };

@@ -45,9 +45,18 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("limit", (arr, n) => (arr || []).slice(0, n));
   eleventyConfig.addFilter("tagLabel", (slug) => site.tags[slug] || slug);
   /** Resolve legacy note ids (from the old single-page site) to current note URLs. */
-  eleventyConfig.addFilter("findByLegacyId", (notes, id) =>
+  const resolveNote = (notes, id) =>
     (notes || []).find((n) => noteLegacyIds(n).includes(legacyId(id))) ||
-    (notes || []).find((n) => noteSlug(n.page.fileSlug) === String(id)));
+    (notes || []).find((n) => noteSlug(n.page.fileSlug) === String(id));
+  eleventyConfig.addFilter("findByLegacyId", (notes, id) => resolveNote(notes, id));
+  /** Notes that point at this one via `related` or `see_also`. */
+  eleventyConfig.addFilter("backlinks", (notes, url) =>
+    (notes || []).filter((n) => {
+      if (n.url === url) return false;
+      const refs = [].concat(n.data.related || [], n.data.see_also || []);
+      return refs.some((id) => resolveNote(notes, id)?.url === url);
+    }));
+  eleventyConfig.addFilter("urls", (items) => (items || []).map((i) => i.url));
 
   eleventyConfig.addCollection("notes", (api) =>
     api.getFilteredByGlob("src/notes/*.md").filter((n) => !n.data.draft).sort((a, b) => b.date - a.date || !!b.data.featured - !!a.data.featured || a.inputPath.localeCompare(b.inputPath)));

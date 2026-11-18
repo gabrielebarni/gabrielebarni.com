@@ -4,8 +4,10 @@
 {%- endfor -%}
 <div class="wrap">
   <div class="read page-head">
-    <h1>{{ tagTitle or "Writing" }}</h1>
+    {%- set heading = tagTitle or "Zettelkasten" -%}
+    <h1{% if heading == "Zettelkasten" %} lang="de"{% endif %}>{{ heading }}</h1>
     <p class="lede">{{ tagLede or "Notes on people, work and AI. Short, with a point of view and sources included." }}</p>
+    <p class="meta start-anywhere">Start anywhere. <a href="/writing/" data-random-note>A random note</a></p>
     <nav aria-label="Topics">
     <ul class="filters">
       <li><a href="/writing/"{% if not tag %} aria-current="page"{% endif %}>All</a></li>
@@ -29,7 +31,7 @@
   <div id="listing">
 {%- macro row(n) -%}
     <div class="row">
-      <time datetime="{{ n.date | isoDate }}">{{ n.date | readableDate }}</time>
+      <p class="row-meta">{% if n.data.noteNumber %}<span class="note-id">#{{ n.data.noteNumber }}</span>{% endif %}<time datetime="{{ n.date | isoDate }}">{{ n.date | readableDate }}</time></p>
       <div>
         <h3><a href="{{ n.url }}">{{ n.data.title }}</a></h3>
         <p>{{ n.data.summary }}</p>

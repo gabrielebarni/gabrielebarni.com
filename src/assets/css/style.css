@@ -25,6 +25,7 @@
 @media (max-width:640px){
   :root{--nav:64px; --padt:96px; --padb:48px; --gut:24px; --hpadb:48px}
   .site-head .wrap{align-items:center;gap:var(--s-2) var(--s-4)}
+  .brand{white-space:nowrap}
   .brand,nav a{min-height:44px;display:inline-flex;align-items:center}
   nav ul{gap:0 .9rem}
 }
@@ -48,10 +49,16 @@ a:hover{color:var(--accent-ink)}
 /* header */
 .site-head{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--rule)}
 .site-head .wrap{display:flex;flex-wrap:wrap;gap:var(--s-2) var(--s-7);align-items:baseline;justify-content:space-between;min-height:var(--nav);padding-top:var(--s-4);padding-bottom:var(--s-4)}
-@media (min-width:360px) and (max-width:640px){
+/* Single-row header when the name and the longer nav label both fit. */
+@media (min-width:520px) and (max-width:640px){
   .site-head .wrap{flex-wrap:nowrap;align-items:center;gap:var(--s-2) var(--s-4)}
-  .brand,nav a{min-height:44px;display:inline-flex;align-items:center}
-  nav ul{gap:0 .9rem}
+}
+/* Below that, put the nav on its own row so "Zettelkasten" doesn't wrap the name. */
+@media (max-width:519px){
+  :root{--nav:112px}
+  .site-head .wrap{flex-wrap:wrap;row-gap:0}
+  nav{flex:1 0 100%}
+  nav ul{gap:0 1rem}
 }
 @media (max-width:359px){
   .brand,nav a{min-height:44px;display:inline-flex;align-items:center}
@@ -110,12 +117,15 @@ p{margin:0 0 1rem}
 .search button{font:inherit;padding:.6rem .9rem;border:0;border-radius:var(--radius);background:var(--text);color:var(--bg);cursor:pointer;font-weight:600}
 .search button:hover{background:var(--accent);color:var(--bg)}
 .year{font:600 1.1rem var(--serif);margin:2.5rem 0 .5rem;padding-bottom:.4rem;border-bottom:2px solid var(--text)}
-.row{display:grid;grid-template-columns:minmax(0,1fr);gap:.15rem 1.5rem;padding:1rem 0;border-bottom:1px solid var(--rule)}
+.start-anywhere{margin:0 0 1.25rem}
+.row{display:grid;grid-template-columns:minmax(0,1fr);gap:.15rem 1.5rem;padding:.9rem 1rem;margin:0 0 .5rem;border:1px solid var(--rule);border-radius:var(--radius);background:var(--bg)}
 @media(min-width:700px){.row{grid-template-columns:7.5rem minmax(0,1fr)}}
-.row time{font:400 .85rem/1.9 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.row-meta{display:flex;flex-direction:column;align-items:flex-start;gap:.2rem;margin:0}
+.row time,.row-meta .note-id{font:400 .85rem/1.4 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
 .row h3 a{text-decoration:none}
 .row h3 a:hover{text-decoration:underline;text-decoration-color:var(--accent)}
 .row p{margin:.2rem 0 0;color:var(--muted)}
+.row .row-meta{margin:0}
 
 /* article */
 .article{padding:3.5rem 0 2rem}
@@ -144,6 +154,15 @@ p{margin:0 0 1rem}
 .next a{display:block;text-decoration:none;border:1px solid var(--rule);border-radius:var(--radius);padding:1rem;background:var(--bg)}
 .next a:hover{border-color:var(--accent)}
 .next span{display:block}
+.link-heading{font:400 .8rem/1 var(--mono);color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin:2.5rem 0 .75rem}
+.note-links{margin:2.25rem 0 0}
+.note-links .link-heading{margin-top:0}
+.note-links + .note-links{margin-top:2.25rem}
+.note-links .next{margin:0}
+.backlink-list{list-style:none;margin:0;padding:0}
+.backlink-list li{padding:.55rem 0;border-bottom:1px solid var(--rule)}
+.backlink-list li:first-child{padding-top:0}
+.backlink-list .meta{margin-right:.45rem}
 
 /* about / lab */
 .about{display:grid;gap:2.5rem;grid-template-columns:minmax(0,1fr);padding:3.5rem 0 3rem}

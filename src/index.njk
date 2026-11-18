@@ -9,6 +9,7 @@ permalink: /
     <div class="who">{% renderFile "./src/fragments/home-intro.md" %}</div>
     <p class="cta">
       <a class="btn" href="/writing/">Read the writing</a>
+      <a href="/writing/" data-random-note>A random note</a>
       <a href="{{ site.linkedin }}">Connect on LinkedIn ↗</a>
     </p>
   </div>
@@ -20,7 +21,7 @@ permalink: /
     <ul class="post-list">
 {%- for n in collections.notes | limit(4) %}
       <li>
-        <p class="meta"><time datetime="{{ n.date | isoDate }}">{{ n.date | readableDate }}</time> · {{ (n.data.tags | reject("equalto","notes") | first) | tagLabel }} · {{ n.data.readingMinutes }} min read</p>
+        <p class="meta">{% if n.data.noteNumber %}#{{ n.data.noteNumber }} · {% endif %}<time datetime="{{ n.date | isoDate }}">{{ n.date | readableDate }}</time> · {{ (n.data.tags | reject("equalto","notes") | first) | tagLabel }} · {{ n.data.readingMinutes }} min read</p>
         <h3><a href="{{ n.url }}">{{ n.data.home_title or n.data.title }}</a></h3>
         <p>{{ n.data.summary }}</p>
       </li>

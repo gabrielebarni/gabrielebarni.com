@@ -43,8 +43,8 @@
       <a class="brand" href="/">{{ site.title }}<span aria-hidden="true">.</span></a>
       <nav aria-label="Main">
         <ul>
-{%- for item in [["Writing","/writing/"],["Lab","/lab/"],["About","/about/"]] %}
-          <li><a href="{{ item[1] }}"{% if page.url.startsWith(item[1]) %} aria-current="page"{% endif %}>{{ item[0] }}</a></li>
+{%- for item in [["Zettelkasten","/writing/","de"],["Lab","/lab/"],["About","/about/"]] %}
+          <li><a href="{{ item[1] }}"{% if page.url.startsWith(item[1]) %} aria-current="page"{% endif %}{% if item[2] %} lang="{{ item[2] }}"{% endif %}>{{ item[0] }}</a></li>
 {%- endfor %}
         </ul>
       </nav>
@@ -70,6 +70,22 @@
       </ul>
     </div>
   </footer>
+  {%- if collections.notes.length %}
+  <script>
+  (function () {
+    var urls = {{ collections.notes | urls | json | safe }};
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest("[data-random-note]");
+      if (!a || !urls.length) return;
+      e.preventDefault();
+      var here = location.pathname.endsWith("/") ? location.pathname : location.pathname + "/";
+      var pool = urls.filter(function (u) { return u !== here; });
+      var list = pool.length ? pool : urls;
+      location.href = list[Math.floor(Math.random() * list.length)];
+    });
+  })();
+  </script>
+  {%- endif %}
   {%- block scripts %}{% endblock %}
 </body>
 </html>
