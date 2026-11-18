@@ -1,4 +1,4 @@
-// Defaults for standalone pages (about.md, lab.md, ...): URL is /<file name>/.
+// Defaults for standalone pages (about.md, lab/, ...): URL is /<file name>/ unless permalink is set.
 export default {
   layout: "layouts/page.njk",
   eleventyComputed: {

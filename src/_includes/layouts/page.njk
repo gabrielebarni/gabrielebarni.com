@@ -3,6 +3,9 @@ layout: layouts/base.njk
 ---
 <div class="wrap">
   <article class="read article" data-pagefind-body data-pagefind-meta="kind:{{ title }}">
+{%- if parent %}
+    <p class="meta"><a href="{{ parent.url }}">{{ parent.label }}</a> › {{ crumb or title }}</p>
+{%- endif %}
 {%- if not hideTitle %}
     <h1>{{ title }}</h1>
 {%- endif %}

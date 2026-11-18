@@ -31,7 +31,8 @@ generated from the built pages. To try it, serve `_site/` (for example
 src/
   notes/NN-slug.md      one file per note; URL is /writing/slug/
   pages/about.md        About page text
-  pages/lab.md          Lab page (Meshtastic and friends)
+  pages/lab.njk            Lab index (project cards)
+  pages/lab/meshtastic.md Meshtastic in Basel
   fragments/home-intro.md  homepage intro paragraph
   _data/site.js         title, tagline, headline, links, topic names
   _data/legacy.json     old note numbers and ids (for redirects)
@@ -70,7 +71,7 @@ Push to `main` and the workflow publishes it.
 The old site was a single page with links like `/#notes/journey-owner`.
 GitHub Pages can't redirect on the server, so a small inline script on the
 homepage sends every old note id to its current note (merged notes included;
-the cut note goes to /writing/). `/meshtastic.htm` redirects to `/lab/`.
+the cut note goes to /writing/). `/meshtastic.htm` redirects to `/lab/meshtastic/`.
 The mapping comes from each note's `merged_from` and `original_ids`.
 
 ## Importing a new wording pass

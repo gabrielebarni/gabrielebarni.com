@@ -51,6 +51,15 @@
       "name": {{ pageTitle | json | safe }},
       "mainEntity": { "@id": {{ personId | json | safe }} },
       "isPartOf": { "@id": {{ websiteId | json | safe }} }
+    }{% elif page.url == "/lab/" or page.url == "/lab/meshtastic/" %},
+    {
+      "@type": {{ ("CollectionPage" if page.url == "/lab/" else "WebPage") | json | safe }},
+      "name": {{ (title or pageTitle) | json | safe }},
+      "description": {{ pageDesc | json | safe }},
+      "url": {{ canonical | json | safe }},
+      "inLanguage": {{ site.language | json | safe }},
+      "author": { "@id": {{ personId | json | safe }} },
+      "isPartOf": { "@id": {{ websiteId | json | safe }} }
     }{% endif %}
   ]
 }
